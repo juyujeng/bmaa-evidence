@@ -22,6 +22,11 @@ website:
         href: mechanisms.qmd
       - text: "關於 BMAA"
         href: about.qmd
+    right:
+      - text: "中文"
+        href: index.qmd
+      - text: "English"
+        href: en/index.qmd
   sidebar:
     - title: "研究清單"
       style: "docked"
@@ -40,6 +45,23 @@ website:
         - studies/2018-chang-children-executive-emotion.qmd
         - studies/2017-lee-body-mind-interaction.qmd
         - studies/2016-teng-confucius.qmd
+    - title: "Studies"
+      style: "docked"
+      contents:
+        - en/studies/index.qmd
+        - en/studies/2026-tien-healthcare-students.qmd
+        - en/studies/2026-lien-depression-agency.qmd
+        - en/studies/2024-chiu-nightmare-lucid-dream.qmd
+        - en/studies/2024-mou-internet-addiction.qmd
+        - en/studies/2024-yang-autistic-traits.qmd
+        - en/studies/2023-yeh-camp-attention-balance.qmd
+        - en/studies/2023-hung-gender-stereotype.qmd
+        - en/studies/2020-weng-teachers-stress-resilience.qmd
+        - en/studies/2020-hsu-emotion-regulation.qmd
+        - en/studies/2019-lee-feel-your-body.qmd
+        - en/studies/2018-chang-children-executive-emotion.qmd
+        - en/studies/2017-lee-body-mind-interaction.qmd
+        - en/studies/2016-teng-confucius.qmd
   page-footer:
     left: "BMAA 研究成效整理草稿"
     right: "Built with Quarto"
@@ -55,6 +77,7 @@ format:
     number-sections: false
     smooth-scroll: true
     code-fold: true
+    include-after-body: assets/language-switch.html
     lang: zh-Hant
 
 execute:

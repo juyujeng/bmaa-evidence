@@ -1,0 +1,35 @@
+---
+title: "About BMAA"
+lang: en
+language: ../assets/language-en.yml
+toc-title: "On this page"
+---
+
+## Body-Mind Well-Being and Returning to a Settled Self
+
+In fast-paced and high-pressure modern life, many people experience physical tension, fatigue, irritability, sleep difficulties, and a loss of mental flexibility. BMAA offers a body-based path for returning to steadiness. Through axial awareness, breath, quiet observation, self-massage, and dynamic practice, BMAA helps practitioners sense the body again and loosen long-standing body-mind knots.
+
+## What Is BMAA?
+
+BMAA stands for Body-Mind Axial Awareness. It is an integrative body-mind practice informed by East Asian traditions of embodied cultivation, modern psychology, and mindfulness. It is not merely stretching, relaxation, or exercise; it is a method of entering awareness through the body.
+
+## Why Start From the Body?
+
+Contemporary psychology increasingly recognizes that body and mind influence each other. When the body stays tense for too long, attention, emotion, and thought can become rigid as well. BMAA emphasizes relaxing the body and clearing mental clutter so that practitioners can rediscover balance, flexibility, and agency.
+
+## Potential Benefits
+
+Sustained practice may support physical comfort, sleep quality, attention, emotional stability, stress coping, self-care, empathy, and a greater sense of living in the present. These changes are best understood as a gradual recovery of the ability to rest, notice, and respond.
+
+## Course Pathway
+
+Basic Course I introduces breathing, quiet observation, simple self-massage, and dynamic practice. Basic Course II deepens the axial state through core movement principles and self-care in daily life. Advanced workshops focus on specific themes or body areas, such as the pelvis or shoulder blades.
+
+## Teaching Features
+
+BMAA courses use small-group teaching, individualized movement adjustment, and a safe learning atmosphere. Students are not forced to speak publicly; they can listen, practice, and share according to their own readiness.
+
+## Links
+
+- [Taiwan Body-Mind Axial Awareness Development Center](https://bmaa.tw/)
+- [Studies](studies/index.qmd)

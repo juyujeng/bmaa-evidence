@@ -1,0 +1,19 @@
+---
+title: "Brief mindfulness guidance reduces implicit gender stereotypes during reading"
+lang: en
+language: ../../assets/language-en.yml
+toc-title: "On this page"
+---
+
+## Method
+
+A mixed-design eye-tracking study comparing a brief mindfulness guidance group with a waitlist control group. The practice included BMAA-derived warm-up exercises followed by breath observation and body scanning.
+
+## Key Findings
+
+- Before training, both groups showed a gender-incongruency effect during reading.
+- After mindfulness guidance, the incongruency effect disappeared in key rereading-time indicators in the experimental group but not in the control group.
+
+## Reference
+
+洪珮瑩, 陳苡禕, & 葉理豪. (2023). 短期正念引導降低閱讀時的內隱性別刻板印象. *教育心理學報, 54*(3), 515-536. https://doi.org/10.6251/BEP.202303_54(3).0001

@@ -5,3 +5,5 @@
 /.home/
 
 **/*.quarto_ipynb
+.Rproj.user
+.positai

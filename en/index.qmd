@@ -1,0 +1,47 @@
+---
+title: "BMAA Research Evidence"
+lang: en
+language: ../assets/language-en.yml
+toc-title: "On this page"
+---
+
+::: {.hero}
+# Body-Mind Axial Awareness Research Evidence
+
+This draft website introduces Body-Mind Axial Awareness (BMAA) and summarizes current scientific evidence on its training effects. Existing studies cover children, teachers, university students, healthcare students, adults with high autistic traits, people with internet addiction tendency, and people experiencing nightmare distress.
+:::
+
+::: {.note-box}
+This English version is an initial bilingual draft. Study summaries should still be checked against the original papers before formal publication.
+:::
+
+## Evidence Overview
+
+::: {.evidence-grid}
+::: {.evidence-card}
+### Body Awareness and Interoception
+Many BMAA studies report improvements in interoceptive sensibility, body awareness, or MAIA-related dimensions. These changes are also candidate mechanisms for later psychological benefits.
+:::
+
+::: {.evidence-card}
+### Emotion and Mental Health
+Studies report reductions in depression, anxiety, perceived stress, emotion-regulation difficulties, or nightmare distress, along with increases in resilience, life satisfaction, or positive embodiment.
+:::
+
+::: {.evidence-card}
+### Attention and Executive Function
+Research with children and adults has examined working memory, sustained attention, switching, and emotional interference. Effects appear strongest for working memory and sustained attention, though results vary across designs.
+:::
+
+::: {.evidence-card}
+### Behavior and Social Functioning
+Recent work extends BMAA to internet use, lucid dreaming and nightmares, alexithymia and empathy, and implicit gender stereotypes during reading.
+:::
+:::
+
+## Site Guide
+
+- [Studies](studies/index.qmd): research summaries listed from newest to oldest.
+- [Outcome Themes](outcomes.qmd): evidence organized by outcome domains.
+- [Mechanisms](mechanisms.qmd): a draft model of how bodily awareness may affect mind and behavior.
+- [About BMAA](about.qmd): an introduction to BMAA concepts, practice features, and course pathway.

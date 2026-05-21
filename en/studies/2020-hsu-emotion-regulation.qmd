@@ -1,0 +1,19 @@
+---
+title: "Effects of a two-week BMAA practice on emotion regulation among university students"
+lang: en
+language: ../../assets/language-en.yml
+toc-title: "On this page"
+---
+
+## Method
+
+A pretest-posttest waitlist-control study with university and graduate students. The experimental group received a two-week, nine-hour short-form BMAA practice.
+
+## Key Findings
+
+- BMAA-S reduced depressive symptoms and emotion-regulation difficulties and improved self-reported emotion regulation.
+- Improved body awareness mediated reductions in depression and partially mediated emotion-regulation improvement.
+
+## Reference
+
+許惟智. (2020). *探討兩週身心中軸覺察練習對大學生情緒調節的成效及覺察傾向、工作記憶的中介角色* [碩士論文，國立臺灣大學]. https://doi.org/10.6342/NTU202002076

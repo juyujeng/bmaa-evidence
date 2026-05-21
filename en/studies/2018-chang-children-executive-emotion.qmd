@@ -1,0 +1,19 @@
+---
+title: "BMAA and integrated activity training for improving children’s executive function and emotion regulation"
+lang: en
+language: ../../assets/language-en.yml
+toc-title: "On this page"
+---
+
+## Method
+
+A pretest-posttest between-group study comparing BMAA-C with an integrated activity program for children.
+
+## Key Findings
+
+- The BMAA-C group showed clearer improvement in working-memory span.
+- The integrated activity group showed stronger improvements in parent-rated emotion regulation indicators.
+
+## Reference
+
+張憶如. (2018). *身心中軸覺察與綜合活動訓練增進兒童之執行功能及情緒調節* [碩士論文，中原大學].

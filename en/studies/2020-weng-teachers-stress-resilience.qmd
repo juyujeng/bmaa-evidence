@@ -1,0 +1,19 @@
+---
+title: "Effects of a short-term dynamic body-mind awareness course on elementary school teachers’ interoceptive awareness, resilience, and perceived stress"
+lang: en
+language: ../../assets/language-en.yml
+toc-title: "On this page"
+---
+
+## Method
+
+A single-group pretest-posttest study with in-service elementary school teachers. The course included six weeks and 18 hours of BMAA practice.
+
+## Key Findings
+
+- After BMAA, teachers showed improved interoceptive awareness, resilience, and sleep quality, and reduced perceived stress and negative affect.
+- Home practice time was related to several improvement indicators.
+
+## Reference
+
+翁宛婷. (2020). *探討短期動態身心覺察課程對國小教師內感覺覺察、心理韌性與壓力知覺的介入成效* [碩士論文，國立臺灣師範大學].

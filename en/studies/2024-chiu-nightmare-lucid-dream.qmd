@@ -1,0 +1,19 @@
+---
+title: "Effects of BMAA combined with lucid-dream therapy on lucid dreaming, nightmares, and sleep quality among people with nightmare distress"
+lang: en
+language: ../../assets/language-en.yml
+toc-title: "On this page"
+---
+
+## Method
+
+A pretest-posttest control-group study comparing a BMAA-MILD intervention with a waitlist control group. The intervention combined BMAA practice, lucid-dream induction training, reality testing, and dream journaling.
+
+## Key Findings
+
+- After the intervention, the experimental group showed increased lucid-dream awareness and reflectiveness, reduced nightmare distress, anxiety, and depression, and improved sleep quality.
+- The proposed mechanism links dream mindfulness and reduced negative dream emotion to lower nightmare burden.
+
+## Reference
+
+邱敬惠. (2024). *身心中軸覺察訓練結合清醒夢療法對惡夢困擾者的清醒夢、惡夢與睡眠品質的影響* [碩士論文，中原大學].

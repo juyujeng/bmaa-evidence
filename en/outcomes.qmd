@@ -1,0 +1,24 @@
+---
+title: "Outcome Themes"
+lang: en
+language: ../assets/language-en.yml
+toc-title: "On this page"
+---
+
+This page groups current BMAA evidence by major outcome domains.
+
+## Body Awareness and Interoception
+
+Several studies use MAIA, BAAI, heartbeat-detection tasks, or related body-awareness indicators. Improvements often involve noticing body signals, regulating attention through the body, and trusting bodily experience.
+
+## Emotion Regulation and Mental Health
+
+BMAA research covers depression, anxiety, perceived stress, emotion-regulation difficulties, resilience, life satisfaction, and nightmare distress. Short-term and medium-term programs both show promising emotional and mental-health outcomes.
+
+## Attention, Working Memory, and Executive Function
+
+Early studies examined working memory, attention switching, Stroop inhibition, SART, and attention-network tasks. Working memory and sustained attention appear to be relatively promising, while inhibition and switching effects may depend on design and comparison group.
+
+## Behavioral Regulation and Social Cognition
+
+Recent studies extend BMAA to internet use, implicit gender stereotypes, empathy, alexithymia, facial-expression recognition, and lucid dreaming. The shared question is whether improved bodily awareness can support self-monitoring, emotion understanding, and behavioral choice.

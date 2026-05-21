@@ -1,0 +1,27 @@
+---
+title: "Possible Mechanisms"
+lang: en
+language: ../assets/language-en.yml
+toc-title: "On this page"
+---
+
+BMAA can be summarized as a pathway from body to mind and then to behavior: axial movement, breath, massage, and bodily sensing may improve interoception and body awareness, which in turn support emotion regulation, attentional control, sense of agency, and daily behavioral choices.
+
+## Draft Mechanism Model
+
+```{mermaid}
+flowchart LR
+  A["BMAA practice<br/>axial movement, breath, bodily sensing"] --> B["Improved body awareness<br/>interoception and MAIA dimensions"]
+  B --> C["Self-regulation resources<br/>attention, emotion awareness, body trust"]
+  C --> D["Mental-health outcomes<br/>lower depression, anxiety, stress, nightmare distress"]
+  C --> E["Cognitive and behavioral outcomes<br/>working memory, sustained attention, internet-use regulation"]
+  B --> F["Social and emotional understanding<br/>lower alexithymia, better facial-expression recognition"]
+```
+
+## Interoception as a Bridge
+
+Several studies treat interoception or body awareness as a key mediator. Evidence suggests that improvements in bodily awareness may help explain changes in depression, emotion regulation, internet-use behavior, and sense of agency.
+
+## Evidence Still Needed
+
+Future summaries should distinguish randomized trials, active-control studies, waitlist-control studies, single-group designs, and case series; add effect sizes and confidence intervals; and separate BMAA-only interventions from combined interventions such as BMAA-MILD.

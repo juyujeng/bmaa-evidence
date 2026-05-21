@@ -1,0 +1,19 @@
+---
+title: "A preliminary study of a camp-based dynamic contemplative course on children’s sustained attention and balance"
+lang: en
+language: ../../assets/language-en.yml
+toc-title: "On this page"
+---
+
+## Method
+
+A case-series pretest-posttest study with five children participating in a six-day camp-based BMAA dynamic contemplative course.
+
+## Key Findings
+
+- Two children showed clearer improvement in visual sustained attention, one in auditory sustained attention, and four in balance performance.
+- Children with stronger attention gains also tended to show balance improvements.
+
+## Reference
+
+葉淨維, 連韻文, 陳人瑜, 莊博雅, 鄭惟馨, & 陳顥齡. (2023). 營隊式動態靜觀課程對兒童持續注意力與平衡能力影響之初探. *台灣職能治療研究與實務, 19*(1), 81-97.

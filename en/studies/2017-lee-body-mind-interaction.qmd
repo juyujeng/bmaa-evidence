@@ -1,0 +1,19 @@
+---
+title: "An initial exploration of body-mind interaction: Effects of BMAA on body sensation, working memory, and attentional control"
+lang: en
+language: ../../assets/language-en.yml
+toc-title: "On this page"
+---
+
+## Method
+
+A child pretest-posttest control-group study, with additional baseline analyses examining relations between body awareness and executive functions.
+
+## Key Findings
+
+- Children with better proprioceptive awareness tended to show better sustained attention at baseline.
+- Compared with the control group, BMAA-C showed greater gains in working memory and sustained attention, with effects moderated by baseline bodily-sensation ability.
+
+## Reference
+
+李少揚. (2017). *身心互動途徑初探：以「身心中軸覺察訓練」對身體感覺、工作記憶與注意力控制功能的提升效果為例* [碩士論文，國立臺灣大學]. https://doi.org/10.6342/NTU201700254

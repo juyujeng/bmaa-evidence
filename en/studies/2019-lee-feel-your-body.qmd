@@ -1,0 +1,19 @@
+---
+title: "Feel your body: Effects of a short-term in-class dynamic contemplative course on children’s interoception, executive control, emotion regulation, and motor coordination"
+lang: en
+language: ../../assets/language-en.yml
+toc-title: "On this page"
+---
+
+## Method
+
+A school-based pretest-posttest control-group study comparing BMAA-C with a waitlist control group over an 11-week course.
+
+## Key Findings
+
+- BMAA-C improved children’s interoceptive awareness and encouraged more autonomous emotion-regulation strategies such as breathing relaxation and reappraisal.
+- Upper-limb and bilateral motor coordination also improved, while executive-control effects were less clear.
+
+## Reference
+
+李茂寧. (2019). *感覺你的身體：短期入班動態靜觀課程對學童內感覺、執行控制功能、情緒調節及運動協調之介入成效* [碩士論文，國立臺灣大學].

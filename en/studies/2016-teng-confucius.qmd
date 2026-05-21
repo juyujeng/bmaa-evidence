@@ -1,0 +1,19 @@
+---
+title: "What Confucius practiced is good for your mind: Examining the effect of a contemplative practice in Confucian tradition on executive functions"
+lang: en
+language: ../../assets/language-en.yml
+toc-title: "On this page"
+---
+
+## Method
+
+A pretest-posttest controlled study comparing BMAA, Chan meditation, and a waitlist control group. Both active interventions included 12 hours of practice over four weeks.
+
+## Key Findings
+
+- BMAA produced the clearest improvement in working-memory capacity compared with Chan meditation and waitlist control.
+- Chan meditation mainly improved attention switching, while neither active intervention improved Stroop inhibition.
+
+## Reference
+
+Teng, S.-C., & Lien, Y.-W. (2016). What Confucius practiced is good for your mind: Examining the effect of a contemplative practice in Confucian tradition on executive functions. *Consciousness and Cognition, 42*, 204-215. https://doi.org/10.1016/j.concog.2016.03.016

@@ -1,0 +1,19 @@
+---
+title: "Effects of BMAA on interoception, alexithymia, and empathy among adults with high autistic traits"
+lang: en
+language: ../../assets/language-en.yml
+toc-title: "On this page"
+---
+
+## Method
+
+A pretest-posttest control-group study with adults scoring high on autistic traits. The BMAA group received a four-week, 12-hour program plus additional home practice.
+
+## Key Findings
+
+- BMAA improved awareness of bodily signals, ability to describe emotions, and recognition of subtle facial expressions.
+- Sequential mediation suggested that improved interoception and reduced alexithymia may help explain changes in autistic-trait related outcomes.
+
+## Reference
+
+楊捷如. (2024). *身心中軸覺察對於高自閉症特質成年人之內感覺、述情障礙及同理心的影響* [碩士論文，中原大學].

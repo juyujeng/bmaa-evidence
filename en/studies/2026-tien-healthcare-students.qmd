@@ -1,0 +1,19 @@
+---
+title: "From body to mind: How body-mind axial awareness training enhances body awareness, mindfulness, positive embodiment and mental health in healthcare students"
+lang: en
+language: ../../assets/language-en.yml
+toc-title: "On this page"
+---
+
+## Method
+
+A non-randomized pretest-posttest control-group study with healthcare students. The BMAA group received an eight-week BMAA program with weekly practice, home practice, and written reflection.
+
+## Key Findings
+
+- After controlling for baseline differences, the BMAA group showed better outcomes in body awareness, mindfulness, positive embodiment, and mental health than the control group.
+- Within-group analyses suggested improvements in body awareness, mindfulness-related qualities, emotional awareness and expression, anxiety, and life satisfaction.
+
+## Reference
+
+Tien, Y.-M., Lin, C.-Y., Lien, Y.-W., & Hsu, L.-C. (2026). From body to mind: How body-mind axial awareness training enhances body awareness, mindfulness, positive embodiment and mental health in healthcare students. *Health Psychology and Behavioral Medicine, 14*(1), Article 2656029. https://doi.org/10.1080/21642850.2026.2656029

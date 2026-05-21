@@ -1,0 +1,84 @@
+/*-- scss:defaults --*/
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+$headings-font-weight: 700;
+$body-color: #203030;
+$link-color: #2f6f73;
+
+/*-- scss:rules --*/
+body {
+  line-height: 1.72;
+}
+
+.navbar-title {
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.hero {
+  background: linear-gradient(135deg, #f4f7f4 0%, #e8f0ee 58%, #f7efe5 100%);
+  border-bottom: 1px solid #d7e2de;
+  margin: -2rem calc(50% - 50vw) 2rem;
+  padding: 4.2rem max(2rem, calc((100vw - 1120px) / 2)) 3.4rem;
+}
+
+.hero h1 {
+  color: #203030;
+  font-size: clamp(2.05rem, 4vw, 3.8rem);
+  line-height: 1.18;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  color: #455858;
+  font-size: 1.15rem;
+  max-width: 760px;
+}
+
+.note-box {
+  background: #fff8ed;
+  border-left: 5px solid #c9853d;
+  padding: 1rem 1.2rem;
+  margin: 1.5rem 0;
+}
+
+.evidence-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin: 1.5rem 0 2rem;
+}
+
+.evidence-card {
+  background: #ffffff;
+  border: 1px solid #dbe5e2;
+  border-radius: 8px;
+  padding: 1.1rem 1.15rem;
+}
+
+.evidence-card h3 {
+  color: #243b3b;
+  font-size: 1.05rem;
+  margin: 0 0 .45rem;
+}
+
+.evidence-card p {
+  color: #526363;
+  margin: 0;
+}
+
+.study-list {
+  margin-top: 1.2rem;
+}
+
+.study-list li {
+  margin-bottom: .65rem;
+}
+
+.table {
+  font-size: .96rem;
+}
+
+h2 {
+  border-bottom: 1px solid #e3ebe8;
+  padding-bottom: .25rem;
+}

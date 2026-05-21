@@ -1,0 +1,63 @@
+project:
+  type: website
+  output-dir: _site
+
+language: assets/language-zh-TW.yml
+
+website:
+  title: "BMAA 研究成效整理"
+  site-url: "https://example.org"
+  description: "Body-Mind Axial Awareness 訓練課程之科學研究成效整理"
+  navbar:
+    background: "#243b3b"
+    foreground: "#ffffff"
+    left:
+      - text: "首頁"
+        href: index.qmd
+      - text: "研究清單"
+        href: studies/index.qmd
+      - text: "成果主題"
+        href: outcomes.qmd
+      - text: "可能機制"
+        href: mechanisms.qmd
+      - text: "關於 BMAA"
+        href: about.qmd
+  sidebar:
+    - title: "研究清單"
+      style: "docked"
+      contents:
+        - studies/index.qmd
+        - studies/2026-tien-healthcare-students.qmd
+        - studies/2026-lien-depression-agency.qmd
+        - studies/2024-chiu-nightmare-lucid-dream.qmd
+        - studies/2024-mou-internet-addiction.qmd
+        - studies/2024-yang-autistic-traits.qmd
+        - studies/2023-yeh-camp-attention-balance.qmd
+        - studies/2023-hung-gender-stereotype.qmd
+        - studies/2020-weng-teachers-stress-resilience.qmd
+        - studies/2020-hsu-emotion-regulation.qmd
+        - studies/2019-lee-feel-your-body.qmd
+        - studies/2018-chang-children-executive-emotion.qmd
+        - studies/2017-lee-body-mind-interaction.qmd
+        - studies/2016-teng-confucius.qmd
+  page-footer:
+    left: "BMAA 研究成效整理草稿"
+    right: "Built with Quarto"
+
+format:
+  html:
+    theme:
+      - cosmo
+      - assets/styles.scss
+    toc: true
+    toc-depth: 3
+    toc-title: "本頁目錄"
+    number-sections: false
+    smooth-scroll: true
+    code-fold: true
+    lang: zh-Hant
+
+execute:
+  echo: false
+  warning: false
+  message: false

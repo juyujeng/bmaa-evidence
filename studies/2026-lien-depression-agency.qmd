@@ -1,0 +1,101 @@
+---
+date: 2026-04-07
+lastmod: 2026-05-21
+title: "From the body to the mind: interoception and sense of agency as mechanisms of depression reduction in the Body–Mind Axial Awareness (BMAA)"
+tags:
+  - BMAA
+categories: [BMAA, 研究摘要]
+---
+
+```{r}
+#| include: false
+source("../R/bmaa_plot_theme.R")
+```
+
+## From the body to the mind: interoception and sense of agency as mechanisms of depression reduction in BMAA
+
+### 方法
+- 實驗設計：前後測主動控制組設計。
+- 實驗組（BMAA，50 人） vs 主動控制組（21 人）；總計 71 名大學生，部分參與者未完成後測。
+- 介入：10 週、共 30 小時；BMAA 組進行身心中軸覺察訓練，主動控制組進行身心相關文獻討論。
+- 主要依變項：憂鬱傾向（BDI-II）、內感覺敏感性（MAIA-II）、自主感/能動感（Sense of Agency Scale）。
+
+### 結果
+
+BMAA 組相較主動控制組，憂鬱傾向顯著下降，MAIA-II 八個內感覺向度皆顯著提升，負向自主感下降。中介分析支持「內感覺提升 → 負向自主感下降 → 憂鬱下降」的序列路徑，特別涉及 Not-Distracting、Attention Regulation 與 Trusting 等向度。
+
+| 指標 | 主要發現 | 圖像化重點 |
+|---|---|---|
+| 憂鬱傾向 | BDI 後測 BMAA 組低於控制組 | BMAA 減少憂鬱症狀 |
+| 內感覺敏感性 | MAIA-II 八個向度皆提升 | 身體覺察全面增強 |
+| 負向自主感 | SoNA 下降 | 「失控感/無力感」降低 |
+| 正向自主感 | SoPA 未顯著提升 | 成效較像降低負向 agency |
+| 中介機制 | 內感覺向度透過 SoNA 影響憂鬱 | 從身體感覺到自主感再到情緒改善 |
+
+### 繪圖資料
+
+#### 憂鬱與自主感
+
+| 指標 | BMAA 前測 | BMAA 後測 | 主動控制前測 | 主動控制後測 |
+|---|---:|---:|---:|---:|
+| BDI | 15.62 | 7.89 | 11.00 | 11.95 |
+| 正向自主感 SoPA | 4.69 | 5.04 | 4.84 | 4.91 |
+| 負向自主感 SoNA | 2.96 | 2.40 | 2.55 | 2.66 |
+
+#### MAIA-II 內感覺敏感性
+
+| 指標 | BMAA 前測 | BMAA 後測 | 主動控制前測 | 主動控制後測 |
+|---|---:|---:|---:|---:|
+| Noticing | 3.11 | 3.87 | 3.30 | 3.32 |
+| Not-distracting | 1.75 | 2.82 | 1.86 | 2.11 |
+| Not-worrying | 1.36 | 2.30 | 1.73 | 1.80 |
+| Attention regulation | 2.31 | 3.38 | 2.64 | 2.85 |
+| Emotional awareness | 3.30 | 3.92 | 3.38 | 3.43 |
+| Self-regulation | 2.65 | 3.66 | 2.88 | 3.02 |
+| Body listening | 2.68 | 3.56 | 2.84 | 2.89 |
+| Trusting | 2.88 | 3.62 | 3.25 | 3.22 |
+
+## 研究結果圖
+
+::: {.callout-note}
+下列圖表根據摘要草稿中的繪圖資料轉為 R/ggplot 圖。正式發佈前，仍建議回到原論文確認數值、統計檢定與圖題。
+:::
+
+#### 憂鬱與自主感
+
+```{r}
+#| echo: true
+#| warning: false
+#| message: false
+#| fig-height: 5.4
+dat <- data.frame(
+  time = rep(c("前測", "後測"), times = 6),
+  group = rep(c("BMAA-BDI", "主動控制-BDI", "BMAA-SoPA", "主動控制-SoPA", "BMAA-SoNA", "主動控制-SoNA"), each = 2),
+  value = c(15.62, 7.89, 11, 11.95, 4.69, 5.04, 4.84, 4.91, 2.96, 2.4, 2.55, 2.66)
+)
+bmaa_line_plot(dat, "憂鬱與自主感")
+```
+
+#### MAIA-II 內感覺敏感性
+
+```{r}
+#| echo: true
+#| warning: false
+#| message: false
+#| fig-height: 5.4
+dat <- data.frame(
+  time = rep(c("前測", "後測"), times = 16),
+  group = rep(c("BMAA-Noticing", "主動控制-Noticing", "BMAA-Not-distracting", "主動控制-Not-distracting", "BMAA-Not-worrying", "主動控制-Not-worrying", "BMAA-Attention regulation", "主動控制-Attention regulation", "BMAA-Emotional awareness", "主動控制-Emotional awareness", "BMAA-Self-regulation", "主動控制-Self-regulation", "BMAA-Body listening", "主動控制-Body listening", "BMAA-Trusting", "主動控制-Trusting"), each = 2),
+  value = c(3.11, 3.87, 3.3, 3.32, 1.75, 2.82, 1.86, 2.11, 1.36, 2.3, 1.73, 1.8, 2.31, 3.38, 2.64, 2.85, 3.3, 3.92, 3.38, 3.43, 2.65, 3.66, 2.88, 3.02, 2.68, 3.56, 2.84, 2.89, 2.88, 3.62, 3.25, 3.22)
+)
+bmaa_line_plot(dat, "MAIA-II 內感覺敏感性")
+```
+
+
+## 參考文獻
+
+Lien, Y.-W., Teng, S.-C., & Wei, L.-Y. (2026). From the body to the mind: Interoception and sense of agency as mechanisms of depression reduction in the Body-Mind Axial Awareness (BMAA). *Frontiers in Psychology, 17*, Article 1755698. https://doi.org/10.3389/fpsyg.2026.1755698
+
+::: {.callout-warning}
+本頁為摘要草稿頁，內容與數值仍需依原論文校對後再作正式推廣使用。
+:::

@@ -148,6 +148,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">關於 BMAA</span></a>
   </li>  
 </ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">中文</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../en/index.html"> 
+<span class="menu-text">English</span></a>
+  </li>  
+</ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
@@ -549,6 +559,75 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 
 </main> <!-- /main -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const path = window.location.pathname;
+  const isEnglish = path.includes("/en/");
+  const siteRoot = path.includes("/en/")
+    ? path.slice(0, path.indexOf("/en/"))
+    : path.includes("/studies/")
+      ? path.slice(0, path.indexOf("/studies/"))
+      : path.replace(/\/[^\/]*$/, "");
+  const pageName = path.split("/").pop() || "index.html";
+  const siteHref = function (relativePath) {
+    return `${siteRoot}/${relativePath}`.replace(/\/{2,}/g, "/");
+  };
+  const toEnglish = path.includes("/studies/")
+    ? siteHref(`en/studies/${pageName}`)
+    : siteHref(`en/${pageName}`);
+  const toChinese = path.includes("/en/studies/")
+    ? siteHref(`studies/${pageName}`)
+    : siteHref(pageName);
+
+  if (isEnglish) {
+    const navItems = new Map([
+      ["首頁", { label: "Home", href: siteHref("en/index.html") }],
+      ["研究清單", { label: "Studies", href: siteHref("en/studies/index.html") }],
+      ["成果主題", { label: "Outcomes", href: siteHref("en/outcomes.html") }],
+      ["可能機制", { label: "Mechanisms", href: siteHref("en/mechanisms.html") }],
+      ["關於 BMAA", { label: "About BMAA", href: siteHref("en/about.html") }]
+    ]);
+    const labels = new Map([
+      ...Array.from(navItems, ([key, value]) => [key, value.label]),
+      ["BMAA 研究成效整理", "BMAA Research Evidence"]
+    ]);
+
+    document.querySelectorAll("a.nav-link").forEach(function (link) {
+      const originalLabel = link.textContent.trim();
+      if (navItems.has(originalLabel)) {
+        link.href = navItems.get(originalLabel).href;
+      }
+    });
+
+    document.querySelectorAll(".menu-text, .navbar-title").forEach(function (el) {
+      const text = el.textContent.trim();
+      if (labels.has(text)) {
+        el.textContent = labels.get(text);
+      }
+    });
+
+    const brand = document.querySelector(".navbar-brand");
+    if (brand) {
+      brand.href = siteHref("en/index.html");
+    }
+
+    const search = document.querySelector("#quarto-search");
+    if (search) {
+      search.setAttribute("title", "Search");
+    }
+  }
+
+  document.querySelectorAll("a.nav-link").forEach(function (link) {
+    const label = link.textContent.trim();
+    if (label === "English") {
+      link.href = isEnglish ? path : toEnglish;
+    }
+    if (label === "中文") {
+      link.href = isEnglish ? toChinese : path;
+    }
+  });
+});
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

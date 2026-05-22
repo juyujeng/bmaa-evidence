@@ -5,14 +5,31 @@ language: ../../assets/language-en.yml
 toc-title: "On this page"
 ---
 
+```{r}
+#| include: false
+source("../../R/bmaa_plot_theme.R")
+```
+
 ## Method
 
 A pretest-posttest active-control study with university students. The BMAA group received a ten-week, 30-hour program, while the active-control group joined body-mind related reading discussions.
 
 ## Key Findings
 
-- Compared with the active-control group, the BMAA group showed reduced depressive symptoms, broad improvement in MAIA-II interoceptive awareness dimensions, and lower negative sense of agency.
-- Mediation analyses supported a pathway from improved interoception to reduced negative agency and then to reduced depression.
+This study connects BMAA to a possible mechanism: improved body awareness may reduce feelings of helplessness or loss of control, which may then reduce depression. BDI measures depressive symptoms; lower scores are better. SoNA measures negative sense of agency, or the feeling that one cannot influence one’s own state. MAIA Self-regulation reflects the ability to use body awareness to calm or regulate oneself.
+
+The BMAA group showed lower depression and negative agency, along with higher interoceptive self-regulation. The active-control group changed less.
+
+```{r}
+#| fig-height: 4.8
+dat <- data.frame(
+  outcome = rep(c("Depression (BDI)", "Negative agency (SoNA)", "Interoceptive self-regulation"), each = 4),
+  group = rep(c("BMAA", "BMAA", "Active control", "Active control"), 3),
+  time = rep(c("Pretest", "Posttest", "Pretest", "Posttest"), 3),
+  value = c(15.62, 7.89, 11.00, 11.95, 2.96, 2.40, 2.55, 2.66, 2.65, 3.66, 2.88, 3.02)
+)
+bmaa_facet_line_plot(dat, "BMAA, body awareness, agency, and depression", ylab = "Mean score")
+```
 
 ## Reference
 

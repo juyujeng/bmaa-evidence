@@ -5,14 +5,30 @@ language: ../../assets/language-en.yml
 toc-title: "On this page"
 ---
 
+```{r}
+#| include: false
+source("../../R/bmaa_plot_theme.R")
+```
+
 ## Method
 
 A case-series pretest-posttest study with five children participating in a six-day camp-based BMAA dynamic contemplative course.
 
 ## Key Findings
 
-- Two children showed clearer improvement in visual sustained attention, one in auditory sustained attention, and four in balance performance.
-- Children with stronger attention gains also tended to show balance improvements.
+This case-series study focuses on how many of the five children showed improvement rather than on group averages. Sustained attention means staying focused over time; balance reflects bodily postural control.
+
+The figure shows the number of children who improved. Balance improved in the largest number of children, while visual and auditory sustained attention improved in some children.
+
+```{r}
+#| fig-height: 4.8
+dat <- data.frame(
+  outcome = c("Visual sustained attention", "Auditory sustained attention", "Balance"),
+  group = "Improved cases",
+  value = c(2, 1, 4)
+)
+bmaa_bar_plot(dat, "Six-day camp-based BMAA: improvement summary", ylab = "Number improved (out of 5)")
+```
 
 ## Reference
 

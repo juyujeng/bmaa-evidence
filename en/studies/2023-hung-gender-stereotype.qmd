@@ -5,14 +5,31 @@ language: ../../assets/language-en.yml
 toc-title: "On this page"
 ---
 
+```{r}
+#| include: false
+source("../../R/bmaa_plot_theme.R")
+```
+
 ## Method
 
 A mixed-design eye-tracking study comparing a brief mindfulness guidance group with a waitlist control group. The practice included BMAA-derived warm-up exercises followed by breath observation and body scanning.
 
 ## Key Findings
 
-- Before training, both groups showed a gender-incongruency effect during reading.
-- After mindfulness guidance, the incongruency effect disappeared in key rereading-time indicators in the experimental group but not in the control group.
+This study used eye tracking to test whether readers reread more when gender stereotypes were violated. Longer rereading time suggests that the reader found the content unexpected and needed to reinterpret it. If incongruent passages trigger longer rereading, implicit gender stereotypes are influencing reading.
+
+After brief mindfulness guidance, the mindfulness group no longer showed the same incongruency effect in third-paragraph rereading time, while the control group did not show the same pattern.
+
+```{r}
+#| fig-height: 4.8
+dat <- data.frame(
+  outcome = "Third-paragraph rereading time",
+  group = rep(c("Mindfulness-congruent", "Mindfulness-incongruent", "Control-congruent", "Control-incongruent"), each = 2),
+  time = rep(c("Pretest", "Posttest"), 4),
+  value = c(1551.94, 2566.15, 3173.46, 1765.30, 2106.19, 1711.23, 2012.86, 1739.40)
+)
+bmaa_facet_line_plot(dat, "Brief mindfulness guidance reduced gender-incongruency effects", ylab = "Rereading time (ms)")
+```
 
 ## Reference
 

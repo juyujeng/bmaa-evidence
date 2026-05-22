@@ -78,6 +78,18 @@ bmaa_line_plot <- function(dat, title, ylab = "數值", subtitle = NULL) {
     theme_bmaa()
 }
 
+bmaa_facet_line_plot <- function(dat, title, ylab = "數值", subtitle = NULL, ncol = NULL) {
+  dat$time <- factor(dat$time, levels = unique(dat$time))
+  dat$outcome <- factor(dat$outcome, levels = unique(dat$outcome))
+  ggplot(dat, aes(time, value, group = group, color = group)) +
+    geom_line(linewidth = 1.15) +
+    geom_point(size = 2.7) +
+    facet_wrap(~ outcome, scales = "free_y", ncol = ncol) +
+    scale_color_manual(values = rep(bmaa_palette, length.out = length(unique(dat$group)))) +
+    labs(title = title, subtitle = subtitle, x = NULL, y = ylab) +
+    theme_bmaa()
+}
+
 bmaa_bar_plot <- function(dat, title, ylab = "數值", subtitle = NULL) {
   dat$outcome <- factor(dat$outcome, levels = unique(dat$outcome))
   ggplot(dat, aes(outcome, value, fill = group)) +

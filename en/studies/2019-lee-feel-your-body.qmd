@@ -5,14 +5,31 @@ language: ../../assets/language-en.yml
 toc-title: "On this page"
 ---
 
+```{r}
+#| include: false
+source("../../R/bmaa_plot_theme.R")
+```
+
 ## Method
 
 A school-based pretest-posttest control-group study comparing BMAA-C with a waitlist control group over an 11-week course.
 
 ## Key Findings
 
-- BMAA-C improved children’s interoceptive awareness and encouraged more autonomous emotion-regulation strategies such as breathing relaxation and reappraisal.
-- Upper-limb and bilateral motor coordination also improved, while executive-control effects were less clear.
+BMAA-C encouraged children to use more self-directed emotion-regulation strategies in negative emotional situations. Seeking help means turning outward to others; reappraisal means looking at the situation from a different angle; breathing relaxation means using the body to calm emotional arousal.
+
+Higher values in the figure mean the child used that strategy more often. After BMAA-C, breathing relaxation and reappraisal increased, while seeking help decreased, suggesting a shift toward more autonomous regulation.
+
+```{r}
+#| fig-height: 4.8
+dat <- data.frame(
+  outcome = rep(c("Seeking help", "Reappraisal", "Breathing relaxation"), each = 4),
+  group = rep(c("BMAA-C", "BMAA-C", "Control", "Control"), 3),
+  time = rep(c("Pretest", "Posttest", "Pretest", "Posttest"), 3),
+  value = c(0.85, 0.53, 0.74, 1.13, 0.74, 1.32, 1.26, 1.35, 0.50, 1.41, 0.84, 1.03)
+)
+bmaa_facet_line_plot(dat, "BMAA-C and self-directed emotion regulation", ylab = "Strategy-use count")
+```
 
 ## Reference
 

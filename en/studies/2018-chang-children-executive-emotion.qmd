@@ -5,14 +5,31 @@ language: ../../assets/language-en.yml
 toc-title: "On this page"
 ---
 
+```{r}
+#| include: false
+source("../../R/bmaa_plot_theme.R")
+```
+
 ## Method
 
 A pretest-posttest between-group study comparing BMAA-C with an integrated activity program for children.
 
 ## Key Findings
 
-- The BMAA-C group showed clearer improvement in working-memory span.
-- The integrated activity group showed stronger improvements in parent-rated emotion regulation indicators.
+The two active programs appeared to help in different ways. BMAA-C showed clearer improvement in working-memory span, while the integrated activity group showed stronger changes in emotion-regulation ratings. Working memory helps children keep and use information during learning; emotion regulation refers to how children manage emotional reactions.
+
+The figure places similar outcomes in separate panels. BMAA-C showed the clearest increase in working memory, whereas the integrated activity group showed stronger changes in emotion-regulation scores.
+
+```{r}
+#| fig-height: 4.8
+dat <- data.frame(
+  outcome = rep(c("Working-memory span", "Positive emotion regulation", "Negative emotion regulation"), each = 4),
+  group = rep(c("BMAA-C", "BMAA-C", "Integrated activity", "Integrated activity"), 3),
+  time = rep(c("Pretest", "Posttest", "Pretest", "Posttest"), 3),
+  value = c(37.44, 42.00, 39.08, 40.08, 29.24, 29.84, 30.58, 32.83, 7.88, 8.04, 8.08, 7.17)
+)
+bmaa_facet_line_plot(dat, "Outcome profile of BMAA-C and integrated activity", ylab = "Mean score")
+```
 
 ## Reference
 

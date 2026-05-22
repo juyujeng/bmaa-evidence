@@ -18,84 +18,216 @@ source("../R/bmaa_plot_theme.R")
 - 實驗設計：前後測主動控制組設計。
 - 實驗組（BMAA，50 人） vs 主動控制組（21 人）；總計 71 名大學生，部分參與者未完成後測。
 - 介入：10 週、共 30 小時；BMAA 組進行身心中軸覺察訓練，主動控制組進行身心相關文獻討論。
-- 主要依變項：憂鬱傾向（BDI-II）、內感覺敏感性（MAIA-II）、自主感/能動感（Sense of Agency Scale）。
+- 主要依變項：
+    - 憂鬱傾向（BDI-II）：評估參與者近期是否出現憂鬱相關狀態，例如心情低落、失去興趣、自我否定、疲倦、睡眠或食慾改變等。分數越高，代表憂鬱傾向越明顯。
+    - 內感覺覺察力（MAIA-II）：評估一個人如何覺察、理解並運用身體傳來的訊號。這個量表包含八個面向，例如「自我調節」指的是一個人能否透過注意身體感覺來安定自己、調節壓力或情緒；例如在感到焦慮時，能不能覺察自己的呼吸、心跳或肌肉緊繃，並透過回到身體感覺來讓自己慢慢穩定下來。
+    - 能動感（Sense of Agency Scale）：評估一個人是否感覺「我能主動影響自己的行動與生活」，也就是對自己行為、選擇與結果的掌控感。可進一步區分為：
+        - 正向能動感：指個體感覺自己能主動做選擇、採取行動，並對事情產生影響。例如覺得「我可以決定怎麼回應情緒或壓力」、「我的行動是有力量的」。
+        - 負向能動感：指個體感覺自己缺乏掌控，或覺得行動不像是由自己主導。例如覺得「事情不是我能控制的」、「我好像只能被情緒或外在狀況推著走」。分數越高，代表這種無力感或失控感越明顯。
 
-### 結果
+### 主要發現
 
-BMAA 組相較主動控制組，憂鬱傾向顯著下降，MAIA-II 八個內感覺向度皆顯著提升，負向自主感下降。中介分析支持「內感覺提升 → 負向自主感下降 → 憂鬱下降」的序列路徑，特別涉及 Not-Distracting、Attention Regulation 與 Trusting 等向度。
+- BMAA訓練組訓練後憂鬱傾向降低，8面向的內感覺覺察力提升，而負面能動感下降。
+- 中介分析的結果顯示，BMAA可能是透過身體覺察提升後，降低負面能動感，進而降低憂鬱傾向。
 
-| 指標 | 主要發現 | 圖像化重點 |
-|---|---|---|
-| 憂鬱傾向 | BDI 後測 BMAA 組低於控制組 | BMAA 減少憂鬱症狀 |
-| 內感覺敏感性 | MAIA-II 八個向度皆提升 | 身體覺察全面增強 |
-| 負向自主感 | SoNA 下降 | 「失控感/無力感」降低 |
-| 正向自主感 | SoPA 未顯著提升 | 成效較像降低負向 agency |
-| 中介機制 | 內感覺向度透過 SoNA 影響憂鬱 | 從身體感覺到自主感再到情緒改善 |
-
-### 繪圖資料
-
-#### 憂鬱與自主感
-
-| 指標 | BMAA 前測 | BMAA 後測 | 主動控制前測 | 主動控制後測 |
-|---|---:|---:|---:|---:|
-| BDI | 15.62 | 7.89 | 11.00 | 11.95 |
-| 正向自主感 SoPA | 4.69 | 5.04 | 4.84 | 4.91 |
-| 負向自主感 SoNA | 2.96 | 2.40 | 2.55 | 2.66 |
-
-#### MAIA-II 內感覺敏感性
-
-| 指標 | BMAA 前測 | BMAA 後測 | 主動控制前測 | 主動控制後測 |
-|---|---:|---:|---:|---:|
-| Noticing | 3.11 | 3.87 | 3.30 | 3.32 |
-| Not-distracting | 1.75 | 2.82 | 1.86 | 2.11 |
-| Not-worrying | 1.36 | 2.30 | 1.73 | 1.80 |
-| Attention regulation | 2.31 | 3.38 | 2.64 | 2.85 |
-| Emotional awareness | 3.30 | 3.92 | 3.38 | 3.43 |
-| Self-regulation | 2.65 | 3.66 | 2.88 | 3.02 |
-| Body listening | 2.68 | 3.56 | 2.84 | 2.89 |
-| Trusting | 2.88 | 3.62 | 3.25 | 3.22 |
-
-## 研究結果圖
-
-::: {.callout-note}
-下列圖表根據摘要草稿中的繪圖資料轉為 R/ggplot 圖。正式發佈前，仍建議回到原論文確認數值、統計檢定與圖題。
-:::
-
-#### 憂鬱與自主感
+圖中 BMAA 組在憂鬱與負向自主感下降，同時 MAIA-II 八個內感覺面向多數上升；主動控制組變化較小。這支持 BMAA 可能透過「更能感覺身體、也更能調節自己」來幫助情緒改善。
 
 ```{r}
-#| echo: true
-#| warning: false
-#| message: false
-#| fig-height: 5.4
-dat <- data.frame(
-  time = rep(c("前測", "後測"), times = 6),
-  group = rep(c("BMAA-BDI", "主動控制-BDI", "BMAA-SoPA", "主動控制-SoPA", "BMAA-SoNA", "主動控制-SoNA"), each = 2),
-  value = c(15.62, 7.89, 11, 11.95, 4.69, 5.04, 4.84, 4.91, 2.96, 2.4, 2.55, 2.66)
+#| fig-height: 10.2
+#| fig-width: 10.5
+library(patchwork)
+
+outcome_dat <- data.frame(
+  outcome = rep(c("憂鬱傾向", "負向能動感"), each = 4),
+  group = rep(c("BMAA", "BMAA", "主動控制組", "主動控制組"), 2),
+  time = rep(c("前測", "後測", "前測", "後測"), 2),
+  value = c(15.62, 7.89, 11.00, 11.95, 2.96, 2.40, 2.55, 2.66)
 )
-bmaa_line_plot(dat, "憂鬱與自主感")
+
+maia_dat <- data.frame(
+  facet = rep(c("BMAA 組", "主動控制組"), each = 16),
+  dimension = rep(
+    c(
+      "覺察", "不分心", "不擔憂", "注意調節",
+      "情緒覺察", "自我調節", "身體聆聽", "信任"
+    ),
+    times = 4
+  ),
+  time = rep(c("前測", "後測"), each = 8, times = 2),
+  value = c(
+    3.11, 1.75, 1.36, 2.31, 3.30, 2.65, 2.68, 2.88,
+    3.87, 2.82, 2.30, 3.38, 3.92, 3.66, 3.56, 3.62,
+    3.30, 1.86, 1.73, 2.64, 3.38, 2.88, 2.84, 3.25,
+    3.32, 2.11, 1.80, 2.85, 3.43, 3.02, 2.89, 3.22
+  )
+)
+
+lien_line_panel <- function(outcome_name, panel_label) {
+  dat <- subset(outcome_dat, outcome == outcome_name)
+  dat$time <- factor(dat$time, levels = c("前測", "後測"))
+
+  ggplot(dat, aes(time, value, group = group, color = group)) +
+    geom_line(linewidth = 1.15) +
+    geom_point(size = 2.9) +
+    scale_color_manual(values = c("BMAA" = bmaa_palette[1], "主動控制組" = bmaa_palette[2])) +
+    labs(title = panel_label, x = NULL, y = "平均分數") +
+    theme_bmaa(base_size = 13) +
+    theme(
+      plot.title = element_text(size = 15),
+      legend.position = "bottom"
+    )
+}
+
+lien_radar_panel <- function(facet_name, panel_label) {
+  dat <- subset(maia_dat, facet == facet_name)
+  dimension_levels <- unique(maia_dat$dimension)
+  dat$dimension <- factor(dat$dimension, levels = dimension_levels)
+  dat$time <- factor(dat$time, levels = c("前測", "後測"))
+  max_score <- 4
+  base_color <- if (facet_name == "BMAA 組") bmaa_palette[1] else bmaa_palette[2]
+  post_color <- grDevices::colorRampPalette(c(base_color, "#ffffff"))(4)[2]
+  time_colors <- c("前測" = base_color, "後測" = post_color)
+
+  axis_dat <- data.frame(
+    dimension = dimension_levels,
+    angle = seq(pi / 2, pi / 2 - 2 * pi + 2 * pi / length(dimension_levels),
+                length.out = length(dimension_levels))
+  )
+
+  dat <- merge(dat, axis_dat, by = "dimension", sort = FALSE)
+  dat$radius <- dat$value / max_score
+  dat$x <- dat$radius * cos(dat$angle)
+  dat$y <- dat$radius * sin(dat$angle)
+  dat <- dat[order(dat$time, dat$angle), ]
+  dat_closed <- do.call(
+    rbind,
+    lapply(split(dat, dat$time), function(x) rbind(x, x[1, ]))
+  )
+
+  grid_dat <- do.call(
+    rbind,
+    lapply(1:max_score, function(score) {
+      radius <- score / max_score
+      poly <- data.frame(
+        score = score,
+        x = radius * cos(axis_dat$angle),
+        y = radius * sin(axis_dat$angle)
+      )
+      rbind(poly, poly[1, ])
+    })
+  )
+
+  spoke_dat <- data.frame(
+    x = 0,
+    y = 0,
+    xend = cos(axis_dat$angle),
+    yend = sin(axis_dat$angle)
+  )
+
+  label_dat <- transform(
+    axis_dat,
+    x = 1.08 * cos(angle),
+    y = 1.08 * sin(angle)
+  )
+
+  score_label_dat <- data.frame(
+    score = 1:max_score,
+    x = -0.08,
+    y = (1:max_score) / max_score
+  )
+
+  ggplot() +
+    geom_path(
+      data = grid_dat,
+      aes(x, y, group = score),
+      color = "#dfe8e6",
+      linewidth = .45
+    ) +
+    geom_segment(
+      data = spoke_dat,
+      aes(x = x, y = y, xend = xend, yend = yend),
+      color = "#dfe8e6",
+      linewidth = .45
+    ) +
+    geom_polygon(
+      data = dat_closed,
+      aes(x, y, group = time, color = time, fill = time),
+      linewidth = 1.05,
+      alpha = .14
+    ) +
+    geom_path(
+      data = dat_closed,
+      aes(x, y, group = time, color = time),
+      linewidth = 1.2
+    ) +
+    geom_point(
+      data = dat,
+      aes(x, y, color = time),
+      size = 2.6
+    ) +
+    geom_text(
+      data = label_dat,
+      aes(x, y, label = dimension),
+      family = bmaa_text_family,
+      size = 3.6,
+      color = "#405050"
+    ) +
+    geom_text(
+      data = score_label_dat,
+      aes(x, y, label = score),
+      family = bmaa_text_family,
+      size = 2.9,
+      color = "#6b7a7a",
+      hjust = 1
+    ) +
+    coord_fixed(xlim = c(-1.14, 1.14), ylim = c(-1.14, 1.14), clip = "off") +
+    scale_color_manual(values = time_colors) +
+    scale_fill_manual(values = time_colors) +
+    labs(title = panel_label, x = NULL, y = NULL) +
+    theme_bmaa(base_size = 12) +
+    theme(
+      plot.title = element_text(size = 15),
+      axis.text = element_blank(),
+      axis.ticks = element_blank(),
+      panel.grid = element_blank(),
+      legend.position = "bottom",
+      plot.margin = margin(2, 2, 2, 2)
+    )
+}
+
+(lien_line_panel("憂鬱傾向", "A. 憂鬱傾向") |
+   lien_line_panel("負向能動感", "B. 負向能動感")) /
+  (lien_radar_panel("BMAA 組", "C. BMAA 組 MAIA-II 八面向") |
+     lien_radar_panel("主動控制組", "D. 主動控制組 MAIA-II 八面向")) +
+  plot_layout(widths = c(1, 1), heights = c(1, 1.55)) +
+  plot_annotation(
+    title = "BMAA降低憂鬱傾向與負向能動感，提升身體覺察",
+    theme = theme(
+      plot.title = element_text(
+        family = bmaa_text_family,
+        face = "bold",
+        size = 19,
+        color = "#203030"
+      )
+    )
+  )
 ```
 
-#### MAIA-II 內感覺敏感性
+#### MAIA-II 八個向度的意義
 
-```{r}
-#| echo: true
-#| warning: false
-#| message: false
-#| fig-height: 5.4
-dat <- data.frame(
-  time = rep(c("前測", "後測"), times = 16),
-  group = rep(c("BMAA-Noticing", "主動控制-Noticing", "BMAA-Not-distracting", "主動控制-Not-distracting", "BMAA-Not-worrying", "主動控制-Not-worrying", "BMAA-Attention regulation", "主動控制-Attention regulation", "BMAA-Emotional awareness", "主動控制-Emotional awareness", "BMAA-Self-regulation", "主動控制-Self-regulation", "BMAA-Body listening", "主動控制-Body listening", "BMAA-Trusting", "主動控制-Trusting"), each = 2),
-  value = c(3.11, 3.87, 3.3, 3.32, 1.75, 2.82, 1.86, 2.11, 1.36, 2.3, 1.73, 1.8, 2.31, 3.38, 2.64, 2.85, 3.3, 3.92, 3.38, 3.43, 2.65, 3.66, 2.88, 3.02, 2.68, 3.56, 2.84, 2.89, 2.88, 3.62, 3.25, 3.22)
-)
-bmaa_line_plot(dat, "MAIA-II 內感覺敏感性")
-```
+| 向度 | 一般人可以怎麼理解 |
+|---|---|
+| 覺察 | 能注意到身體正在發生什麼，例如呼吸、心跳、肌肉緊繃、疲累或不舒服。 |
+| 不分心 | 身體不舒服時，不是立刻忽略、壓下去或轉移注意，而是能留意它。 |
+| 不擔憂 | 感覺到身體訊號時，不會很快把它想成壞事或災難，而是比較能平穩看待。 |
+| 注意調節 | 能把注意力放到身體感覺上，也能維持一段時間，不容易一下子被拉走。 |
+| 情緒覺察 | 能感覺到情緒和身體的關係，例如焦慮時肩膀緊、難過時胸口悶。 |
+| 自我調節 | 能運用身體覺察幫助自己穩定下來，例如回到呼吸、放鬆肌肉或調整姿勢。 |
+| 身體聆聽 | 會把身體感覺當作重要訊息，幫助自己知道現在需要休息、調整或照顧自己。 |
+| 信任 | 對自己的身體比較安心，感覺身體是可以依靠、可以合作的。 |
+
 
 
 ## 參考文獻
 
 Lien, Y.-W., Teng, S.-C., & Wei, L.-Y. (2026). From the body to the mind: Interoception and sense of agency as mechanisms of depression reduction in the Body-Mind Axial Awareness (BMAA). *Frontiers in Psychology, 17*, Article 1755698. https://doi.org/10.3389/fpsyg.2026.1755698
-
-::: {.callout-warning}
-本頁為摘要草稿頁，內容與數值仍需依原論文校對後再作正式推廣使用。
-:::

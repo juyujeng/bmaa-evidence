@@ -5,14 +5,31 @@ language: ../../assets/language-en.yml
 toc-title: "On this page"
 ---
 
+```{r}
+#| include: false
+source("../../R/bmaa_plot_theme.R")
+```
+
 ## Method
 
 A pretest-posttest controlled study comparing BMAA, Chan meditation, and a waitlist control group. Both active interventions included 12 hours of practice over four weeks.
 
 ## Key Findings
 
-- BMAA produced the clearest improvement in working-memory capacity compared with Chan meditation and waitlist control.
-- Chan meditation mainly improved attention switching, while neither active intervention improved Stroop inhibition.
+The clearest finding was that short-term BMAA training improved working-memory capacity. Working memory means the ability to hold information in mind while also using or updating it, such as remembering numbers while doing another task. OSPAN is a working-memory task; higher scores indicate better capacity.
+
+In the figure, the horizontal axis shows pretest and posttest, and each line represents one group. The BMAA group showed a clearer increase than the Chan meditation and waitlist control groups.
+
+```{r}
+#| fig-height: 4.8
+dat <- data.frame(
+  outcome = "Working-memory capacity (OSPAN)",
+  group = rep(c("BMAA", "Chan meditation", "Waitlist control"), each = 2),
+  time = rep(c("Pretest", "Posttest"), 3),
+  value = c(3.75, 4.58, 3.52, 3.92, 3.65, 3.98)
+)
+bmaa_facet_line_plot(dat, "Short-term BMAA and working memory", ylab = "Mean score")
+```
 
 ## Reference
 

@@ -6,7 +6,7 @@ language: assets/language-zh-TW.yml
 
 website:
   title: "BMAA 研究成效整理"
-  site-url: "https://example.org"
+  site-url: "https://juyujeng.github.io/bmaa-evidence/"
   description: "Body-Mind Axial Awareness 訓練課程之科學研究成效整理"
   navbar:
     background: "#243b3b"
@@ -78,7 +78,7 @@ format:
     smooth-scroll: true
     code-fold: true
     include-after-body: assets/language-switch.html
-    lang: zh-Hant
+    lang: zh-TW
 
 execute:
   echo: false

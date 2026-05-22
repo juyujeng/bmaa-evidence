@@ -5,14 +5,31 @@ language: ../../assets/language-en.yml
 toc-title: "On this page"
 ---
 
+```{r}
+#| include: false
+source("../../R/bmaa_plot_theme.R")
+```
+
 ## Method
 
 A pretest-posttest control-group study with adults scoring high on autistic traits. The BMAA group received a four-week, 12-hour program plus additional home practice.
 
 ## Key Findings
 
-- BMAA improved awareness of bodily signals, ability to describe emotions, and recognition of subtle facial expressions.
-- Sequential mediation suggested that improved interoception and reduced alexithymia may help explain changes in autistic-trait related outcomes.
+The main change was not an immediate drop in autistic traits themselves, but improvement in abilities that may support social-emotional functioning. Interoception means sensing internal bodily signals; alexithymia means difficulty identifying and describing emotions; low-intensity facial-expression recognition captures sensitivity to subtle social cues.
+
+The BMAA group showed increased interoception, reduced alexithymia, and improved low-intensity expression recognition, while the control group changed less.
+
+```{r}
+#| fig-height: 4.8
+dat <- data.frame(
+  outcome = rep(c("Interoception (MAIA-C)", "Alexithymia (TAS-20)", "Low-intensity expression recognition"), each = 4),
+  group = rep(c("BMAA", "BMAA", "Control", "Control"), 3),
+  time = rep(c("Pretest", "Posttest", "Pretest", "Posttest"), 3),
+  value = c(81.12, 96.65, 80.73, 82.18, 58.71, 50.53, 56.36, 55.91, 40.44, 45.51, 40.22, 40.40)
+)
+bmaa_facet_line_plot(dat, "BMAA and interoception, alexithymia, and subtle expression recognition", ylab = "Mean score")
+```
 
 ## Reference
 

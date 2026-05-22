@@ -5,14 +5,31 @@ language: ../../assets/language-en.yml
 toc-title: "On this page"
 ---
 
+```{r}
+#| include: false
+source("../../R/bmaa_plot_theme.R")
+```
+
 ## Method
 
 A single-group pretest-posttest study with in-service elementary school teachers. The course included six weeks and 18 hours of BMAA practice.
 
 ## Key Findings
 
-- After BMAA, teachers showed improved interoceptive awareness, resilience, and sleep quality, and reduced perceived stress and negative affect.
-- Home practice time was related to several improvement indicators.
+After BMAA, teachers reported lower perceived stress, higher resilience, and lower negative affect. Perceived stress reflects how stressful life feels; resilience refers to the ability to recover from stress; PANAS negative affect captures unpleasant emotional states such as worry, tension, or irritability.
+
+The directions differ by variable: lower stress and negative affect are better, while higher resilience is better. Overall, the pattern suggests reduced stress burden and improved recovery capacity.
+
+```{r}
+#| fig-height: 4.8
+dat <- data.frame(
+  outcome = rep(c("Perceived stress (PSS)", "Resilience (BRS)", "PANAS negative affect"), each = 2),
+  group = rep("Teacher BMAA", 6),
+  time = rep(c("Pretest", "Posttest"), 3),
+  value = c(16.00, 10.28, 3.33, 3.83, 2.26, 1.65)
+)
+bmaa_facet_line_plot(dat, "BMAA reduced stress and supported resilience in teachers", ylab = "Mean score")
+```
 
 ## Reference
 

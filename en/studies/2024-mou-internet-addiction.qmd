@@ -5,14 +5,31 @@ language: ../../assets/language-en.yml
 toc-title: "On this page"
 ---
 
+```{r}
+#| include: false
+source("../../R/bmaa_plot_theme.R")
+```
+
 ## Method
 
 A randomized pretest-posttest control-group study with participants who scored high on internet addiction tendency. The BMAA group received a six-week, 12-hour BMAA course with daily home practice.
 
 ## Key Findings
 
-- BMAA improved interoceptive sensibility and accuracy and reduced self-reported internet addiction tendency.
-- Increased interoceptive sensibility mediated reductions in self-reported addiction tendency and entertainment screen time.
+After six weeks of BMAA, internet addiction tendency decreased, especially in core symptoms. CIAS total score reflects overall internet addiction risk; core symptoms include difficulty controlling use, withdrawal-like feelings, and tolerance-like increases in use.
+
+The BMAA group showed a larger decrease from pretest to posttest than the control group. This suggests that improving bodily awareness may help people notice urges and regulate internet-use behavior.
+
+```{r}
+#| fig-height: 4.8
+dat <- data.frame(
+  outcome = rep(c("CIAS total", "Core internet-addiction symptoms"), each = 4),
+  group = rep(c("BMAA", "BMAA", "Control", "Control"), 2),
+  time = rep(c("Pretest", "Posttest", "Pretest", "Posttest"), 2),
+  value = c(74.84, 62.37, 75.35, 71.35, 41.79, 35.26, 42.90, 40.65)
+)
+bmaa_facet_line_plot(dat, "BMAA reduced internet addiction tendency", ylab = "Mean score")
+```
 
 ## Reference
 

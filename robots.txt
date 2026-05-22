@@ -1,1 +1,1 @@
-Sitemap: https://example.org/sitemap.xml
+Sitemap: https://juyujeng.github.io/bmaa-evidence/sitemap.xml

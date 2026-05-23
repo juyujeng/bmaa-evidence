@@ -1,5 +1,6 @@
 ---
 title: "What Confucius practiced is good for your mind: Examining the effect of a contemplative practice in Confucian tradition on executive functions"
+author: "Teng, S.-C., & Lien, Y.-W."
 lang: en
 language: ../../assets/language-en.yml
 toc-title: "On this page"

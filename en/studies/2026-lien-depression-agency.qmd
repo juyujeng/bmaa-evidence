@@ -1,5 +1,6 @@
 ---
 title: "From the body to the mind: Interoception and sense of agency as mechanisms of depression reduction in BMAA"
+author: "Lien, Y.-W., Teng, S.-C., & Wei, L.-Y."
 lang: en
 language: ../../assets/language-en.yml
 toc-title: "On this page"

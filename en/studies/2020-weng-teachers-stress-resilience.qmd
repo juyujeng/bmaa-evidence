@@ -1,5 +1,6 @@
 ---
 title: "Effects of a short-term dynamic body-mind awareness course on elementary school teachers’ interoceptive awareness, resilience, and perceived stress"
+author: "Weng, W.-T."
 lang: en
 language: ../../assets/language-en.yml
 toc-title: "On this page"

@@ -1,5 +1,6 @@
 ---
 title: "Improving interoceptive ability to reduce internet addiction tendency: Effects and mechanisms of BMAA training"
+author: "Mou, S.-C."
 lang: en
 language: ../../assets/language-en.yml
 toc-title: "On this page"

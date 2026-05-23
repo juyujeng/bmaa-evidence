@@ -1,5 +1,6 @@
 ---
 title: "An initial exploration of body-mind interaction: Effects of BMAA on body sensation, working memory, and attentional control"
+author: "Lee, S.-Y."
 lang: en
 language: ../../assets/language-en.yml
 toc-title: "On this page"

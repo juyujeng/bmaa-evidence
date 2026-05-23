@@ -8,46 +8,18 @@ title: "研究清單"
 研究摘要由既有草稿轉入，尚未逐篇完成原文校對。正式發佈前建議確認研究設計、樣本數、統計結果、圖表數值與引用格式。
 :::
 
-| 年份 | 研究 |
-|---|---|
-| 2026 | [From body to mind: how body-mind axial awareness training enhances body awareness, mindfulness, positive embodiment and mental health in healthcare students](2026-tien-healthcare-students.qmd) |
-| 2026 | [From the body to the mind: interoception and sense of agency as mechanisms of depression reduction in the Body–Mind Axial Awareness (BMAA)](2026-lien-depression-agency.qmd) |
-| 2024 | [身心中軸覺察訓練結合清醒夢療法對惡夢困擾者的清醒夢、惡夢與睡眠品質的影響](2024-chiu-nightmare-lucid-dream.qmd) |
-| 2024 | [內感覺能力提升對於降低網路成癮傾向的影響：以身心中軸覺察訓練為介入的效果與機制探討](2024-mou-internet-addiction.qmd) |
-| 2024 | [身心中軸覺察對於高自閉症特質成年人之內感覺、述情障礙及同理心的影響](2024-yang-autistic-traits.qmd) |
-| 2023 | [營隊式動態靜觀課程對兒童持續注意力與平衡能力影響之初探](2023-yeh-camp-attention-balance.qmd) |
-| 2023 | [短期正念引導降低閱讀時的內隱性別刻板印象](2023-hung-gender-stereotype.qmd) |
-| 2020 | [探討短期動態身心覺察課程對國小教師內感覺覺察、心理韌性與壓力知覺的介入成效](2020-weng-teachers-stress-resilience.qmd) |
-| 2020 | [探討兩週身心中軸覺察練習對大學生情緒調節的成效及覺察傾向、工作記憶的中介角色](2020-hsu-emotion-regulation.qmd) |
-| 2019 | [感覺你的身體：短期入班動態靜觀課程對學童內感覺、執行控制功能、情緒調節及運動協調之介入成效](2019-lee-feel-your-body.qmd) |
-| 2018 | [身心中軸覺察與綜合活動訓練增進兒童之執行功能及情緒調節](2018-chang-children-executive-emotion.qmd) |
-| 2017 | [身心互動途徑初探：以「身心中軸覺察訓練」對身體感覺、工作記憶與注意力控制功能的提升效果為例](2017-lee-body-mind-interaction.qmd) |
-| 2016 | [What Confucius practiced is good for your mind: Examining the effect of a contemplative practice in Confucian tradition on executive functions](2016-teng-confucius.qmd) |
-
-## 參考文獻
-
-Tien, Y.-M., Lin, C.-Y., Lien, Y.-W., & Hsu, L.-C. (2026). From body to mind: How body-mind axial awareness training enhances body awareness, mindfulness, positive embodiment and mental health in healthcare students. *Health Psychology and Behavioral Medicine, 14*(1), Article 2656029. https://doi.org/10.1080/21642850.2026.2656029
-
-Lien, Y.-W., Teng, S.-C., & Wei, L.-Y. (2026). From the body to the mind: Interoception and sense of agency as mechanisms of depression reduction in the Body-Mind Axial Awareness (BMAA). *Frontiers in Psychology, 17*, Article 1755698. https://doi.org/10.3389/fpsyg.2026.1755698
-
-邱敬惠. (2024). *身心中軸覺察訓練結合清醒夢療法對惡夢困擾者的清醒夢、惡夢與睡眠品質的影響* [碩士論文，中原大學].
-
-牟書琪. (2024). *內感覺能力提升對於降低網路成癮傾向的影響：以身心中軸覺察訓練為介入的效果與機制探討* [碩士論文，中原大學].
-
-楊捷如. (2024). *身心中軸覺察對於高自閉症特質成年人之內感覺、述情障礙及同理心的影響* [碩士論文，中原大學].
-
-葉淨維, 連韻文, 陳人瑜, 莊博雅, 鄭惟馨, & 陳顥齡. (2023). 營隊式動態靜觀課程對兒童持續注意力與平衡能力影響之初探. *台灣職能治療研究與實務, 19*(1), 81-97.
-
-洪珮瑩, 陳苡禕, & 葉理豪. (2023). 短期正念引導降低閱讀時的內隱性別刻板印象. *教育心理學報, 54*(3), 515-536. https://doi.org/10.6251/BEP.202303_54(3).0001
-
-翁宛婷. (2020). *探討短期動態身心覺察課程對國小教師內感覺覺察、心理韌性與壓力知覺的介入成效* [碩士論文，國立臺灣師範大學].
-
-許惟智. (2020). *探討兩週身心中軸覺察練習對大學生情緒調節的成效及覺察傾向、工作記憶的中介角色* [碩士論文，國立臺灣大學]. https://doi.org/10.6342/NTU202002076
-
-李茂寧. (2019). *感覺你的身體：短期入班動態靜觀課程對學童內感覺、執行控制功能、情緒調節及運動協調之介入成效* [碩士論文，國立臺灣大學].
-
-張憶如. (2018). *身心中軸覺察與綜合活動訓練增進兒童之執行功能及情緒調節* [碩士論文，中原大學].
-
-李少揚. (2017). *身心互動途徑初探：以「身心中軸覺察訓練」對身體感覺、工作記憶與注意力控制功能的提升效果為例* [碩士論文，國立臺灣大學]. https://doi.org/10.6342/NTU201700254
-
-Teng, S.-C., & Lien, Y.-W. (2016). What Confucius practiced is good for your mind: Examining the effect of a contemplative practice in Confucian tradition on executive functions. *Consciousness and Cognition, 42*, 204-215. https://doi.org/10.1016/j.concog.2016.03.016
+| 年份 | 作者 | 研究 |
+|---|---|---|
+| 2026 | Tien, Y.-M., Lin, C.-Y., Lien, Y.-W., & Hsu, L.-C. | [From body to mind: how body-mind axial awareness training enhances body awareness, mindfulness, positive embodiment and mental health in healthcare students](2026-tien-healthcare-students.qmd) |
+| 2026 | Lien, Y.-W., Teng, S.-C., & Wei, L.-Y. | [From the body to the mind: interoception and sense of agency as mechanisms of depression reduction in the Body–Mind Axial Awareness (BMAA)](2026-lien-depression-agency.qmd) |
+| 2024 | 邱敬惠 | [身心中軸覺察訓練結合清醒夢療法對惡夢困擾者的清醒夢、惡夢與睡眠品質的影響](2024-chiu-nightmare-lucid-dream.qmd) |
+| 2024 | 牟書琪 | [內感覺能力提升對於降低網路成癮傾向的影響：以身心中軸覺察訓練為介入的效果與機制探討](2024-mou-internet-addiction.qmd) |
+| 2024 | 楊捷如 | [身心中軸覺察對於高自閉症特質成年人之內感覺、述情障礙及同理心的影響](2024-yang-autistic-traits.qmd) |
+| 2023 | 葉淨維, 連韻文, 陳人瑜, 莊博雅, 鄭惟馨, & 陳顥齡 | [營隊式動態靜觀課程對兒童持續注意力與平衡能力影響之初探](2023-yeh-camp-attention-balance.qmd) |
+| 2023 | 洪珮瑩, 陳苡禕, & 葉理豪 | [短期正念引導降低閱讀時的內隱性別刻板印象](2023-hung-gender-stereotype.qmd) |
+| 2020 | 翁宛婷 | [探討短期動態身心覺察課程對國小教師內感覺覺察、心理韌性與壓力知覺的介入成效](2020-weng-teachers-stress-resilience.qmd) |
+| 2020 | 許惟智 | [探討兩週身心中軸覺察練習對大學生情緒調節的成效及覺察傾向、工作記憶的中介角色](2020-hsu-emotion-regulation.qmd) |
+| 2019 | 李茂寧 | [感覺你的身體：短期入班動態靜觀課程對學童內感覺、執行控制功能、情緒調節及運動協調之介入成效](2019-lee-feel-your-body.qmd) |
+| 2018 | 張憶如 | [身心中軸覺察與綜合活動訓練增進兒童之執行功能及情緒調節](2018-chang-children-executive-emotion.qmd) |
+| 2017 | 李少揚 | [身心互動途徑初探：以「身心中軸覺察訓練」對身體感覺、工作記憶與注意力控制功能的提升效果為例](2017-lee-body-mind-interaction.qmd) |
+| 2016 | Teng, S.-C., & Lien, Y.-W. | [What Confucius practiced is good for your mind: Examining the effect of a contemplative practice in Confucian tradition on executive functions](2016-teng-confucius.qmd) |

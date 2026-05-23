@@ -1,5 +1,6 @@
 ---
 title: "BMAA and integrated activity training for improving children’s executive function and emotion regulation"
+author: "Chang, Y.-J."
 lang: en
 language: ../../assets/language-en.yml
 toc-title: "On this page"

@@ -1,5 +1,6 @@
 ---
 date: 2026-04-07
+author: "Lien, Y.-W., Teng, S.-C., & Wei, L.-Y."
 lastmod: 2026-05-21
 title: "From the body to the mind: interoception and sense of agency as mechanisms of depression reduction in the Body–Mind Axial Awareness (BMAA)"
 tags:

@@ -1,5 +1,6 @@
 ---
 title: "Effects of BMAA on interoception, alexithymia, and empathy among adults with high autistic traits"
+author: "Yang, C.-J."
 lang: en
 language: ../../assets/language-en.yml
 toc-title: "On this page"

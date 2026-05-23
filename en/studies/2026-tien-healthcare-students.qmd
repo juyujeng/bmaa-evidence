@@ -1,5 +1,6 @@
 ---
 title: "From body to mind: How body-mind axial awareness training enhances body awareness, mindfulness, positive embodiment and mental health in healthcare students"
+author: "Tien, Y.-M., Lin, C.-Y., Lien, Y.-W., & Hsu, L.-C."
 lang: en
 language: ../../assets/language-en.yml
 toc-title: "On this page"
@@ -16,19 +17,24 @@ A non-randomized pretest-posttest control-group study with healthcare students. 
 
 ## Key Findings
 
-Healthcare students showed positive changes in body awareness, mental health, and emotional expression after BMAA. BAAI measures body awareness; AMHS reflects mental health, with higher scores indicating better functioning; TAS-20 measures alexithymia, so lower scores indicate less difficulty identifying and expressing emotions.
+Healthcare students showed positive changes in body awareness, mental health, life satisfaction, and emotional expression after BMAA. BAAI measures body awareness; AMHS reflects mental health, with higher scores indicating better functioning; SWLS measures life satisfaction, with higher scores indicating greater satisfaction; TAS-20 measures alexithymia, so lower scores indicate less difficulty identifying and expressing emotions.
 
-The BMAA group increased in body awareness and mental health and decreased in alexithymia, while the control group changed less or moved in the opposite direction.
+The BMAA group increased in body awareness, mental health, and life satisfaction and decreased in alexithymia, while the control group changed less or moved in the opposite direction.
 
 ```{r}
-#| fig-height: 4.8
+#| fig-height: 6.6
 dat <- data.frame(
-  outcome = rep(c("Body awareness (BAAI)", "Mental health (AMHS)", "Alexithymia (TAS-20)"), each = 4),
-  group = rep(c("BMAA", "BMAA", "Control", "Control"), 3),
-  time = rep(c("Pretest", "Posttest", "Pretest", "Posttest"), 3),
-  value = c(92.74, 99.87, 95.74, 94.85, 94.08, 101.00, 101.70, 99.44, 47.32, 43.13, 51.44, 50.81)
+  outcome = rep(c("Body awareness (BAAI)", "Mental health (AMHS)", "Life satisfaction (SWLS)", "Alexithymia (TAS-20)"), each = 4),
+  group = rep(c("BMAA", "BMAA", "Control", "Control"), 4),
+  time = rep(c("Pretest", "Posttest", "Pretest", "Posttest"), 4),
+  value = c(
+    92.74, 99.87, 95.74, 94.85,
+    94.08, 101.00, 101.70, 99.44,
+    23.82, 25.26, 25.37, 25.26,
+    47.32, 43.13, 51.44, 50.81
+  )
 )
-bmaa_facet_line_plot(dat, "BMAA improved body and mental-health indicators in healthcare students", ylab = "Mean score")
+bmaa_facet_line_plot(dat, "BMAA improved body and mental-health indicators in healthcare students", ylab = "Mean score", ncol = 2)
 ```
 
 ## Reference

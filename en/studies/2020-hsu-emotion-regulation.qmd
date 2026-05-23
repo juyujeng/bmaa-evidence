@@ -1,5 +1,6 @@
 ---
 title: "Effects of a two-week BMAA practice on emotion regulation among university students"
+author: "Hsu, W.-C."
 lang: en
 language: ../../assets/language-en.yml
 toc-title: "On this page"

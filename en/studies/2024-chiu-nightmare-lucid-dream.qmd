@@ -1,5 +1,6 @@
 ---
 title: "Effects of BMAA combined with lucid-dream therapy on lucid dreaming, nightmares, and sleep quality among people with nightmare distress"
+author: "Chiu, C.-H."
 lang: en
 language: ../../assets/language-en.yml
 toc-title: "On this page"

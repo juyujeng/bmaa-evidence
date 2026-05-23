@@ -1,5 +1,6 @@
 ---
 title: "A preliminary study of a camp-based dynamic contemplative course on children’s sustained attention and balance"
+author: "Yeh, C.-W., Lien, Y.-W., Chen, R.-Y., Chuang, P.-Y., Cheng, W.-H., & Chen, H.-L."
 lang: en
 language: ../../assets/language-en.yml
 toc-title: "On this page"

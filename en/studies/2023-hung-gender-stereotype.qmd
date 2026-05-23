@@ -1,5 +1,6 @@
 ---
 title: "Brief mindfulness guidance reduces implicit gender stereotypes during reading"
+author: "Hung, P.-Y., Chen, Y.-Y., & Yeh, L.-H."
 lang: en
 language: ../../assets/language-en.yml
 toc-title: "On this page"

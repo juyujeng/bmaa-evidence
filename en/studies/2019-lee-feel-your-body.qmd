@@ -1,5 +1,6 @@
 ---
 title: "Feel your body: Effects of a short-term in-class dynamic contemplative course on children’s interoception, executive control, emotion regulation, and motor coordination"
+author: "Lee, M.-N."
 lang: en
 language: ../../assets/language-en.yml
 toc-title: "On this page"

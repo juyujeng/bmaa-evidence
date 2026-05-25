@@ -1,7 +1,7 @@
 ---
 date: 2016-03-22
 author: "Teng, S.-C., & Lien, Y.-W."
-lastmod: 2026-05-21
+lastmod: 2026-05-26
 title: "What Confucius practiced is good for your mind: Examining the effect of a contemplative practice in Confucian tradition on executive functions"
 tags:
   - BMAA
@@ -19,112 +19,33 @@ source("../R/bmaa_plot_theme.R")
 - 實驗設計：前後測控制組設計；BMAA、禪修動禪、等待名單控制組三組比較。
 - 實驗組（15 人） vs 主動控制組（禪修，16 人） vs 等待控制組（20 人）。
 - 介入：4 週、共 12 小時；BMAA 與禪修皆為 8 堂、每堂 90 分鐘，並鼓勵每日居家練習。
-- 主要依變項：工作記憶容量（OSPAN）、注意力轉換、Stroop 抑制、正念特質（FFMQ）。
+- 主要依變項：
+  - 執行功能：工作記憶容量（OSPAN）、注意力轉換、Stroop 抑制。
+  - 主觀覺察：正念特質（FFMQ）。
 
 ### 主要發現
 
 這篇研究最清楚的結果是：短期 BMAA 訓練後，參與者的工作記憶容量提升最明顯。工作記憶可以理解為「腦中暫時放著資訊、同時操作它」的能力，例如一邊記住數字、一邊完成其他判斷。OSPAN 分數越高，代表越能在干擾下維持與更新資訊。
 
-圖中以前測與後測作為橫軸；每條線代表一個組別。BMAA 組後測上升幅度比禪修組與等待控制組更清楚，表示這種以動作與身體中軸覺察為核心的練習，可能特別有助於工作記憶。
+圖中以前測與後測作為橫軸；每條線代表一個組別。BMAA 組的工作記憶上升幅度較清楚，表示這種以動作與身體中軸覺察為核心的練習，可能特別有助於工作記憶。注意力轉換成本則是越低越好，禪修組下降較明顯，代表注意力切換較有效率。
 
 ```{r}
 #| fig-height: 4.8
 dat <- data.frame(
-  outcome = "工作記憶容量（OSPAN）",
-  group = rep(c("BMAA", "禪修", "等待控制"), each = 2),
-  time = rep(c("前測", "後測"), 3),
-  value = c(3.75, 4.58, 3.52, 3.92, 3.65, 3.98)
+  outcome = rep(c("工作記憶容量（OSPAN）", "注意力轉換成本"), each = 6),
+  group = rep(c("BMAA", "禪修", "等待控制"), each = 2, times = 2),
+  time = rep(c("前測", "後測"), 6),
+  value = c(
+    3.75, 4.58, 3.52, 3.92, 3.65, 3.98,
+    218.24, 195.99, 232.30, 153.04, 314.53, 278.93
+  )
 )
-bmaa_facet_line_plot(dat, "短期 BMAA 對工作記憶的效果", ylab = "平均分數")
-```
-
-### 結果
-
-BMAA 組在短期訓練後的工作記憶容量優於禪修組與等待控制組，並在非轉換試次正確率上顯示較好的持續注意力傾向；禪修組則主要提升注意力轉換。兩種訓練皆提升 FFMQ 的「觀察」與「覺察行動」，但皆未改善 Stroop 抑制。
-
-| 指標 | 主要發現 | 圖像化重點 |
-|---|---|---|
-| 工作記憶容量 | BMAA 後測高於等待控制組與禪修組 | BMAA 對「更新/維持資訊」最突出 |
-| 注意力轉換 | 禪修組轉換成本低於控制組 | 禪修較偏向提升彈性切換 |
-| 持續注意力 | BMAA 非轉換試次正確率高於控制組 | BMAA 可能幫助穩定維持注意 |
-| Stroop 抑制 | 無顯著訓練效果 | 短期訓練不足以改變慣性反應抑制 |
-| 正念特質 | BMAA 與禪修皆提升觀察、覺察行動 | 兩種練習都增加當下覺察 |
-
-### 繪圖資料
-
-#### 工作記憶容量（OSPAN）
-
-| 組別 | 前測 | 後測 |
-|---|---:|---:|
-| BMAA | 3.75 | 4.58 |
-| 禪修 | 3.52 | 3.92 |
-| 等待控制 | 3.65 | 3.98 |
-
-#### 注意力轉換成本（毫秒，越低越好）
-
-| 組別 | 前測 | 後測 |
-|---|---:|---:|
-| BMAA | 218.24 | 195.99 |
-| 禪修 | 232.30 | 153.04 |
-| 等待控制 | 314.53 | 278.93 |
-
-#### FFMQ 總分
-
-| 組別 | 前測 | 後測 |
-|---|---:|---:|
-| BMAA | 120.47 | 126.48 |
-| 禪修 | 125.43 | 126.88 |
-| 等待控制 | 120.00 | 116.61 |
-
-## 研究結果圖
-
-::: {.callout-note}
-下列圖表根據摘要草稿中的繪圖資料轉為 R/ggplot 圖。正式發佈前，仍建議回到原論文確認數值、統計檢定與圖題。
-:::
-
-#### 工作記憶容量（OSPAN）
-
-```{r}
-#| echo: true
-#| warning: false
-#| message: false
-#| fig-height: 5.4
-dat <- data.frame(
-  time = rep(c("前測", "後測"), times = 3),
-  group = rep(c("BMAA", "禪修", "等待控制"), each = 2),
-  value = c(3.75, 4.58, 3.52, 3.92, 3.65, 3.98)
+bmaa_facet_line_plot(
+  dat,
+  "短期 BMAA 與禪修對執行功能的不同效果",
+  ylab = "平均分數",
+  subtitle = "工作記憶越高越好；注意力轉換成本越低越好"
 )
-bmaa_line_plot(dat, "工作記憶容量（OSPAN）")
-```
-
-#### 注意力轉換成本（毫秒，越低越好）
-
-```{r}
-#| echo: true
-#| warning: false
-#| message: false
-#| fig-height: 5.4
-dat <- data.frame(
-  time = rep(c("前測", "後測"), times = 3),
-  group = rep(c("BMAA", "禪修", "等待控制"), each = 2),
-  value = c(218.24, 195.99, 232.3, 153.04, 314.53, 278.93)
-)
-bmaa_line_plot(dat, "注意力轉換成本（毫秒，越低越好）")
-```
-
-#### FFMQ 總分
-
-```{r}
-#| echo: true
-#| warning: false
-#| message: false
-#| fig-height: 5.4
-dat <- data.frame(
-  time = rep(c("前測", "後測"), times = 3),
-  group = rep(c("BMAA", "禪修", "等待控制"), each = 2),
-  value = c(120.47, 126.48, 125.43, 126.88, 120, 116.61)
-)
-bmaa_line_plot(dat, "FFMQ 總分")
 ```
 
 
@@ -132,6 +53,3 @@ bmaa_line_plot(dat, "FFMQ 總分")
 
 Teng, S.-C., & Lien, Y.-W. (2016). What Confucius practiced is good for your mind: Examining the effect of a contemplative practice in Confucian tradition on executive functions. *Consciousness and Cognition, 42*, 204-215. https://doi.org/10.1016/j.concog.2016.03.016
 
-::: {.callout-warning}
-本頁為摘要草稿頁，內容與數值仍需依原論文校對後再作正式推廣使用。
-:::

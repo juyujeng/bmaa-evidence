@@ -24,41 +24,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -107,6 +72,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -279,10 +247,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#方法" id="toc-方法" class="nav-link" data-scroll-target="#方法">方法</a></li>
   <li><a href="#主要發現" id="toc-主要發現" class="nav-link" data-scroll-target="#主要發現">主要發現</a></li>
-  <li><a href="#結果" id="toc-結果" class="nav-link" data-scroll-target="#結果">結果</a></li>
-  <li><a href="#繪圖資料" id="toc-繪圖資料" class="nav-link" data-scroll-target="#繪圖資料">繪圖資料</a></li>
   </ul></li>
-  <li><a href="#研究結果圖" id="toc-研究結果圖" class="nav-link" data-scroll-target="#研究結果圖">研究結果圖</a></li>
   <li><a href="#參考文獻" id="toc-參考文獻" class="nav-link" data-scroll-target="#參考文獻">參考文獻</a></li>
   </ul>
 </nav>
@@ -331,15 +296,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="方法">方法</h3>
 <ul>
 <li>實驗設計：隨機分派之前後測控制組設計。</li>
-<li>實驗組（BMAA，19 人納入分析） vs 控制組（20 人納入分析）；參與者 CIAS 分數皆大於或等於 58。</li>
+<li>實驗組（BMAA，19 人納入分析） vs 控制組（20 人納入分析）；參與者 CIAS 總分皆大於或等於 58。（青少年網路沉迷切分標準為58）</li>
 <li>介入：6 週、每週 2 小時、共 12 小時 BMAA 課程，並要求每日居家自我練習；控制組不接受介入。</li>
-<li>主要依變項：網路成癮傾向（CIAS）、網路使用習慣與手機紀錄、內感覺敏感性（MAIA-C）、內感覺準確性（心跳偵測作業）、憂鬱、焦慮、幸福感。</li>
+<li>主要依變項：
+<ul>
+<li>網路成癮傾向（CIAS）：包含總分、網路成癮核心症狀與網路成癮相關問題。核心症狀分量表包含強迫性上網、戒斷症狀與耐受性；相關問題分量表包含人際與健康問題、時間管理問題。</li>
+<li>網路使用習慣與手機紀錄</li>
+<li>內感覺覺察（MAIA-C）</li>
+<li>內感覺準確度（IAc，心跳偵測作業）</li>
+</ul></li>
 </ul>
 </section>
 <section id="主要發現" class="level3">
 <h3 class="anchored" data-anchor-id="主要發現">主要發現</h3>
-<p>六週 BMAA 後，網路成癮傾向下降，尤其是核心症狀下降較清楚。CIAS 總分代表整體網路成癮風險；核心症狀包含難以控制使用、戒斷感、耐受性增加等比較接近成癮本身的現象。</p>
-<p>圖中 BMAA 組從前測到後測下降幅度較大，控制組也略下降但較小。這表示提升身體內在感覺後，可能有助於覺察衝動與調節網路使用行為。</p>
+<p>BMAA 訓練後，參與者的網路成癮核心症狀與 CIAS 總分下降，同時內感覺覺察與內感覺準確度提升。也就是說，BMAA 組不只在主觀網路成癮傾向上改善，也更能覺察身體訊號，並在心跳偵測作業中更準確地感覺自己的身體狀態。</p>
+<p>具體來說：</p>
+<ul>
+<li>網路成癮傾向（CIAS）：BMAA 組的 CIAS 總分與網路成癮核心症狀下降，且後測分數低於控制組。相關問題分量表也隨時間下降，但兩組變化差異較不明顯。</li>
+<li>網路使用習慣與手機紀錄：手機使用紀錄與使用情境沒有呈現明確的介入效果，因此本頁不把手機紀錄列為主要成效圖。</li>
+<li>內感覺覺察（MAIA-C）：BMAA 組的 MAIA-C 總分提升，表示參與者更能注意、辨識並理解自己的身體訊號。</li>
+<li>內感覺準確度（IAc）：BMAA 組在心跳偵測作業中的準確度提升，表示對身體內在訊號的偵測更準確。</li>
+</ul>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -349,171 +326,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-</section>
-<section id="結果" class="level3">
-<h3 class="anchored" data-anchor-id="結果">結果</h3>
-<p>六週 BMAA 後，實驗組內感覺敏感性與準確性提升，自陳網路成癮程度降低。中介分析顯示，內感覺敏感性增加可中介組別對自陳網路成癮傾向降低，以及手機娛樂使用總時長降低的效果。</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>指標</th>
-<th>主要發現</th>
-<th>圖像化重點</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>內感覺敏感性</td>
-<td>實驗組提升，後測高於控制組</td>
-<td>身體訊號覺察變敏銳</td>
-</tr>
-<tr class="even">
-<td>內感覺準確性</td>
-<td>實驗組提升</td>
-<td>心跳偵測能力改善</td>
-</tr>
-<tr class="odd">
-<td>網路成癮</td>
-<td>CIAS 總分與核心症狀下降</td>
-<td>BMAA 降低成癮傾向</td>
-</tr>
-<tr class="even">
-<td>手機娛樂時間</td>
-<td>內感覺敏感性中介娛樂使用總時長下降</td>
-<td>從身體覺察到行為調節</td>
-</tr>
-<tr class="odd">
-<td>機制</td>
-<td>內感覺敏感性為關鍵中介</td>
-<td>成效可能來自內感覺能力提升</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="繪圖資料" class="level3">
-<h3 class="anchored" data-anchor-id="繪圖資料">繪圖資料</h3>
-<section id="網路成癮量表cias" class="level4">
-<h4 class="anchored" data-anchor-id="網路成癮量表cias">網路成癮量表（CIAS）</h4>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>指標</th>
-<th style="text-align: right;">BMAA 前測</th>
-<th style="text-align: right;">BMAA 後測</th>
-<th style="text-align: right;">控制組前測</th>
-<th style="text-align: right;">控制組後測</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>CIAS 總分</td>
-<td style="text-align: right;">74.84</td>
-<td style="text-align: right;">62.37</td>
-<td style="text-align: right;">75.35</td>
-<td style="text-align: right;">71.35</td>
-</tr>
-<tr class="even">
-<td>網路成癮核心症狀</td>
-<td style="text-align: right;">41.79</td>
-<td style="text-align: right;">35.26</td>
-<td style="text-align: right;">42.90</td>
-<td style="text-align: right;">40.65</td>
-</tr>
-<tr class="odd">
-<td>網路成癮相關問題</td>
-<td style="text-align: right;">33.05</td>
-<td style="text-align: right;">27.11</td>
-<td style="text-align: right;">33.45</td>
-<td style="text-align: right;">30.70</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="手機使用客觀紀錄" class="level4">
-<h4 class="anchored" data-anchor-id="手機使用客觀紀錄">手機使用客觀紀錄</h4>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>指標</th>
-<th style="text-align: right;">BMAA 前測</th>
-<th style="text-align: right;">BMAA 後測</th>
-<th style="text-align: right;">控制組前測</th>
-<th style="text-align: right;">控制組後測</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>螢幕使用總時長</td>
-<td style="text-align: right;">3461.42</td>
-<td style="text-align: right;">3369.32</td>
-<td style="text-align: right;">3265.85</td>
-<td style="text-align: right;">3248.65</td>
-</tr>
-<tr class="even">
-<td>社交時間總時長</td>
-<td style="text-align: right;">1489.32</td>
-<td style="text-align: right;">1662.68</td>
-<td style="text-align: right;">1571.75</td>
-<td style="text-align: right;">1659.65</td>
-</tr>
-<tr class="odd">
-<td>遊戲時間總時長</td>
-<td style="text-align: right;">324.32</td>
-<td style="text-align: right;">238.32</td>
-<td style="text-align: right;">218.95</td>
-<td style="text-align: right;">221.60</td>
-</tr>
-<tr class="even">
-<td>娛樂時間總時長</td>
-<td style="text-align: right;">289.42</td>
-<td style="text-align: right;">273.26</td>
-<td style="text-align: right;">337.40</td>
-<td style="text-align: right;">323.65</td>
-</tr>
-<tr class="odd">
-<td>手機拿起頻率</td>
-<td style="text-align: right;">844.16</td>
-<td style="text-align: right;">854.89</td>
-<td style="text-align: right;">939.05</td>
-<td style="text-align: right;">918.20</td>
-</tr>
-</tbody>
-</table>
-</section>
-</section>
-</section>
-<section id="研究結果圖" class="level2">
-<h2 class="anchored" data-anchor-id="研究結果圖">研究結果圖</h2>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-註釋
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>下列圖表根據摘要草稿中的繪圖資料轉為 R/ggplot 圖。正式發佈前，仍建議回到原論文確認數值、統計檢定與圖題。</p>
-</div>
-</div>
-<section id="網路成癮量表cias-1" class="level4">
-<h4 class="anchored" data-anchor-id="網路成癮量表cias-1">網路成癮量表（CIAS）</h4>
 <div class="cell">
-<details class="code-fold">
-<summary>程式碼</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">time =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"前測"</span>, <span class="st">"後測"</span>), <span class="at">times =</span> <span class="dv">6</span>),</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">group =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"BMAA-CIAS總分"</span>, <span class="st">"控制組-CIAS總分"</span>, <span class="st">"BMAA-核心症狀"</span>, <span class="st">"控制組-核心症狀"</span>, <span class="st">"BMAA-相關問題"</span>, <span class="st">"控制組-相關問題"</span>), <span class="at">each =</span> <span class="dv">2</span>),</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> <span class="fu">c</span>(<span class="fl">74.84</span>, <span class="fl">62.37</span>, <span class="fl">75.35</span>, <span class="fl">71.35</span>, <span class="fl">41.79</span>, <span class="fl">35.26</span>, <span class="fl">42.9</span>, <span class="fl">40.65</span>, <span class="fl">33.05</span>, <span class="fl">27.11</span>, <span class="fl">33.45</span>, <span class="fl">30.7</span>)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">bmaa_line_plot</span>(dat, <span class="st">"網路成癮量表（CIAS）"</span>)</span></code></pre></div><button title="複製到剪貼簿" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -522,45 +335,33 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-</section>
-<section id="手機使用客觀紀錄-1" class="level4">
-<h4 class="anchored" data-anchor-id="手機使用客觀紀錄-1">手機使用客觀紀錄</h4>
-<div class="cell">
-<details class="code-fold">
-<summary>程式碼</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">time =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"前測"</span>, <span class="st">"後測"</span>), <span class="at">times =</span> <span class="dv">10</span>),</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">group =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"BMAA-螢幕總時長"</span>, <span class="st">"控制組-螢幕總時長"</span>, <span class="st">"BMAA-社交總時長"</span>, <span class="st">"控制組-社交總時長"</span>, <span class="st">"BMAA-遊戲總時長"</span>, <span class="st">"控制組-遊戲總時長"</span>, <span class="st">"BMAA-娛樂總時長"</span>, <span class="st">"控制組-娛樂總時長"</span>, <span class="st">"BMAA-手機拿起頻率"</span>, <span class="st">"控制組-手機拿起頻率"</span>), <span class="at">each =</span> <span class="dv">2</span>),</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> <span class="fu">c</span>(<span class="fl">3461.42</span>, <span class="fl">3369.32</span>, <span class="fl">3265.85</span>, <span class="fl">3248.65</span>, <span class="fl">1489.32</span>, <span class="fl">1662.68</span>, <span class="fl">1571.75</span>, <span class="fl">1659.65</span>, <span class="fl">324.32</span>, <span class="fl">238.32</span>, <span class="fl">218.95</span>, <span class="fl">221.6</span>, <span class="fl">289.42</span>, <span class="fl">273.26</span>, <span class="fl">337.4</span>, <span class="fl">323.65</span>, <span class="fl">844.16</span>, <span class="fl">854.89</span>, <span class="fl">939.05</span>, <span class="fl">918.2</span>)</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="fu">bmaa_line_plot</span>(dat, <span class="st">"手機使用客觀紀錄"</span>)</span></code></pre></div><button title="複製到剪貼簿" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
+<section id="中介機制" class="level4">
+<h4 class="anchored" data-anchor-id="中介機制">中介機制</h4>
+<div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
-<figure class="figure">
-<p><img src="2024-mou-internet-addiction_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" style="width:100.0%"></p>
-</figure>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+  X["BMAA 訓練"]
+  M["提升內感覺覺察&lt;br/&gt;MAIA-C 分數上升"]
+  Y["降低主觀網路成癮傾向&lt;br/&gt;CIAS 總分下降"]
+
+  X --&gt; M --&gt; Y
+</pre>
+</div>
+<p></p></figure><p></p>
 </div>
 </div>
 </div>
+<p>中介分析支持的重點是：BMAA 訓練可能先提升參與者的內感覺覺察，也就是更能注意、辨識並理解自己的身體訊號；而內感覺覺察提升後，主觀網路成癮傾向（CIAS 總分）也跟著下降。</p>
+<p>因此，這篇研究的重要性在於把「主觀網路成癮傾向」放回身體覺察的脈絡中理解：當一個人更能感覺身體狀態，也可能更容易覺察自己正在被網路使用衝動帶走，進而降低自陳的網路成癮傾向。</p>
+</section>
 </section>
 </section>
 <section id="參考文獻" class="level2">
 <h2 class="anchored" data-anchor-id="參考文獻">參考文獻</h2>
 <p>牟書琪. (2024). <em>內感覺能力提升對於降低網路成癮傾向的影響：以身心中軸覺察訓練為介入的效果與機制探討</em> [碩士論文，中原大學].</p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-警告
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本頁為摘要草稿頁，內容與數值仍需依原論文校對後再作正式推廣使用。</p>
-</div>
-</div>
 
 
 </section>

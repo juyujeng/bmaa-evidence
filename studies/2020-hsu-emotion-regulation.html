@@ -24,41 +24,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -107,6 +72,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -279,10 +247,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#方法" id="toc-方法" class="nav-link" data-scroll-target="#方法">方法</a></li>
   <li><a href="#主要發現" id="toc-主要發現" class="nav-link" data-scroll-target="#主要發現">主要發現</a></li>
-  <li><a href="#結果" id="toc-結果" class="nav-link" data-scroll-target="#結果">結果</a></li>
-  <li><a href="#繪圖資料" id="toc-繪圖資料" class="nav-link" data-scroll-target="#繪圖資料">繪圖資料</a></li>
   </ul></li>
-  <li><a href="#研究結果圖" id="toc-研究結果圖" class="nav-link" data-scroll-target="#研究結果圖">研究結果圖</a></li>
   <li><a href="#參考文獻" id="toc-參考文獻" class="nav-link" data-scroll-target="#參考文獻">參考文獻</a></li>
   </ul>
 </nav>
@@ -333,13 +298,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>實驗設計：前後測等待名單控制組設計。</li>
 <li>實驗組（約 28 人） vs 等待控制組（約 28 人）；共招募 56 名大學生與研究生並平均分派。</li>
 <li>介入：兩週、共 9 小時短版身心中軸覺察練習（BMAA-S）。</li>
-<li>主要依變項：憂鬱程度（BDI）、情緒調節困難、自評生活情緒調節、情緒干擾作業、注意力覺察傾向、身體覺察傾向、工作記憶廣度。</li>
+<li>主要依變項：
+<ul>
+<li>情緒狀態：憂鬱程度（BDI）、情緒調節困難、自評生活情緒調節。</li>
+<li>覺察能力：身體覺察傾向、注意力覺察傾向。</li>
+<li>認知與作業表現：情緒干擾作業、工作記憶廣度。</li>
+</ul></li>
 </ul>
 </section>
 <section id="主要發現" class="level3">
 <h3 class="anchored" data-anchor-id="主要發現">主要發現</h3>
-<p>兩週 BMAA-S 後，大學生的憂鬱程度與情緒調節困難下降，身體覺察明顯提升。憂鬱分數越低代表負向情緒症狀越少；情緒調節困難越低代表比較能處理情緒；身體覺察越高，代表更能感覺並辨識身體內在狀態。</p>
-<p>圖中可看到 BMAA-S 組在三個指標都朝正向改變：憂鬱與情緒調節困難下降，身體覺察上升；控制組變化較小。</p>
+<p>BMAA-S 訓練後，大學生的憂鬱程度下降，情緒調節能力改善，身體覺察也提升。憂鬱分數越低代表負向情緒症狀越少；情緒調節困難越低，代表比較能處理情緒；身體覺察越高，代表更能感覺並辨識身體內在狀態。</p>
+<p>圖中可看到 BMAA-S 組在三個指標都朝正向改變：憂鬱與情緒調節困難下降，身體覺察上升；控制組變化較小。研究也發現，BMAA-S 對情緒改善的關鍵機制，比較像是透過「身體覺察提升」，而不是透過工作記憶變好。</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -349,232 +319,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-</section>
-<section id="結果" class="level3">
-<h3 class="anchored" data-anchor-id="結果">結果</h3>
-<p>BMAA-S 在兩週內降低憂鬱程度、提升自評情緒調節能力，並在預先啟動執行控制時降低負面情緒刺激對作業表現的干擾。身體覺察提升完全中介憂鬱下降，並部分中介自評情緒調節改善；注意力覺察與工作記憶未呈現同樣中介效果。</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>指標</th>
-<th>主要發現</th>
-<th>圖像化重點</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>憂鬱程度</td>
-<td>實驗組後測顯著下降</td>
-<td>短期 BMAA-S 可降低負面情緒狀態</td>
-</tr>
-<tr class="even">
-<td>自評情緒調節</td>
-<td>實驗組提升，控制組無改變</td>
-<td>日常情緒調節能力改善</td>
-</tr>
-<tr class="odd">
-<td>情緒干擾</td>
-<td>啟動執行控制後，負面刺激干擾降低</td>
-<td>情緒與任務控制整合變好</td>
-</tr>
-<tr class="even">
-<td>覺察傾向</td>
-<td>身體覺察與注意力覺察皆提升</td>
-<td>介入同步提升覺察能力</td>
-</tr>
-<tr class="odd">
-<td>中介機制</td>
-<td>身體覺察中介情緒調節成效</td>
-<td>成效關鍵較偏身體覺察而非工作記憶</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="繪圖資料" class="level3">
-<h3 class="anchored" data-anchor-id="繪圖資料">繪圖資料</h3>
-<section id="情緒調節與覺察主要指標" class="level4">
-<h4 class="anchored" data-anchor-id="情緒調節與覺察主要指標">情緒調節與覺察主要指標</h4>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>指標</th>
-<th style="text-align: right;">BMAA-S 前測</th>
-<th style="text-align: right;">BMAA-S 後測</th>
-<th style="text-align: right;">控制組前測</th>
-<th style="text-align: right;">控制組後測</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>貝克憂鬱量表總分</td>
-<td style="text-align: right;">16.54</td>
-<td style="text-align: right;">7.36</td>
-<td style="text-align: right;">15.04</td>
-<td style="text-align: right;">13.43</td>
-</tr>
-<tr class="even">
-<td>情緒調節困難量表總分</td>
-<td style="text-align: right;">53.39</td>
-<td style="text-align: right;">42.46</td>
-<td style="text-align: right;">54.86</td>
-<td style="text-align: right;">55.46</td>
-</tr>
-<tr class="odd">
-<td>止觀覺察注意量表總分</td>
-<td style="text-align: right;">51.63</td>
-<td style="text-align: right;">59.63</td>
-<td style="text-align: right;">54.71</td>
-<td style="text-align: right;">53.79</td>
-</tr>
-<tr class="even">
-<td>多向度內感覺覺察量表總分</td>
-<td style="text-align: right;">78.77</td>
-<td style="text-align: right;">100.39</td>
-<td style="text-align: right;">81.04</td>
-<td style="text-align: right;">83.34</td>
-</tr>
-<tr class="odd">
-<td>操作廣度作業工作記憶廣度</td>
-<td style="text-align: right;">4.31</td>
-<td style="text-align: right;">5.11</td>
-<td style="text-align: right;">4.26</td>
-<td style="text-align: right;">4.54</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="情緒干擾作業" class="level4">
-<h4 class="anchored" data-anchor-id="情緒干擾作業">情緒干擾作業</h4>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>指標</th>
-<th style="text-align: right;">BMAA-S 前測</th>
-<th style="text-align: right;">BMAA-S 後測</th>
-<th style="text-align: right;">控制組前測</th>
-<th style="text-align: right;">控制組後測</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>一致情境干擾值</td>
-<td style="text-align: right;">25.10</td>
-<td style="text-align: right;">16.30</td>
-<td style="text-align: right;">27.80</td>
-<td style="text-align: right;">22.20</td>
-</tr>
-<tr class="even">
-<td>不一致情境干擾值</td>
-<td style="text-align: right;">29.70</td>
-<td style="text-align: right;">14.10</td>
-<td style="text-align: right;">22.00</td>
-<td style="text-align: right;">23.80</td>
-</tr>
-</tbody>
-</table>
-</section>
-</section>
-</section>
-<section id="研究結果圖" class="level2">
-<h2 class="anchored" data-anchor-id="研究結果圖">研究結果圖</h2>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-註釋
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>下列圖表根據摘要草稿中的繪圖資料轉為 R/ggplot 圖。正式發佈前，仍建議回到原論文確認數值、統計檢定與圖題。</p>
-</div>
-</div>
-<section id="情緒調節與覺察主要指標-1" class="level4">
-<h4 class="anchored" data-anchor-id="情緒調節與覺察主要指標-1">情緒調節與覺察主要指標</h4>
-<div class="cell">
-<details class="code-fold">
-<summary>程式碼</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">time =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"前測"</span>, <span class="st">"後測"</span>), <span class="at">times =</span> <span class="dv">10</span>),</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">group =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"BMAA-S-憂鬱"</span>, <span class="st">"控制組-憂鬱"</span>, <span class="st">"BMAA-S-情緒調節困難"</span>, <span class="st">"控制組-情緒調節困難"</span>, <span class="st">"BMAA-S-注意覺察"</span>, <span class="st">"控制組-注意覺察"</span>, <span class="st">"BMAA-S-身體覺察"</span>, <span class="st">"控制組-身體覺察"</span>, <span class="st">"BMAA-S-工作記憶"</span>, <span class="st">"控制組-工作記憶"</span>), <span class="at">each =</span> <span class="dv">2</span>),</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> <span class="fu">c</span>(<span class="fl">16.54</span>, <span class="fl">7.36</span>, <span class="fl">15.04</span>, <span class="fl">13.43</span>, <span class="fl">53.39</span>, <span class="fl">42.46</span>, <span class="fl">54.86</span>, <span class="fl">55.46</span>, <span class="fl">51.63</span>, <span class="fl">59.63</span>, <span class="fl">54.71</span>, <span class="fl">53.79</span>, <span class="fl">78.77</span>, <span class="fl">100.39</span>, <span class="fl">81.04</span>, <span class="fl">83.34</span>, <span class="fl">4.31</span>, <span class="fl">5.11</span>, <span class="fl">4.26</span>, <span class="fl">4.54</span>)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">bmaa_line_plot</span>(dat, <span class="st">"情緒調節與覺察主要指標"</span>)</span></code></pre></div><button title="複製到剪貼簿" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
+<section id="中介機制" class="level4">
+<h4 class="anchored" data-anchor-id="中介機制">中介機制</h4>
+<div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
-<figure class="figure">
-<p><img src="2020-hsu-emotion-regulation_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" style="width:100.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="貝克憂鬱量表總分" class="level4">
-<h4 class="anchored" data-anchor-id="貝克憂鬱量表總分">貝克憂鬱量表總分</h4>
-<div class="cell">
-<details class="code-fold">
-<summary>程式碼</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">time =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"前測"</span>, <span class="st">"後測"</span>), <span class="at">times =</span> <span class="dv">2</span>),</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">group =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"BMAA-S"</span>, <span class="st">"控制組"</span>), <span class="at">each =</span> <span class="dv">2</span>),</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> <span class="fu">c</span>(<span class="fl">16.54</span>, <span class="fl">7.36</span>, <span class="fl">15.04</span>, <span class="fl">13.43</span>)</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="fu">bmaa_line_plot</span>(dat, <span class="st">"貝克憂鬱量表總分"</span>)</span></code></pre></div><button title="複製到剪貼簿" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-<div class="cell-output-display">
+<p></p><figure class="figure"><p></p>
 <div>
-<figure class="figure">
-<p><img src="2020-hsu-emotion-regulation_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" style="width:100.0%"></p>
-</figure>
+<pre class="mermaid mermaid-js">flowchart LR
+  X["BMAA-S 訓練"]
+  M["身體覺察提升&lt;br/&gt;更能感覺身體狀態"]
+  Y1["憂鬱程度下降"]
+  Y2["日常情緒調節改善"]
+
+  X --&gt; M
+  M --&gt; Y1
+  M --&gt; Y2
+</pre>
+</div>
+<p></p></figure><p></p>
 </div>
 </div>
 </div>
+<p>中介分析顯示，身體覺察提升可以解釋憂鬱下降，並部分解釋自評情緒調節改善。換句話說，這篇研究支持「先更能感覺身體，再更能調節情緒」的路徑。</p>
 </section>
-<section id="情緒干擾作業-1" class="level4">
-<h4 class="anchored" data-anchor-id="情緒干擾作業-1">情緒干擾作業</h4>
-<div class="cell">
-<details class="code-fold">
-<summary>程式碼</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">time =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"前測"</span>, <span class="st">"後測"</span>), <span class="at">times =</span> <span class="dv">4</span>),</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">group =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"BMAA-S-一致情境"</span>, <span class="st">"控制組-一致情境"</span>, <span class="st">"BMAA-S-不一致情境"</span>, <span class="st">"控制組-不一致情境"</span>), <span class="at">each =</span> <span class="dv">2</span>),</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> <span class="fu">c</span>(<span class="fl">25.1</span>, <span class="fl">16.3</span>, <span class="fl">27.8</span>, <span class="fl">22.2</span>, <span class="fl">29.7</span>, <span class="fl">14.1</span>, <span class="dv">22</span>, <span class="fl">23.8</span>)</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="fu">bmaa_line_plot</span>(dat, <span class="st">"情緒干擾作業"</span>)</span></code></pre></div><button title="複製到剪貼簿" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="2020-hsu-emotion-regulation_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" style="width:100.0%"></p>
-</figure>
-</div>
-</div>
-</div>
 </section>
 </section>
 <section id="參考文獻" class="level2">
 <h2 class="anchored" data-anchor-id="參考文獻">參考文獻</h2>
 <p>許惟智. (2020). <em>探討兩週身心中軸覺察練習對大學生情緒調節的成效及覺察傾向、工作記憶的中介角色</em> [碩士論文，國立臺灣大學]. https://doi.org/10.6342/NTU202002076</p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-警告
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本頁為摘要草稿頁，內容與數值仍需依原論文校對後再作正式推廣使用。</p>
-</div>
-</div>
 
 
 </section>

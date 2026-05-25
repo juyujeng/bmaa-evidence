@@ -24,41 +24,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -279,10 +244,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#方法" id="toc-方法" class="nav-link" data-scroll-target="#方法">方法</a></li>
   <li><a href="#主要發現" id="toc-主要發現" class="nav-link" data-scroll-target="#主要發現">主要發現</a></li>
-  <li><a href="#結果" id="toc-結果" class="nav-link" data-scroll-target="#結果">結果</a></li>
-  <li><a href="#繪圖資料" id="toc-繪圖資料" class="nav-link" data-scroll-target="#繪圖資料">繪圖資料</a></li>
   </ul></li>
-  <li><a href="#研究結果圖" id="toc-研究結果圖" class="nav-link" data-scroll-target="#研究結果圖">研究結果圖</a></li>
   <li><a href="#參考文獻" id="toc-參考文獻" class="nav-link" data-scroll-target="#參考文獻">參考文獻</a></li>
   </ul>
 </nav>
@@ -333,13 +295,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>實驗設計：前後測組間設計，比較兒童版 BMAA-C 與綜合活動課程。</li>
 <li>實驗組（BMAA-C，25 人納入分析） vs 主動控制組（綜合活動，12 人納入分析）。</li>
 <li>介入：3.5 週、11 堂課、共 33 小時；兩組皆為動態活動，但 BMAA-C 強調向內觀察身體，綜合活動強調外在活動目標。</li>
-<li>主要依變項：工作記憶、注意力網絡作業、情緒調節量表、兒童行為檢核表、身體覺察、精細動作控制、操作協調。</li>
+<li>主要依變項：
+<ul>
+<li>認知功能：工作記憶、注意力網絡作業。</li>
+<li>情緒與行為：情緒調節量表、兒童行為檢核表。</li>
+<li>身體與動作：身體覺察、精細動作控制、操作協調。</li>
+</ul></li>
 </ul>
 </section>
 <section id="主要發現" class="level3">
 <h3 class="anchored" data-anchor-id="主要發現">主要發現</h3>
 <p>這篇研究顯示，不同活動帶來的受益方向不太一樣：BMAA-C 在工作記憶進步較清楚，綜合活動組在情緒調節量表上改善較明顯。工作記憶代表孩子暫時保存與操作資訊的能力；情緒調節則是孩子面對情緒時，能不能用比較有效的方式調整自己。</p>
-<p>圖中把工作記憶、正向情緒調節與負向情緒調節放在不同 panel。前後測線條可以看到，BMAA-C 的工作記憶上升較明顯，而綜合活動組在情緒調節分數的變化較大。</p>
+<p>圖中把工作記憶、正向情緒調節與負向情緒調節放在不同 panel。前後測線條可以看到，BMAA-C 的工作記憶上升較明顯，而綜合活動組在情緒調節分數的變化較大。這表示兒童版 BMAA-C 的主要亮點較偏向認知功能，綜合活動則較反映在家長或量表評估的情緒調節。</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -350,236 +317,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="結果" class="level3">
-<h3 class="anchored" data-anchor-id="結果">結果</h3>
-<p>BMAA-C 組主要在工作記憶廣度上顯著進步；綜合活動組則在情緒調節相關量表上改善較明顯。進一步比較顯示綜合活動組在正向與負向情緒調節改善上優於 BMAA-C，但兩組在執行功能後測差異不明顯。</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>指標</th>
-<th>主要發現</th>
-<th>圖像化重點</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>工作記憶</td>
-<td>BMAA-C 組前後測顯著進步</td>
-<td>內在身體覺察較連結客觀認知表現</td>
-</tr>
-<tr class="even">
-<td>情緒調節</td>
-<td>綜合活動組量表分數顯著改善</td>
-<td>外在活動目標較反映於家長評估情緒表現</td>
-</tr>
-<tr class="odd">
-<td>組間比較</td>
-<td>綜合活動組正/負向情緒調節改善優於 BMAA-C</td>
-<td>不同身心活動帶來不同成效剖面</td>
-</tr>
-<tr class="even">
-<td>調節因子</td>
-<td>BMAA-C 效果受內感受與動作能力影響</td>
-<td>身體條件會影響訓練受益</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="繪圖資料" class="level3">
-<h3 class="anchored" data-anchor-id="繪圖資料">繪圖資料</h3>
-<section id="工作記憶廣度" class="level4">
-<h4 class="anchored" data-anchor-id="工作記憶廣度">工作記憶廣度</h4>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>組別</th>
-<th style="text-align: right;">前測</th>
-<th style="text-align: right;">後測</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>BMAA-C</td>
-<td style="text-align: right;">37.44</td>
-<td style="text-align: right;">42.00</td>
-</tr>
-<tr class="even">
-<td>綜合活動</td>
-<td style="text-align: right;">39.08</td>
-<td style="text-align: right;">40.08</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="情緒調節量表" class="level4">
-<h4 class="anchored" data-anchor-id="情緒調節量表">情緒調節量表</h4>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>指標</th>
-<th style="text-align: right;">BMAA-C 前測</th>
-<th style="text-align: right;">BMAA-C 後測</th>
-<th style="text-align: right;">綜合活動前測</th>
-<th style="text-align: right;">綜合活動後測</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>正向情緒調節</td>
-<td style="text-align: right;">29.24</td>
-<td style="text-align: right;">29.84</td>
-<td style="text-align: right;">30.58</td>
-<td style="text-align: right;">32.83</td>
-</tr>
-<tr class="even">
-<td>不穩定情緒調節</td>
-<td style="text-align: right;">15.88</td>
-<td style="text-align: right;">16.12</td>
-<td style="text-align: right;">17.00</td>
-<td style="text-align: right;">15.25</td>
-</tr>
-<tr class="odd">
-<td>負向情緒調節</td>
-<td style="text-align: right;">7.88</td>
-<td style="text-align: right;">8.04</td>
-<td style="text-align: right;">8.08</td>
-<td style="text-align: right;">7.17</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="兒童行為檢核表" class="level4">
-<h4 class="anchored" data-anchor-id="兒童行為檢核表">兒童行為檢核表</h4>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>指標</th>
-<th style="text-align: right;">BMAA-C 前測</th>
-<th style="text-align: right;">BMAA-C 後測</th>
-<th style="text-align: right;">綜合活動前測</th>
-<th style="text-align: right;">綜合活動後測</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>焦慮症狀</td>
-<td style="text-align: right;">56.84</td>
-<td style="text-align: right;">56.52</td>
-<td style="text-align: right;">61.25</td>
-<td style="text-align: right;">55.92</td>
-</tr>
-<tr class="even">
-<td>憂鬱症狀</td>
-<td style="text-align: right;">57.92</td>
-<td style="text-align: right;">57.36</td>
-<td style="text-align: right;">59.42</td>
-<td style="text-align: right;">55.50</td>
-</tr>
-</tbody>
-</table>
-</section>
-</section>
-</section>
-<section id="研究結果圖" class="level2">
-<h2 class="anchored" data-anchor-id="研究結果圖">研究結果圖</h2>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-註釋
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>下列圖表根據摘要草稿中的繪圖資料轉為 R/ggplot 圖。正式發佈前，仍建議回到原論文確認數值、統計檢定與圖題。</p>
-</div>
-</div>
-<section id="工作記憶廣度-1" class="level4">
-<h4 class="anchored" data-anchor-id="工作記憶廣度-1">工作記憶廣度</h4>
-<div class="cell">
-<details class="code-fold">
-<summary>程式碼</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">time =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"前測"</span>, <span class="st">"後測"</span>), <span class="at">times =</span> <span class="dv">2</span>),</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">group =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"BMAA-C"</span>, <span class="st">"綜合活動"</span>), <span class="at">each =</span> <span class="dv">2</span>),</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> <span class="fu">c</span>(<span class="fl">37.44</span>, <span class="dv">42</span>, <span class="fl">39.08</span>, <span class="fl">40.08</span>)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">bmaa_line_plot</span>(dat, <span class="st">"工作記憶廣度"</span>)</span></code></pre></div><button title="複製到剪貼簿" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="2018-chang-children-executive-emotion_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" style="width:100.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="情緒調節量表-1" class="level4">
-<h4 class="anchored" data-anchor-id="情緒調節量表-1">情緒調節量表</h4>
-<div class="cell">
-<details class="code-fold">
-<summary>程式碼</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">time =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"前測"</span>, <span class="st">"後測"</span>), <span class="at">times =</span> <span class="dv">6</span>),</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">group =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"BMAA-C-正向情緒調節"</span>, <span class="st">"綜合活動-正向情緒調節"</span>, <span class="st">"BMAA-C-不穩定情緒調節"</span>, <span class="st">"綜合活動-不穩定情緒調節"</span>, <span class="st">"BMAA-C-負向情緒調節"</span>, <span class="st">"綜合活動-負向情緒調節"</span>), <span class="at">each =</span> <span class="dv">2</span>),</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> <span class="fu">c</span>(<span class="fl">29.24</span>, <span class="fl">29.84</span>, <span class="fl">30.58</span>, <span class="fl">32.83</span>, <span class="fl">15.88</span>, <span class="fl">16.12</span>, <span class="dv">17</span>, <span class="fl">15.25</span>, <span class="fl">7.88</span>, <span class="fl">8.04</span>, <span class="fl">8.08</span>, <span class="fl">7.17</span>)</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="fu">bmaa_line_plot</span>(dat, <span class="st">"情緒調節量表"</span>)</span></code></pre></div><button title="複製到剪貼簿" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="2018-chang-children-executive-emotion_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" style="width:100.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="兒童行為檢核表-1" class="level4">
-<h4 class="anchored" data-anchor-id="兒童行為檢核表-1">兒童行為檢核表</h4>
-<div class="cell">
-<details class="code-fold">
-<summary>程式碼</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">time =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"前測"</span>, <span class="st">"後測"</span>), <span class="at">times =</span> <span class="dv">4</span>),</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">group =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"BMAA-C-焦慮症狀"</span>, <span class="st">"綜合活動-焦慮症狀"</span>, <span class="st">"BMAA-C-憂鬱症狀"</span>, <span class="st">"綜合活動-憂鬱症狀"</span>), <span class="at">each =</span> <span class="dv">2</span>),</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> <span class="fu">c</span>(<span class="fl">56.84</span>, <span class="fl">56.52</span>, <span class="fl">61.25</span>, <span class="fl">55.92</span>, <span class="fl">57.92</span>, <span class="fl">57.36</span>, <span class="fl">59.42</span>, <span class="fl">55.5</span>)</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="fu">bmaa_line_plot</span>(dat, <span class="st">"兒童行為檢核表"</span>)</span></code></pre></div><button title="複製到剪貼簿" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="2018-chang-children-executive-emotion_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" style="width:100.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
 </section>
 <section id="參考文獻" class="level2">
 <h2 class="anchored" data-anchor-id="參考文獻">參考文獻</h2>
 <p>張憶如. (2018). <em>身心中軸覺察與綜合活動訓練增進兒童之執行功能及情緒調節</em> [碩士論文，中原大學].</p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-警告
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本頁為摘要草稿頁，內容與數值仍需依原論文校對後再作正式推廣使用。</p>
-</div>
-</div>
 
 
 </section>

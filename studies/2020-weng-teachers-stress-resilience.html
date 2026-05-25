@@ -24,41 +24,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -279,10 +244,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#方法" id="toc-方法" class="nav-link" data-scroll-target="#方法">方法</a></li>
   <li><a href="#主要發現" id="toc-主要發現" class="nav-link" data-scroll-target="#主要發現">主要發現</a></li>
-  <li><a href="#結果" id="toc-結果" class="nav-link" data-scroll-target="#結果">結果</a></li>
-  <li><a href="#繪圖資料" id="toc-繪圖資料" class="nav-link" data-scroll-target="#繪圖資料">繪圖資料</a></li>
   </ul></li>
-  <li><a href="#研究結果圖" id="toc-研究結果圖" class="nav-link" data-scroll-target="#研究結果圖">研究結果圖</a></li>
   <li><a href="#參考文獻" id="toc-參考文獻" class="nav-link" data-scroll-target="#參考文獻">參考文獻</a></li>
   </ul>
 </nav>
@@ -333,13 +295,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>實驗設計：單組前後測設計，並檢驗前測內感覺與壓力/韌性的關聯。</li>
 <li>實驗組（完成分析之在職教師 25 人） vs 控制組（無）。</li>
 <li>介入：6 週、共 18 小時 BMAA 課程；另分析居家練習時間與成效的關係。</li>
-<li>主要依變項：內感覺覺察（心跳偵測作業、MAIA）、心理韌性、壓力知覺、睡眠品質、情緒狀態。</li>
+<li>主要依變項：
+<ul>
+<li>壓力與情緒：壓力知覺、正向情緒、負向情緒。</li>
+<li>身心資源：心理韌性、睡眠品質、內感覺覺察。</li>
+<li>練習投入：居家練習時間與前後測改變量的關係。</li>
+</ul></li>
 </ul>
 </section>
 <section id="主要發現" class="level3">
 <h3 class="anchored" data-anchor-id="主要發現">主要發現</h3>
-<p>國小教師接受 BMAA 後，壓力知覺下降，心理韌性提升，負向情緒也下降。壓力知覺是主觀感到生活壓力多大的程度；心理韌性代表遇到壓力後恢復與回彈的能力；PANAS 負向情緒則反映焦慮、煩躁或不舒服的情緒狀態。</p>
-<p>圖中分數方向不同：壓力與負向情緒越低越好，心理韌性越高越好。整體看來，教師在課程後呈現壓力降低、韌性增加的趨勢。</p>
+<p>國小教師接受 BMAA 後，壓力知覺下降，心理韌性提升，負向情緒也下降。壓力知覺是主觀感到生活壓力多大的程度；心理韌性代表遇到壓力後恢復與回彈的能力；負向情緒則反映焦慮、煩躁或不舒服的情緒狀態。</p>
+<p>這篇研究沒有控制組，因此不能直接判斷改善完全來自 BMAA；但結果顯示，課程後教師的壓力與負向情緒較低、心理韌性較高。研究也發現，內感覺能力較好的教師，通常壓力知覺較低；練習時間較多者，多項改善幅度也較明顯。</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -350,239 +317,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="結果" class="level3">
-<h3 class="anchored" data-anchor-id="結果">結果</h3>
-<p>前測時，主客觀內感覺指標與壓力知覺呈負相關，MAIA 的自我調節分量表可預測心理韌性。BMAA 介入後，教師的內感覺覺察、心理韌性與睡眠品質提升，壓力知覺與負向情緒下降，且多數成效與居家練習時間相關。</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>指標</th>
-<th>主要發現</th>
-<th>圖像化重點</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>內感覺與壓力</td>
-<td>內感覺越佳，壓力知覺越低</td>
-<td>身體覺察可能是壓力調節資源</td>
-</tr>
-<tr class="even">
-<td>心理韌性</td>
-<td>MAIA 自我調節可預測韌性</td>
-<td>身體調節能力連結心理韌性</td>
-</tr>
-<tr class="odd">
-<td>BMAA 介入</td>
-<td>內感覺、韌性、睡眠品質提升</td>
-<td>教師身心資源增加</td>
-</tr>
-<tr class="even">
-<td>壓力與情緒</td>
-<td>壓力知覺、負向情緒下降</td>
-<td>BMAA 可作為教師壓力調節方案</td>
-</tr>
-<tr class="odd">
-<td>居家練習</td>
-<td>練習時間可預測多數改善幅度</td>
-<td>劑量越多，改善越明顯</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="繪圖資料" class="level3">
-<h3 class="anchored" data-anchor-id="繪圖資料">繪圖資料</h3>
-<section id="壓力韌性與情緒" class="level4">
-<h4 class="anchored" data-anchor-id="壓力韌性與情緒">壓力、韌性與情緒</h4>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>指標</th>
-<th style="text-align: right;">前測</th>
-<th style="text-align: right;">後測</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>壓力知覺量表 PSS</td>
-<td style="text-align: right;">16.00</td>
-<td style="text-align: right;">10.28</td>
-</tr>
-<tr class="even">
-<td>心理韌性 BRS</td>
-<td style="text-align: right;">3.33</td>
-<td style="text-align: right;">3.83</td>
-</tr>
-<tr class="odd">
-<td>PANAS 正向情緒</td>
-<td style="text-align: right;">3.19</td>
-<td style="text-align: right;">3.36</td>
-</tr>
-<tr class="even">
-<td>PANAS 負向情緒</td>
-<td style="text-align: right;">2.26</td>
-<td style="text-align: right;">1.65</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="內感覺覺察maia-主要分量表" class="level4">
-<h4 class="anchored" data-anchor-id="內感覺覺察maia-主要分量表">內感覺覺察（MAIA 主要分量表）</h4>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>指標</th>
-<th style="text-align: right;">前測</th>
-<th style="text-align: right;">後測</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>MAIA 總分/整體指標</td>
-<td style="text-align: right;">3.36</td>
-<td style="text-align: right;">3.78</td>
-</tr>
-<tr class="even">
-<td>MAIA 分量表 1</td>
-<td style="text-align: right;">3.30</td>
-<td style="text-align: right;">3.89</td>
-</tr>
-<tr class="odd">
-<td>MAIA 分量表 2</td>
-<td style="text-align: right;">1.63</td>
-<td style="text-align: right;">2.15</td>
-</tr>
-<tr class="even">
-<td>MAIA 分量表 3</td>
-<td style="text-align: right;">1.47</td>
-<td style="text-align: right;">2.13</td>
-</tr>
-<tr class="odd">
-<td>MAIA 分量表 4</td>
-<td style="text-align: right;">2.70</td>
-<td style="text-align: right;">3.45</td>
-</tr>
-<tr class="even">
-<td>MAIA 分量表 5</td>
-<td style="text-align: right;">3.07</td>
-<td style="text-align: right;">3.95</td>
-</tr>
-<tr class="odd">
-<td>MAIA 分量表 6</td>
-<td style="text-align: right;">2.79</td>
-<td style="text-align: right;">3.59</td>
-</tr>
-<tr class="even">
-<td>MAIA 分量表 7</td>
-<td style="text-align: right;">3.16</td>
-<td style="text-align: right;">3.89</td>
-</tr>
-<tr class="odd">
-<td>MAIA 分量表 8</td>
-<td style="text-align: right;">2.68</td>
-<td style="text-align: right;">3.35</td>
-</tr>
-</tbody>
-</table>
-<p>註：PDF 文字層未保留 MAIA 分量表中文標籤，先以分量表序號保留可繪圖數值。</p>
-</section>
-</section>
-</section>
-<section id="研究結果圖" class="level2">
-<h2 class="anchored" data-anchor-id="研究結果圖">研究結果圖</h2>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-註釋
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>下列圖表根據摘要草稿中的繪圖資料轉為 R/ggplot 圖。正式發佈前，仍建議回到原論文確認數值、統計檢定與圖題。</p>
-</div>
-</div>
-<section id="壓力韌性與情緒-1" class="level4">
-<h4 class="anchored" data-anchor-id="壓力韌性與情緒-1">壓力、韌性與情緒</h4>
-<div class="cell">
-<details class="code-fold">
-<summary>程式碼</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">time =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"前測"</span>, <span class="st">"後測"</span>), <span class="at">times =</span> <span class="dv">4</span>),</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">group =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"PSS"</span>, <span class="st">"BRS"</span>, <span class="st">"PANAS 正向"</span>, <span class="st">"PANAS 負向"</span>), <span class="at">each =</span> <span class="dv">2</span>),</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> <span class="fu">c</span>(<span class="dv">16</span>, <span class="fl">10.28</span>, <span class="fl">3.33</span>, <span class="fl">3.83</span>, <span class="fl">3.19</span>, <span class="fl">3.36</span>, <span class="fl">2.26</span>, <span class="fl">1.65</span>)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">bmaa_line_plot</span>(dat, <span class="st">"壓力、韌性與情緒"</span>)</span></code></pre></div><button title="複製到剪貼簿" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="2020-weng-teachers-stress-resilience_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" style="width:100.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="內感覺覺察maia-主要分量表-1" class="level4">
-<h4 class="anchored" data-anchor-id="內感覺覺察maia-主要分量表-1">內感覺覺察（MAIA 主要分量表）</h4>
-<div class="cell">
-<details class="code-fold">
-<summary>程式碼</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">time =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"前測"</span>, <span class="st">"後測"</span>), <span class="at">times =</span> <span class="dv">5</span>),</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">group =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"MAIA 整體指標"</span>, <span class="st">"MAIA 分量表 1"</span>, <span class="st">"MAIA 分量表 4"</span>, <span class="st">"MAIA 分量表 6"</span>, <span class="st">"MAIA 分量表 8"</span>), <span class="at">each =</span> <span class="dv">2</span>),</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> <span class="fu">c</span>(<span class="fl">3.36</span>, <span class="fl">3.78</span>, <span class="fl">3.3</span>, <span class="fl">3.89</span>, <span class="fl">2.7</span>, <span class="fl">3.45</span>, <span class="fl">2.79</span>, <span class="fl">3.59</span>, <span class="fl">2.68</span>, <span class="fl">3.35</span>)</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="fu">bmaa_line_plot</span>(dat, <span class="st">"內感覺覺察（MAIA 主要分量表）"</span>)</span></code></pre></div><button title="複製到剪貼簿" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="2020-weng-teachers-stress-resilience_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" style="width:100.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="maia-其他分量表" class="level4">
-<h4 class="anchored" data-anchor-id="maia-其他分量表">MAIA 其他分量表</h4>
-<div class="cell">
-<details class="code-fold">
-<summary>程式碼</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">time =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"前測"</span>, <span class="st">"後測"</span>), <span class="at">times =</span> <span class="dv">4</span>),</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">group =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"MAIA 分量表 2"</span>, <span class="st">"MAIA 分量表 3"</span>, <span class="st">"MAIA 分量表 5"</span>, <span class="st">"MAIA 分量表 7"</span>), <span class="at">each =</span> <span class="dv">2</span>),</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> <span class="fu">c</span>(<span class="fl">1.63</span>, <span class="fl">2.15</span>, <span class="fl">1.47</span>, <span class="fl">2.13</span>, <span class="fl">3.07</span>, <span class="fl">3.95</span>, <span class="fl">3.16</span>, <span class="fl">3.89</span>)</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="fu">bmaa_line_plot</span>(dat, <span class="st">"MAIA 其他分量表"</span>)</span></code></pre></div><button title="複製到剪貼簿" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="2020-weng-teachers-stress-resilience_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" style="width:100.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
 </section>
 <section id="參考文獻" class="level2">
 <h2 class="anchored" data-anchor-id="參考文獻">參考文獻</h2>
 <p>翁宛婷. (2020). <em>探討短期動態身心覺察課程對國小教師內感覺覺察、心理韌性與壓力知覺的介入成效</em> [碩士論文，國立臺灣師範大學].</p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-警告
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本頁為摘要草稿頁，內容與數值仍需依原論文校對後再作正式推廣使用。</p>
-</div>
-</div>
 
 
 </section>

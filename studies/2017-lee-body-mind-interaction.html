@@ -24,41 +24,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -279,10 +244,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#方法" id="toc-方法" class="nav-link" data-scroll-target="#方法">方法</a></li>
   <li><a href="#主要發現" id="toc-主要發現" class="nav-link" data-scroll-target="#主要發現">主要發現</a></li>
-  <li><a href="#結果" id="toc-結果" class="nav-link" data-scroll-target="#結果">結果</a></li>
-  <li><a href="#繪圖資料" id="toc-繪圖資料" class="nav-link" data-scroll-target="#繪圖資料">繪圖資料</a></li>
   </ul></li>
-  <li><a href="#研究結果圖" id="toc-研究結果圖" class="nav-link" data-scroll-target="#研究結果圖">研究結果圖</a></li>
   <li><a href="#參考文獻" id="toc-參考文獻" class="nav-link" data-scroll-target="#參考文獻">參考文獻</a></li>
   </ul>
 </nav>
@@ -333,13 +295,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>實驗設計：兒童前後測控制組設計；另以前測資料檢驗身體覺察與執行功能的相關。</li>
 <li>實驗組（BMAA-C，27 人） vs 控制組（一般營隊/活動，21 人）；前測相關分析另含 58 名 8-11 歲兒童。</li>
 <li>介入：兒童版身心中軸覺察課程，對照組為非正念、非武術/瑜伽的一般暑期活動。</li>
-<li>主要依變項：本體覺、內感覺、持續性注意力（SART 的 RTCV 與 NOGO accuracy）、工作記憶（OSPAN）。</li>
+<li>主要依變項：
+<ul>
+<li>身體感覺：本體覺、內感覺。</li>
+<li>注意力控制：持續性注意力（SART 的 RTCV 與 NOGO accuracy）。</li>
+<li>工作記憶：OSPAN。</li>
+</ul></li>
 </ul>
 </section>
 <section id="主要發現" class="level3">
 <h3 class="anchored" data-anchor-id="主要發現">主要發現</h3>
-<p>這篇研究指出，兒童版 BMAA-C 對工作記憶有較清楚的改善。工作記憶是孩子在學習時「暫時記住並操作資訊」的能力；RTCV 則反映持續注意力的穩定度，數值越低通常代表反應越穩定。</p>
-<p>下圖用改善率比較 BMAA-C 與控制組。工作記憶改善率越高越好；RTCV 因為越低代表越穩定，所以下降可視為較佳趨勢。</p>
+<p>這篇研究指出，兒童版 BMAA-C 對工作記憶有較清楚的改善，也可能幫助部分孩子的注意力更穩定。工作記憶是孩子在學習時「暫時記住並操作資訊」的能力；RTCV 則反映持續注意力的穩定度，數值越低通常代表反應越穩定。</p>
+<p>下圖用改善率比較 BMAA-C 與控制組。工作記憶改善率越高越好；RTCV 因為越低代表越穩定，所以下降可視為較佳趨勢。研究也發現，孩子原本的身體覺察能力會影響訓練受益程度，表示 BMAA-C 的效果可能和個別身體感覺基礎有關。</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -350,207 +317,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="結果" class="level3">
-<h3 class="anchored" data-anchor-id="結果">結果</h3>
-<p>前測時，本體覺覺察度越好的兒童，持續性注意力表現越好。相較控制組，BMAA-C 更能提升工作記憶與持續性注意力，且兒童原本的本體覺條件會調節訓練成效。</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>指標</th>
-<th>主要發現</th>
-<th>圖像化重點</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本體覺與注意力</td>
-<td>前測本體覺覺察較佳者，RTCV 較低、NOGO accuracy 較高</td>
-<td>身體覺察與注意穩定性相連</td>
-</tr>
-<tr class="even">
-<td>工作記憶</td>
-<td>BMAA-C 較控制組有更大提升</td>
-<td>BMAA-C 促進兒童認知控制</td>
-</tr>
-<tr class="odd">
-<td>持續性注意力</td>
-<td>BMAA-C 較控制組降低 RTCV</td>
-<td>反應穩定度改善</td>
-</tr>
-<tr class="even">
-<td>個別差異</td>
-<td>本體覺準確度高、覺察度低於中位數者在 NOGO accuracy 較受益</td>
-<td>訓練效果受身體感覺基線影響</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="繪圖資料" class="level3">
-<h3 class="anchored" data-anchor-id="繪圖資料">繪圖資料</h3>
-<section id="主要訓練效果改善率" class="level4">
-<h4 class="anchored" data-anchor-id="主要訓練效果改善率">主要訓練效果：改善率</h4>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>指標</th>
-<th style="text-align: right;">BMAA-C</th>
-<th style="text-align: right;">控制組</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>工作記憶改善率</td>
-<td style="text-align: right;">0.14</td>
-<td style="text-align: right;">0.04</td>
-</tr>
-<tr class="even">
-<td>RTCV 改善率</td>
-<td style="text-align: right;">-0.06</td>
-<td style="text-align: right;">0.11</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="前測身體覺察與認知表現全體樣本描述" class="level4">
-<h4 class="anchored" data-anchor-id="前測身體覺察與認知表現全體樣本描述">前測身體覺察與認知表現（全體樣本描述）</h4>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>指標</th>
-<th style="text-align: right;">平均數</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>內感覺準確度</td>
-<td style="text-align: right;">0.68</td>
-</tr>
-<tr class="even">
-<td>內感覺覺察度</td>
-<td style="text-align: right;">729.66</td>
-</tr>
-<tr class="odd">
-<td>本體覺準確度</td>
-<td style="text-align: right;">0.81</td>
-</tr>
-<tr class="even">
-<td>本體覺覺察度</td>
-<td style="text-align: right;">663.80</td>
-</tr>
-<tr class="odd">
-<td>NOGO ACC</td>
-<td style="text-align: right;">0.40</td>
-</tr>
-<tr class="even">
-<td>RTCV</td>
-<td style="text-align: right;">0.39</td>
-</tr>
-</tbody>
-</table>
-<p>註：本研究在訓練效果章節主要回報改善率；若要畫前後測折線圖，需回到原始表格或資料檔補齊 T1/T2 平均數。</p>
-</section>
-</section>
-</section>
-<section id="研究結果圖" class="level2">
-<h2 class="anchored" data-anchor-id="研究結果圖">研究結果圖</h2>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-註釋
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>下列圖表根據摘要草稿中的繪圖資料轉為 R/ggplot 圖。正式發佈前，仍建議回到原論文確認數值、統計檢定與圖題。</p>
-</div>
-</div>
-<section id="主要訓練效果改善率-1" class="level4">
-<h4 class="anchored" data-anchor-id="主要訓練效果改善率-1">主要訓練效果：改善率</h4>
-<div class="cell">
-<details class="code-fold">
-<summary>程式碼</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">outcome =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"工作記憶改善率"</span>, <span class="st">"RTCV 改善率"</span>), <span class="at">times =</span> <span class="dv">2</span>),</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">group =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"BMAA-C"</span>, <span class="st">"控制組"</span>), <span class="at">each =</span> <span class="dv">2</span>),</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> <span class="fu">c</span>(<span class="fl">0.14</span>, <span class="sc">-</span><span class="fl">0.06</span>, <span class="fl">0.04</span>, <span class="fl">0.11</span>)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">bmaa_bar_plot</span>(dat, <span class="st">"主要訓練效果：改善率"</span>)</span></code></pre></div><button title="複製到剪貼簿" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="2017-lee-body-mind-interaction_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" style="width:100.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="前測身體覺察與認知表現全體樣本描述-1" class="level4">
-<h4 class="anchored" data-anchor-id="前測身體覺察與認知表現全體樣本描述-1">前測身體覺察與認知表現（全體樣本描述）</h4>
-<div class="cell">
-<details class="code-fold">
-<summary>程式碼</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">outcome =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"內感覺準確度"</span>, <span class="st">"本體覺準確度"</span>, <span class="st">"NOGO ACC"</span>, <span class="st">"RTCV"</span>), <span class="at">times =</span> <span class="dv">1</span>),</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">group =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"平均數"</span>), <span class="at">each =</span> <span class="dv">4</span>),</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> <span class="fu">c</span>(<span class="fl">0.68</span>, <span class="fl">0.81</span>, <span class="fl">0.4</span>, <span class="fl">0.39</span>)</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="fu">bmaa_bar_plot</span>(dat, <span class="st">"前測身體覺察與認知表現（全體樣本描述）"</span>)</span></code></pre></div><button title="複製到剪貼簿" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="2017-lee-body-mind-interaction_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" style="width:100.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="前測身體覺察時間指標" class="level4">
-<h4 class="anchored" data-anchor-id="前測身體覺察時間指標">前測身體覺察時間指標</h4>
-<div class="cell">
-<details class="code-fold">
-<summary>程式碼</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">outcome =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"內感覺覺察度"</span>, <span class="st">"本體覺覺察度"</span>), <span class="at">times =</span> <span class="dv">1</span>),</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">group =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"平均數"</span>), <span class="at">each =</span> <span class="dv">2</span>),</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> <span class="fu">c</span>(<span class="fl">729.66</span>, <span class="fl">663.8</span>)</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="fu">bmaa_bar_plot</span>(dat, <span class="st">"前測身體覺察時間指標"</span>)</span></code></pre></div><button title="複製到剪貼簿" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="2017-lee-body-mind-interaction_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" style="width:100.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
 </section>
 <section id="參考文獻" class="level2">
 <h2 class="anchored" data-anchor-id="參考文獻">參考文獻</h2>
 <p>李少揚. (2017). <em>身心互動途徑初探：以「身心中軸覺察訓練」對身體感覺、工作記憶與注意力控制功能的提升效果為例</em> [碩士論文，國立臺灣大學]. https://doi.org/10.6342/NTU201700254</p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-警告
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本頁為摘要草稿頁，內容與數值仍需依原論文校對後再作正式推廣使用。</p>
-</div>
-</div>
 
 
 </section>

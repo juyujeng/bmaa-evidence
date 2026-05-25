@@ -24,41 +24,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -279,10 +244,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#方法" id="toc-方法" class="nav-link" data-scroll-target="#方法">方法</a></li>
   <li><a href="#主要發現" id="toc-主要發現" class="nav-link" data-scroll-target="#主要發現">主要發現</a></li>
-  <li><a href="#結果" id="toc-結果" class="nav-link" data-scroll-target="#結果">結果</a></li>
-  <li><a href="#繪圖資料" id="toc-繪圖資料" class="nav-link" data-scroll-target="#繪圖資料">繪圖資料</a></li>
   </ul></li>
-  <li><a href="#研究結果圖" id="toc-研究結果圖" class="nav-link" data-scroll-target="#研究結果圖">研究結果圖</a></li>
   <li><a href="#參考文獻" id="toc-參考文獻" class="nav-link" data-scroll-target="#參考文獻">參考文獻</a></li>
   </ul>
 </nav>
@@ -333,13 +295,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>實驗設計：前後測控制組設計；BMAA、禪修動禪、等待名單控制組三組比較。</li>
 <li>實驗組（15 人） vs 主動控制組（禪修，16 人） vs 等待控制組（20 人）。</li>
 <li>介入：4 週、共 12 小時；BMAA 與禪修皆為 8 堂、每堂 90 分鐘，並鼓勵每日居家練習。</li>
-<li>主要依變項：工作記憶容量（OSPAN）、注意力轉換、Stroop 抑制、正念特質（FFMQ）。</li>
+<li>主要依變項：
+<ul>
+<li>執行功能：工作記憶容量（OSPAN）、注意力轉換、Stroop 抑制。</li>
+<li>主觀覺察：正念特質（FFMQ）。</li>
+</ul></li>
 </ul>
 </section>
 <section id="主要發現" class="level3">
 <h3 class="anchored" data-anchor-id="主要發現">主要發現</h3>
 <p>這篇研究最清楚的結果是：短期 BMAA 訓練後，參與者的工作記憶容量提升最明顯。工作記憶可以理解為「腦中暫時放著資訊、同時操作它」的能力，例如一邊記住數字、一邊完成其他判斷。OSPAN 分數越高，代表越能在干擾下維持與更新資訊。</p>
-<p>圖中以前測與後測作為橫軸；每條線代表一個組別。BMAA 組後測上升幅度比禪修組與等待控制組更清楚，表示這種以動作與身體中軸覺察為核心的練習，可能特別有助於工作記憶。</p>
+<p>圖中以前測與後測作為橫軸；每條線代表一個組別。BMAA 組的工作記憶上升幅度較清楚，表示這種以動作與身體中軸覺察為核心的練習，可能特別有助於工作記憶。注意力轉換成本則是越低越好，禪修組下降較明顯，代表注意力切換較有效率。</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -350,237 +316,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="結果" class="level3">
-<h3 class="anchored" data-anchor-id="結果">結果</h3>
-<p>BMAA 組在短期訓練後的工作記憶容量優於禪修組與等待控制組，並在非轉換試次正確率上顯示較好的持續注意力傾向；禪修組則主要提升注意力轉換。兩種訓練皆提升 FFMQ 的「觀察」與「覺察行動」，但皆未改善 Stroop 抑制。</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>指標</th>
-<th>主要發現</th>
-<th>圖像化重點</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>工作記憶容量</td>
-<td>BMAA 後測高於等待控制組與禪修組</td>
-<td>BMAA 對「更新/維持資訊」最突出</td>
-</tr>
-<tr class="even">
-<td>注意力轉換</td>
-<td>禪修組轉換成本低於控制組</td>
-<td>禪修較偏向提升彈性切換</td>
-</tr>
-<tr class="odd">
-<td>持續注意力</td>
-<td>BMAA 非轉換試次正確率高於控制組</td>
-<td>BMAA 可能幫助穩定維持注意</td>
-</tr>
-<tr class="even">
-<td>Stroop 抑制</td>
-<td>無顯著訓練效果</td>
-<td>短期訓練不足以改變慣性反應抑制</td>
-</tr>
-<tr class="odd">
-<td>正念特質</td>
-<td>BMAA 與禪修皆提升觀察、覺察行動</td>
-<td>兩種練習都增加當下覺察</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="繪圖資料" class="level3">
-<h3 class="anchored" data-anchor-id="繪圖資料">繪圖資料</h3>
-<section id="工作記憶容量ospan" class="level4">
-<h4 class="anchored" data-anchor-id="工作記憶容量ospan">工作記憶容量（OSPAN）</h4>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>組別</th>
-<th style="text-align: right;">前測</th>
-<th style="text-align: right;">後測</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>BMAA</td>
-<td style="text-align: right;">3.75</td>
-<td style="text-align: right;">4.58</td>
-</tr>
-<tr class="even">
-<td>禪修</td>
-<td style="text-align: right;">3.52</td>
-<td style="text-align: right;">3.92</td>
-</tr>
-<tr class="odd">
-<td>等待控制</td>
-<td style="text-align: right;">3.65</td>
-<td style="text-align: right;">3.98</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="注意力轉換成本毫秒越低越好" class="level4">
-<h4 class="anchored" data-anchor-id="注意力轉換成本毫秒越低越好">注意力轉換成本（毫秒，越低越好）</h4>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>組別</th>
-<th style="text-align: right;">前測</th>
-<th style="text-align: right;">後測</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>BMAA</td>
-<td style="text-align: right;">218.24</td>
-<td style="text-align: right;">195.99</td>
-</tr>
-<tr class="even">
-<td>禪修</td>
-<td style="text-align: right;">232.30</td>
-<td style="text-align: right;">153.04</td>
-</tr>
-<tr class="odd">
-<td>等待控制</td>
-<td style="text-align: right;">314.53</td>
-<td style="text-align: right;">278.93</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="ffmq-總分" class="level4">
-<h4 class="anchored" data-anchor-id="ffmq-總分">FFMQ 總分</h4>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>組別</th>
-<th style="text-align: right;">前測</th>
-<th style="text-align: right;">後測</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>BMAA</td>
-<td style="text-align: right;">120.47</td>
-<td style="text-align: right;">126.48</td>
-</tr>
-<tr class="even">
-<td>禪修</td>
-<td style="text-align: right;">125.43</td>
-<td style="text-align: right;">126.88</td>
-</tr>
-<tr class="odd">
-<td>等待控制</td>
-<td style="text-align: right;">120.00</td>
-<td style="text-align: right;">116.61</td>
-</tr>
-</tbody>
-</table>
-</section>
-</section>
-</section>
-<section id="研究結果圖" class="level2">
-<h2 class="anchored" data-anchor-id="研究結果圖">研究結果圖</h2>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-註釋
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>下列圖表根據摘要草稿中的繪圖資料轉為 R/ggplot 圖。正式發佈前，仍建議回到原論文確認數值、統計檢定與圖題。</p>
-</div>
-</div>
-<section id="工作記憶容量ospan-1" class="level4">
-<h4 class="anchored" data-anchor-id="工作記憶容量ospan-1">工作記憶容量（OSPAN）</h4>
-<div class="cell">
-<details class="code-fold">
-<summary>程式碼</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">time =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"前測"</span>, <span class="st">"後測"</span>), <span class="at">times =</span> <span class="dv">3</span>),</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">group =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"BMAA"</span>, <span class="st">"禪修"</span>, <span class="st">"等待控制"</span>), <span class="at">each =</span> <span class="dv">2</span>),</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> <span class="fu">c</span>(<span class="fl">3.75</span>, <span class="fl">4.58</span>, <span class="fl">3.52</span>, <span class="fl">3.92</span>, <span class="fl">3.65</span>, <span class="fl">3.98</span>)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">bmaa_line_plot</span>(dat, <span class="st">"工作記憶容量（OSPAN）"</span>)</span></code></pre></div><button title="複製到剪貼簿" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="2016-teng-confucius_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" style="width:100.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="注意力轉換成本毫秒越低越好-1" class="level4">
-<h4 class="anchored" data-anchor-id="注意力轉換成本毫秒越低越好-1">注意力轉換成本（毫秒，越低越好）</h4>
-<div class="cell">
-<details class="code-fold">
-<summary>程式碼</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">time =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"前測"</span>, <span class="st">"後測"</span>), <span class="at">times =</span> <span class="dv">3</span>),</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">group =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"BMAA"</span>, <span class="st">"禪修"</span>, <span class="st">"等待控制"</span>), <span class="at">each =</span> <span class="dv">2</span>),</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> <span class="fu">c</span>(<span class="fl">218.24</span>, <span class="fl">195.99</span>, <span class="fl">232.3</span>, <span class="fl">153.04</span>, <span class="fl">314.53</span>, <span class="fl">278.93</span>)</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="fu">bmaa_line_plot</span>(dat, <span class="st">"注意力轉換成本（毫秒，越低越好）"</span>)</span></code></pre></div><button title="複製到剪貼簿" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="2016-teng-confucius_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" style="width:100.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="ffmq-總分-1" class="level4">
-<h4 class="anchored" data-anchor-id="ffmq-總分-1">FFMQ 總分</h4>
-<div class="cell">
-<details class="code-fold">
-<summary>程式碼</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">time =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"前測"</span>, <span class="st">"後測"</span>), <span class="at">times =</span> <span class="dv">3</span>),</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">group =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"BMAA"</span>, <span class="st">"禪修"</span>, <span class="st">"等待控制"</span>), <span class="at">each =</span> <span class="dv">2</span>),</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> <span class="fu">c</span>(<span class="fl">120.47</span>, <span class="fl">126.48</span>, <span class="fl">125.43</span>, <span class="fl">126.88</span>, <span class="dv">120</span>, <span class="fl">116.61</span>)</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="fu">bmaa_line_plot</span>(dat, <span class="st">"FFMQ 總分"</span>)</span></code></pre></div><button title="複製到剪貼簿" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="2016-teng-confucius_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" style="width:100.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
 </section>
 <section id="參考文獻" class="level2">
 <h2 class="anchored" data-anchor-id="參考文獻">參考文獻</h2>
 <p>Teng, S.-C., &amp; Lien, Y.-W. (2016). What Confucius practiced is good for your mind: Examining the effect of a contemplative practice in Confucian tradition on executive functions. <em>Consciousness and Cognition, 42</em>, 204-215. https://doi.org/10.1016/j.concog.2016.03.016</p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-警告
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本頁為摘要草稿頁，內容與數值仍需依原論文校對後再作正式推廣使用。</p>
-</div>
-</div>
 
 
 </section>

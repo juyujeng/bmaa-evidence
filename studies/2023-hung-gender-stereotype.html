@@ -24,41 +24,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -279,10 +244,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#方法" id="toc-方法" class="nav-link" data-scroll-target="#方法">方法</a></li>
   <li><a href="#主要發現" id="toc-主要發現" class="nav-link" data-scroll-target="#主要發現">主要發現</a></li>
-  <li><a href="#結果" id="toc-結果" class="nav-link" data-scroll-target="#結果">結果</a></li>
-  <li><a href="#繪圖資料" id="toc-繪圖資料" class="nav-link" data-scroll-target="#繪圖資料">繪圖資料</a></li>
   </ul></li>
-  <li><a href="#研究結果圖" id="toc-研究結果圖" class="nav-link" data-scroll-target="#研究結果圖">研究結果圖</a></li>
   <li><a href="#參考文獻" id="toc-參考文獻" class="nav-link" data-scroll-target="#參考文獻">參考文獻</a></li>
   </ul>
 </nav>
@@ -333,13 +295,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>實驗設計：三因子混合設計；組別（正念引導 vs 等待控制）× 文章一致性（一致 vs 不一致）× 時間（前測 vs 後測）。</li>
 <li>實驗組（27 人） vs 等待控制組（31 人）。</li>
 <li>介入：三次短期正念引導，每次約 30 分鐘；包含源自 BMAA 的舌根運動、眼球運動、單鼻孔呼吸作為暖身，接續觀呼吸與身體掃描。</li>
-<li>主要依變項：眼動閱讀指標，尤其性別特質詞彙與段落的再閱讀時間，用以反映內隱性別刻板印象。</li>
+<li>主要依變項：眼動閱讀指標，尤其性別特質詞彙與段落的再閱讀時間。再閱讀時間越長，代表讀者越可能覺得內容不符合預期，需要回頭重新理解。</li>
 </ul>
 </section>
 <section id="主要發現" class="level3">
 <h3 class="anchored" data-anchor-id="主要發現">主要發現</h3>
 <p>這篇研究用眼動資料觀察讀者是否因性別刻板印象被打破而回頭多讀。再閱讀時間越長，代表讀者越可能覺得內容不符合預期、需要重新理解。若「不一致」文章引發較長再閱讀，表示內隱性別刻板印象正在影響閱讀。</p>
-<p>圖中正念引導組在後測時，不一致文章的再閱讀時間下降，原本的性別不一致效應消失；控制組則沒有呈現同樣模式。這表示短期正念引導可能降低閱讀中的內隱性別刻板印象。</p>
+<p>圖中正念引導組在後測時，不一致文章的再閱讀時間下降，原本「看到不符合性別刻板印象內容就回頭多讀」的現象變弱；控制組則沒有呈現同樣模式。這表示短期正念引導可能降低閱讀中的內隱性別刻板印象。</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -350,202 +312,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="結果" class="level3">
-<h3 class="anchored" data-anchor-id="結果">結果</h3>
-<p>前測時兩組皆出現性別不一致效應，表示性別刻板印象操弄有效；正念引導後，實驗組在第三段再閱讀時間與第一段性別特質詞彙再閱讀時間的性別不一致效應消失，控制組則未呈現同樣改變。</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>指標</th>
-<th>主要發現</th>
-<th>圖像化重點</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>前測操弄</td>
-<td>不一致文章引發較多再閱讀</td>
-<td>讀者自動偵測性別刻板違反</td>
-</tr>
-<tr class="even">
-<td>正念引導後</td>
-<td>實驗組不一致效應消失</td>
-<td>短期正念降低內隱性別刻板印象</td>
-</tr>
-<tr class="odd">
-<td>控制組</td>
-<td>一致/不一致差異維持</td>
-<td>改變並非單純重測效果</td>
-</tr>
-<tr class="even">
-<td>BMAA 相關性</td>
-<td>BMAA 動態暖身協助進入正念狀態</td>
-<td>可作為短期正念引導的身體入口</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="繪圖資料" class="level3">
-<h3 class="anchored" data-anchor-id="繪圖資料">繪圖資料</h3>
-<section id="第三段再閱讀時間毫秒" class="level4">
-<h4 class="anchored" data-anchor-id="第三段再閱讀時間毫秒">第三段再閱讀時間（毫秒）</h4>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>組別</th>
-<th>一致性</th>
-<th style="text-align: right;">前測</th>
-<th style="text-align: right;">後測</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>正念引導</td>
-<td>一致</td>
-<td style="text-align: right;">1551.94</td>
-<td style="text-align: right;">2566.15</td>
-</tr>
-<tr class="even">
-<td>正念引導</td>
-<td>不一致</td>
-<td style="text-align: right;">3173.46</td>
-<td style="text-align: right;">1765.30</td>
-</tr>
-<tr class="odd">
-<td>等待控制</td>
-<td>一致</td>
-<td style="text-align: right;">2106.19</td>
-<td style="text-align: right;">1711.23</td>
-</tr>
-<tr class="even">
-<td>等待控制</td>
-<td>不一致</td>
-<td style="text-align: right;">2012.86</td>
-<td style="text-align: right;">1739.40</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="第一段再閱讀時間毫秒" class="level4">
-<h4 class="anchored" data-anchor-id="第一段再閱讀時間毫秒">第一段再閱讀時間（毫秒）</h4>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>組別</th>
-<th>一致性</th>
-<th style="text-align: right;">前測</th>
-<th style="text-align: right;">後測</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>正念引導</td>
-<td>一致</td>
-<td style="text-align: right;">3990.32</td>
-<td style="text-align: right;">2997.80</td>
-</tr>
-<tr class="even">
-<td>正念引導</td>
-<td>不一致</td>
-<td style="text-align: right;">5010.09</td>
-<td style="text-align: right;">4370.09</td>
-</tr>
-<tr class="odd">
-<td>等待控制</td>
-<td>一致</td>
-<td style="text-align: right;">3160.53</td>
-<td style="text-align: right;">2636.31</td>
-</tr>
-<tr class="even">
-<td>等待控制</td>
-<td>不一致</td>
-<td style="text-align: right;">3226.82</td>
-<td style="text-align: right;">3273.55</td>
-</tr>
-</tbody>
-</table>
-</section>
-</section>
-</section>
-<section id="研究結果圖" class="level2">
-<h2 class="anchored" data-anchor-id="研究結果圖">研究結果圖</h2>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-註釋
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>下列圖表根據摘要草稿中的繪圖資料轉為 R/ggplot 圖。正式發佈前，仍建議回到原論文確認數值、統計檢定與圖題。</p>
-</div>
-</div>
-<section id="第三段再閱讀時間毫秒-1" class="level4">
-<h4 class="anchored" data-anchor-id="第三段再閱讀時間毫秒-1">第三段再閱讀時間（毫秒）</h4>
-<div class="cell">
-<details class="code-fold">
-<summary>程式碼</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">time =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"前測"</span>, <span class="st">"後測"</span>), <span class="at">times =</span> <span class="dv">4</span>),</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">group =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"正念引導-一致"</span>, <span class="st">"正念引導-不一致"</span>, <span class="st">"等待控制-一致"</span>, <span class="st">"等待控制-不一致"</span>), <span class="at">each =</span> <span class="dv">2</span>),</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> <span class="fu">c</span>(<span class="fl">1551.94</span>, <span class="fl">2566.15</span>, <span class="fl">3173.46</span>, <span class="fl">1765.3</span>, <span class="fl">2106.19</span>, <span class="fl">1711.23</span>, <span class="fl">2012.86</span>, <span class="fl">1739.4</span>)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">bmaa_line_plot</span>(dat, <span class="st">"第三段再閱讀時間（毫秒）"</span>)</span></code></pre></div><button title="複製到剪貼簿" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="2023-hung-gender-stereotype_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" style="width:100.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="第一段再閱讀時間毫秒-1" class="level4">
-<h4 class="anchored" data-anchor-id="第一段再閱讀時間毫秒-1">第一段再閱讀時間（毫秒）</h4>
-<div class="cell">
-<details class="code-fold">
-<summary>程式碼</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">time =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"前測"</span>, <span class="st">"後測"</span>), <span class="at">times =</span> <span class="dv">4</span>),</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">group =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"正念引導-一致"</span>, <span class="st">"正念引導-不一致"</span>, <span class="st">"等待控制-一致"</span>, <span class="st">"等待控制-不一致"</span>), <span class="at">each =</span> <span class="dv">2</span>),</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> <span class="fu">c</span>(<span class="fl">3990.32</span>, <span class="fl">2997.8</span>, <span class="fl">5010.09</span>, <span class="fl">4370.09</span>, <span class="fl">3160.53</span>, <span class="fl">2636.31</span>, <span class="fl">3226.82</span>, <span class="fl">3273.55</span>)</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="fu">bmaa_line_plot</span>(dat, <span class="st">"第一段再閱讀時間（毫秒）"</span>)</span></code></pre></div><button title="複製到剪貼簿" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="2023-hung-gender-stereotype_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" style="width:100.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
 </section>
 <section id="參考文獻" class="level2">
 <h2 class="anchored" data-anchor-id="參考文獻">參考文獻</h2>
 <p>洪珮瑩, 陳苡禕, &amp; 葉理豪. (2023). 短期正念引導降低閱讀時的內隱性別刻板印象. <em>教育心理學報, 54</em>(3), 515-536. https://doi.org/10.6251/BEP.202303_54(3).0001</p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-警告
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本頁為摘要草稿頁，內容與數值仍需依原論文校對後再作正式推廣使用。</p>
-</div>
-</div>
 
 
 </section>

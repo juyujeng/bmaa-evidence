@@ -3,6 +3,7 @@ date: 2016-03-22
 author: "Teng, S.-C., & Lien, Y.-W."
 lastmod: 2026-05-26
 title: "What Confucius practiced is good for your mind: Examining the effect of a contemplative practice in Confucian tradition on executive functions"
+image: "../assets/study-covers/2016-teng-confucius.png"
 tags:
   - BMAA
 categories: [BMAA, 研究摘要]
@@ -12,6 +13,12 @@ categories: [BMAA, 研究摘要]
 #| include: false
 source("../R/bmaa_plot_theme.R")
 ```
+
+::: {.study-cover}
+<img src="../assets/study-covers/2016-teng-confucius.png" alt="短期 BMAA 與禪修對執行功能的不同效果">
+
+封面圖：BMAA 組的工作記憶容量提升較清楚，禪修組的注意力轉換成本下降較明顯。
+:::
 
 ## What Confucius practiced is good for your mind
 
@@ -52,4 +59,3 @@ bmaa_facet_line_plot(
 ## 參考文獻
 
 Teng, S.-C., & Lien, Y.-W. (2016). What Confucius practiced is good for your mind: Examining the effect of a contemplative practice in Confucian tradition on executive functions. *Consciousness and Cognition, 42*, 204-215. https://doi.org/10.1016/j.concog.2016.03.016
-

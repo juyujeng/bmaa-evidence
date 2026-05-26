@@ -3,6 +3,7 @@ date: 2024-11-01
 author: "邱敬惠"
 lastmod: 2026-05-21
 title: "身心中軸覺察訓練結合清醒夢療法對惡夢困擾者的清醒夢、惡夢與睡眠品質的影響"
+image: "../assets/study-covers/2024-chiu-nightmare-lucid-dream.png"
 tags:
   - BMAA
 categories: [BMAA, 研究摘要]
@@ -12,6 +13,12 @@ categories: [BMAA, 研究摘要]
 #| include: false
 source("../R/bmaa_plot_theme.R")
 ```
+
+::: {.study-cover}
+<img src="../assets/study-covers/2024-chiu-nightmare-lucid-dream.png" alt="BMAA-MILD 減少惡夢負擔並改善睡眠">
+
+封面圖：BMAA-MILD 組的惡夢困擾、惡夢影響與睡眠品質分數在後測下降。
+:::
 
 ## 身心中軸覺察訓練結合清醒夢療法對惡夢困擾者的影響
 
@@ -66,4 +73,3 @@ flowchart LR
 ## 參考文獻
 
 邱敬惠. (2024). *身心中軸覺察訓練結合清醒夢療法對惡夢困擾者的清醒夢、惡夢與睡眠品質的影響* [碩士論文，中原大學].
-

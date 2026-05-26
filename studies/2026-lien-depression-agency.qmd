@@ -3,6 +3,7 @@ date: 2026-04-07
 author: "Lien, Y.-W., Teng, S.-C., & Wei, L.-Y."
 lastmod: 2026-05-21
 title: "From the body to the mind: interoception and sense of agency as mechanisms of depression reduction in the Body–Mind Axial Awareness (BMAA)"
+image: "../assets/study-covers/2026-lien-depression-agency.png"
 tags:
   - BMAA
 categories: [BMAA, 研究摘要]
@@ -12,6 +13,12 @@ categories: [BMAA, 研究摘要]
 #| include: false
 source("../R/bmaa_plot_theme.R")
 ```
+
+::: {.study-cover}
+<img src="../assets/study-covers/2026-lien-depression-agency.png" alt="BMAA 降低憂鬱傾向與負向能動感">
+
+封面圖：BMAA 組在訓練後憂鬱傾向與負向能動感下降。
+:::
 
 ## From the body to the mind: interoception and sense of agency as mechanisms of depression reduction in BMAA
 

@@ -3,6 +3,7 @@ date: 2018-07-01
 author: "張憶如"
 lastmod: 2026-05-26
 title: "身心中軸覺察與綜合活動訓練增進兒童之執行功能及情緒調節"
+image: "../assets/study-covers/2018-chang-children-executive-emotion.png"
 tags:
   - BMAA
 categories: [BMAA, 研究摘要]
@@ -12,6 +13,12 @@ categories: [BMAA, 研究摘要]
 #| include: false
 source("../R/bmaa_plot_theme.R")
 ```
+
+::: {.study-cover}
+<img src="../assets/study-covers/2018-chang-children-executive-emotion.png" alt="兒童 BMAA-C 與綜合活動的成效剖面">
+
+封面圖：BMAA-C 的亮點偏向工作記憶，綜合活動組在情緒調節量表上變化較大。
+:::
 
 ## 身心中軸覺察與綜合活動訓練增進兒童之執行功能及情緒調節
 

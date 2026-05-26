@@ -1,6 +1,7 @@
 ---
 title: "Feel your body: Effects of a short-term in-class dynamic contemplative course on children’s interoception, executive control, emotion regulation, and motor coordination"
 author: "Lee, M.-N."
+image: "../../assets/study-covers-en/2019-lee-feel-your-body.png"
 lang: en
 language: ../../assets/language-en.yml
 toc-title: "On this page"
@@ -10,6 +11,12 @@ toc-title: "On this page"
 #| include: false
 source("../../R/bmaa_plot_theme.R")
 ```
+
+::: {.study-cover}
+<img src="../../assets/study-covers-en/2019-lee-feel-your-body.png" alt="Breathing relaxation strategy increased">
+
+Cover figure: children in the BMAA-C group used breathing relaxation more often after training.
+:::
 
 ## Method
 

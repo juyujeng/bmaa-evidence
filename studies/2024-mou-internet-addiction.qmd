@@ -3,6 +3,7 @@ date: 2024-11-01
 author: "牟書琪"
 lastmod: 2026-05-25
 title: "內感覺能力提升對於降低網路成癮傾向的影響：以身心中軸覺察訓練為介入的效果與機制探討"
+image: "../assets/study-covers/2024-mou-internet-addiction.png"
 tags:
   - BMAA
 categories: [BMAA, 研究摘要]
@@ -12,6 +13,12 @@ categories: [BMAA, 研究摘要]
 #| include: false
 source("../R/bmaa_plot_theme.R")
 ```
+
+::: {.study-cover}
+<img src="../assets/study-covers/2024-mou-internet-addiction.png" alt="BMAA 降低網路成癮傾向">
+
+封面圖：BMAA 組的 CIAS 總分與網路成癮核心症狀在訓練後下降。
+:::
 
 ## 內感覺能力提升對於降低網路成癮傾向的影響
 
@@ -81,4 +88,3 @@ flowchart LR
 ## 參考文獻
 
 牟書琪. (2024). *內感覺能力提升對於降低網路成癮傾向的影響：以身心中軸覺察訓練為介入的效果與機制探討* [碩士論文，中原大學].
-

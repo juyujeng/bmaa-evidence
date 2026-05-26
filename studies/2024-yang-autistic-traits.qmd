@@ -3,6 +3,7 @@ date: 2024-06-01
 author: "楊捷如"
 lastmod: 2026-05-21
 title: "身心中軸覺察對於高自閉症特質成年人之內感覺、述情障礙及同理心的影響"
+image: "../assets/study-covers/2024-yang-autistic-traits.png"
 tags:
   - BMAA
 categories: [BMAA, 研究摘要]
@@ -12,6 +13,12 @@ categories: [BMAA, 研究摘要]
 #| include: false
 source("../R/bmaa_plot_theme.R")
 ```
+
+::: {.study-cover}
+<img src="../assets/study-covers/2024-yang-autistic-traits.png" alt="述情障礙下降">
+
+封面圖：BMAA 組在訓練後述情障礙分數下降，表示情緒辨識與表達困難減少。
+:::
 
 ## 身心中軸覺察對於高自閉症特質成年人之內感覺、述情障礙及同理心的影響
 

@@ -1,6 +1,7 @@
 ---
 title: "Effects of BMAA on interoception, alexithymia, and empathy among adults with high autistic traits"
 author: "Yang, C.-J."
+image: "../../assets/study-covers-en/2024-yang-autistic-traits.png"
 lang: en
 language: ../../assets/language-en.yml
 toc-title: "On this page"
@@ -10,6 +11,12 @@ toc-title: "On this page"
 #| include: false
 source("../../R/bmaa_plot_theme.R")
 ```
+
+::: {.study-cover}
+<img src="../../assets/study-covers-en/2024-yang-autistic-traits.png" alt="Alexithymia decreased">
+
+Cover figure: after BMAA, TAS-20 alexithymia scores decreased, indicating less difficulty identifying and describing emotions.
+:::
 
 ## Method
 

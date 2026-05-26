@@ -3,6 +3,7 @@ date: 2020-06-01
 author: "許惟智"
 lastmod: 2026-05-26
 title: "探討兩週身心中軸覺察練習對大學生情緒調節的成效及覺察傾向、工作記憶的中介角色"
+image: "../assets/study-covers/2020-hsu-emotion-regulation.png"
 tags:
   - BMAA
 categories: [BMAA, 研究摘要]
@@ -12,6 +13,12 @@ categories: [BMAA, 研究摘要]
 #| include: false
 source("../R/bmaa_plot_theme.R")
 ```
+
+::: {.study-cover}
+<img src="../assets/study-covers/2020-hsu-emotion-regulation.png" alt="短版 BMAA-S 改善情緒調節">
+
+封面圖：BMAA-S 組的憂鬱與情緒調節困難下降，身體覺察提升。
+:::
 
 ## 探討兩週身心中軸覺察練習對大學生情緒調節的成效
 

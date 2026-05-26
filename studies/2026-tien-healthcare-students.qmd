@@ -3,6 +3,7 @@ date: 2026-04-10
 author: "Tien, Y.-M., Lin, C.-Y., Lien, Y.-W., & Hsu, L.-C."
 lastmod: 2026-05-21
 title: "From body to mind: how body-mind axial awareness training enhances body awareness, mindfulness, positive embodiment and mental health in healthcare students"
+image: "../assets/study-covers/2026-tien-healthcare-students.png"
 tags:
   - BMAA
 categories: [BMAA, 研究摘要]
@@ -12,6 +13,12 @@ categories: [BMAA, 研究摘要]
 #| include: false
 source("../R/bmaa_plot_theme.R")
 ```
+
+::: {.study-cover}
+<img src="../assets/study-covers/2026-tien-healthcare-students.png" alt="BMAA 提升醫療學生身心健康指標">
+
+封面圖：BMAA 組在身體覺察、心理健康與生活滿意度上升，述情困難下降。
+:::
 
 ## From body to mind: BMAA enhances body awareness, mindfulness, positive embodiment and mental health
 
@@ -55,5 +62,3 @@ bmaa_facet_line_plot(dat, "BMAA 提升醫療學生的身心健康指標", ylab =
 ## 參考文獻
 
 Tien, Y.-M., Lin, C.-Y., Lien, Y.-W., & Hsu, L.-C. (2026). From body to mind: How body-mind axial awareness training enhances body awareness, mindfulness, positive embodiment and mental health in healthcare students. *Health Psychology and Behavioral Medicine, 14*(1), Article 2656029. https://doi.org/10.1080/21642850.2026.2656029
-
-

@@ -3,6 +3,7 @@ date: 2020-08-01
 author: "翁宛婷"
 lastmod: 2026-05-26
 title: "探討短期動態身心覺察課程對國小教師內感覺覺察、心理韌性與壓力知覺的介入成效"
+image: "../assets/study-covers/2020-weng-teachers-stress-resilience.png"
 tags:
   - BMAA
 categories: [BMAA, 研究摘要]
@@ -12,6 +13,12 @@ categories: [BMAA, 研究摘要]
 #| include: false
 source("../R/bmaa_plot_theme.R")
 ```
+
+::: {.study-cover}
+<img src="../assets/study-covers/2020-weng-teachers-stress-resilience.png" alt="教師 BMAA 課程降低壓力並提升韌性">
+
+封面圖：教師完成 BMAA 課程後，壓力與負向情緒下降，心理韌性提升。
+:::
 
 ## 探討短期動態身心覺察課程對國小教師內感覺覺察、心理韌性與壓力知覺的介入成效
 

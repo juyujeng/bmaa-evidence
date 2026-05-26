@@ -3,6 +3,7 @@ date: 2019-12-01
 author: "李茂寧"
 lastmod: 2026-05-26
 title: "感覺你的身體：短期入班動態靜觀課程對學童內感覺、執行控制功能、情緒調節及運動協調之介入成效"
+image: "../assets/study-covers/2019-lee-feel-your-body.png"
 tags:
   - BMAA
 categories: [BMAA, 研究摘要]
@@ -12,6 +13,12 @@ categories: [BMAA, 研究摘要]
 #| include: false
 source("../R/bmaa_plot_theme.R")
 ```
+
+::: {.study-cover}
+<img src="../assets/study-covers/2019-lee-feel-your-body.png" alt="BMAA-C 促進更自主的情緒調節策略">
+
+封面圖：BMAA-C 組在後測時更常使用呼吸放鬆與再評價等自主調節策略。
+:::
 
 ## 感覺你的身體
 

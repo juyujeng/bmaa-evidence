@@ -1,6 +1,7 @@
 ---
 title: "An initial exploration of body-mind interaction: Effects of BMAA on body sensation, working memory, and attentional control"
 author: "Lee, S.-Y."
+image: "../../assets/study-covers-en/2017-lee-body-mind-interaction.png"
 lang: en
 language: ../../assets/language-en.yml
 toc-title: "On this page"
@@ -10,6 +11,12 @@ toc-title: "On this page"
 #| include: false
 source("../../R/bmaa_plot_theme.R")
 ```
+
+::: {.study-cover}
+<img src="../../assets/study-covers-en/2017-lee-body-mind-interaction.png" alt="Cognitive improvement after BMAA-C">
+
+Cover figure: BMAA-C showed a higher working-memory improvement rate than the control condition.
+:::
 
 ## Method
 

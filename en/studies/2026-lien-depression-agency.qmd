@@ -1,6 +1,7 @@
 ---
 title: "From the body to the mind: Interoception and sense of agency as mechanisms of depression reduction in BMAA"
 author: "Lien, Y.-W., Teng, S.-C., & Wei, L.-Y."
+image: "../../assets/study-covers-en/2026-lien-depression-agency.png"
 lang: en
 language: ../../assets/language-en.yml
 toc-title: "On this page"
@@ -10,6 +11,12 @@ toc-title: "On this page"
 #| include: false
 source("../../R/bmaa_plot_theme.R")
 ```
+
+::: {.study-cover}
+<img src="../../assets/study-covers-en/2026-lien-depression-agency.png" alt="Depression decreased">
+
+Cover figure: after BMAA, depression scores decreased relative to the active-control group.
+:::
 
 ## Method
 

@@ -3,6 +3,7 @@ date: 2017-01-01
 author: "李少揚"
 lastmod: 2026-05-26
 title: "身心互動途徑初探：以「身心中軸覺察訓練」對身體感覺、工作記憶與注意力控制功能的提升效果為例"
+image: "../assets/study-covers/2017-lee-body-mind-interaction.png"
 tags:
   - BMAA
 categories: [BMAA, 研究摘要]
@@ -12,6 +13,12 @@ categories: [BMAA, 研究摘要]
 #| include: false
 source("../R/bmaa_plot_theme.R")
 ```
+
+::: {.study-cover}
+<img src="../assets/study-covers/2017-lee-body-mind-interaction.png" alt="BMAA-C 的認知改善率">
+
+封面圖：兒童版 BMAA-C 的工作記憶改善率較高，注意力穩定度呈現不同變化。
+:::
 
 ## 身心互動途徑初探
 

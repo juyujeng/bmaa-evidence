@@ -4,22 +4,202 @@ title: "研究清單"
 
 本頁依年份由新至舊列出目前已整理的 BMAA 相關研究。每一頁包含研究方法、主要結果與目前可用的繪圖資料草稿。
 
-::: {.callout-note}
-研究摘要由既有草稿轉入，尚未逐篇完成原文校對。正式發佈前建議確認研究設計、樣本數、統計結果、圖表數值與引用格式。
+
+::: {.study-card-grid}
+
+::: {.study-card}
+<div class="study-card-body">
+<p class="study-card-title">From body to mind: BMAA enhances body awareness, mindfulness, positive embodiment and mental health</p>
+<p class="study-card-meta">2026 · Tien, Y.-M., Lin, C.-Y., Lien, Y.-W., & Hsu, L.-C.</p>
+<img class="study-card-cover" src="../assets/study-covers/2026-tien-healthcare-students.png" alt="BMAA 提升醫療學生身心健康指標">
+<p>醫療相關科系學生接受 8 週 BMAA 後，身體覺察、心理健康與生活滿意度朝正向改變。</p>
+<ul>
+<li>提升身體覺察與心理健康</li>
+<li>生活滿意度上升</li>
+<li>述情困難下降</li>
+</ul>
+<p><a class="study-card-link" href="2026-tien-healthcare-students.qmd">閱讀研究摘要</a></p>
+</div>
 :::
 
-| 年份 | 作者 | 研究 |
-|---|---|---|
-| 2026 | Tien, Y.-M., Lin, C.-Y., Lien, Y.-W., & Hsu, L.-C. | [From body to mind: how body-mind axial awareness training enhances body awareness, mindfulness, positive embodiment and mental health in healthcare students](2026-tien-healthcare-students.qmd) |
-| 2026 | Lien, Y.-W., Teng, S.-C., & Wei, L.-Y. | [From the body to the mind: interoception and sense of agency as mechanisms of depression reduction in the Body–Mind Axial Awareness (BMAA)](2026-lien-depression-agency.qmd) |
-| 2024 | 邱敬惠 | [身心中軸覺察訓練結合清醒夢療法對惡夢困擾者的清醒夢、惡夢與睡眠品質的影響](2024-chiu-nightmare-lucid-dream.qmd) |
-| 2024 | 牟書琪 | [內感覺能力提升對於降低網路成癮傾向的影響：以身心中軸覺察訓練為介入的效果與機制探討](2024-mou-internet-addiction.qmd) |
-| 2024 | 楊捷如 | [身心中軸覺察對於高自閉症特質成年人之內感覺、述情障礙及同理心的影響](2024-yang-autistic-traits.qmd) |
-| 2023 | 葉淨維, 連韻文, 陳人瑜, 莊博雅, 鄭惟馨, & 陳顥齡 | [營隊式動態靜觀課程對兒童持續注意力與平衡能力影響之初探](2023-yeh-camp-attention-balance.qmd) |
-| 2023 | 洪珮瑩, 陳苡禕, & 葉理豪 | [短期正念引導降低閱讀時的內隱性別刻板印象](2023-hung-gender-stereotype.qmd) |
-| 2020 | 翁宛婷 | [探討短期動態身心覺察課程對國小教師內感覺覺察、心理韌性與壓力知覺的介入成效](2020-weng-teachers-stress-resilience.qmd) |
-| 2020 | 許惟智 | [探討兩週身心中軸覺察練習對大學生情緒調節的成效及覺察傾向、工作記憶的中介角色](2020-hsu-emotion-regulation.qmd) |
-| 2019 | 李茂寧 | [感覺你的身體：短期入班動態靜觀課程對學童內感覺、執行控制功能、情緒調節及運動協調之介入成效](2019-lee-feel-your-body.qmd) |
-| 2018 | 張憶如 | [身心中軸覺察與綜合活動訓練增進兒童之執行功能及情緒調節](2018-chang-children-executive-emotion.qmd) |
-| 2017 | 李少揚 | [身心互動途徑初探：以「身心中軸覺察訓練」對身體感覺、工作記憶與注意力控制功能的提升效果為例](2017-lee-body-mind-interaction.qmd) |
-| 2016 | Teng, S.-C., & Lien, Y.-W. | [What Confucius practiced is good for your mind: Examining the effect of a contemplative practice in Confucian tradition on executive functions](2016-teng-confucius.qmd) |
+::: {.study-card}
+<div class="study-card-body">
+<p class="study-card-title">From the body to the mind: interoception and sense of agency as mechanisms of depression reduction</p>
+<p class="study-card-meta">2026 · Lien, Y.-W., Teng, S.-C., & Wei, L.-Y.</p>
+<img class="study-card-cover" src="../assets/study-covers/2026-lien-depression-agency.png" alt="BMAA 降低憂鬱傾向與負向能動感">
+<p>這篇研究把憂鬱改善放在身體覺察與能動感的路徑中理解，指出 BMAA 可能先提升內感覺，再降低無力感。</p>
+<ul>
+<li>憂鬱傾向下降</li>
+<li>內感覺覺察力提升</li>
+<li>負向能動感下降</li>
+</ul>
+<p><a class="study-card-link" href="2026-lien-depression-agency.qmd">閱讀研究摘要</a></p>
+</div>
+:::
+
+::: {.study-card}
+<div class="study-card-body">
+<p class="study-card-title">身心中軸覺察訓練結合清醒夢療法對惡夢困擾者的影響</p>
+<p class="study-card-meta">2024 · 邱敬惠</p>
+<img class="study-card-cover" src="../assets/study-covers/2024-chiu-nightmare-lucid-dream.png" alt="BMAA-MILD 減少惡夢負擔並改善睡眠">
+<p>BMAA-MILD 將身體覺察與清醒夢技巧結合，主要成果集中在降低惡夢負擔與改善睡眠品質。</p>
+<ul>
+<li>惡夢困擾下降</li>
+<li>惡夢對生活影響降低</li>
+<li>睡眠品質改善</li>
+</ul>
+<p><a class="study-card-link" href="2024-chiu-nightmare-lucid-dream.qmd">閱讀研究摘要</a></p>
+</div>
+:::
+
+::: {.study-card}
+<div class="study-card-body">
+<p class="study-card-title">內感覺能力提升對於降低網路成癮傾向的影響</p>
+<p class="study-card-meta">2024 · 牟書琪</p>
+<img class="study-card-cover" src="../assets/study-covers/2024-mou-internet-addiction.png" alt="BMAA 降低網路成癮傾向">
+<p>以 BMAA 作為介入，觀察網路成癮傾向與內感覺能力是否同步改變。</p>
+<ul>
+<li>CIAS 總分下降</li>
+<li>網路成癮核心症狀下降</li>
+<li>內感覺覺察與準確度提升</li>
+</ul>
+<p><a class="study-card-link" href="2024-mou-internet-addiction.qmd">閱讀研究摘要</a></p>
+</div>
+:::
+
+::: {.study-card}
+<div class="study-card-body">
+<p class="study-card-title">身心中軸覺察對高自閉症特質成年人之內感覺、述情障礙及同理心的影響</p>
+<p class="study-card-meta">2024 · 楊捷如</p>
+<img class="study-card-cover" src="../assets/study-covers/2024-yang-autistic-traits.png" alt="述情障礙下降">
+<p>這篇研究關注高自閉症特質成人，檢視 BMAA 是否支持身體覺察、情緒辨識與社會訊息理解。</p>
+<ul>
+<li>內感覺提升</li>
+<li>述情障礙下降</li>
+<li>低強度表情辨識提升</li>
+</ul>
+<p><a class="study-card-link" href="2024-yang-autistic-traits.qmd">閱讀研究摘要</a></p>
+</div>
+:::
+
+::: {.study-card}
+<div class="study-card-body">
+<p class="study-card-title">營隊式動態靜觀課程對兒童持續注意力與平衡能力影響之初探</p>
+<p class="study-card-meta">2023 · 葉淨維, 連韻文, 陳人瑜, 莊博雅, 鄭惟馨, & 陳顥齡</p>
+<img class="study-card-cover" src="../assets/study-covers/2023-yeh-camp-attention-balance.png" alt="六天營隊式 BMAA 的個案改善摘要">
+<p>小樣本個案系列研究，初步觀察六天營隊式 BMAA 對兒童注意力與平衡能力的可能影響。</p>
+<ul>
+<li>平衡能力改善人數最多</li>
+<li>部分兒童注意力改善</li>
+<li>適合作為初步探索</li>
+</ul>
+<p><a class="study-card-link" href="2023-yeh-camp-attention-balance.qmd">閱讀研究摘要</a></p>
+</div>
+:::
+
+::: {.study-card}
+<div class="study-card-body">
+<p class="study-card-title">短期正念引導降低閱讀時的內隱性別刻板印象</p>
+<p class="study-card-meta">2023 · 洪珮瑩, 陳苡禕, & 葉理豪</p>
+<img class="study-card-cover" src="../assets/study-covers/2023-hung-gender-stereotype.png" alt="正念引導降低閱讀中的性別不一致效應">
+<p>以眼動閱讀資料檢驗短期正念引導是否降低讀者面對性別刻板印象不一致內容時的再閱讀反應。</p>
+<ul>
+<li>不一致文章再閱讀時間下降</li>
+<li>內隱性別刻板印象效應變弱</li>
+<li>使用源自 BMAA 的身體暖身練習</li>
+</ul>
+<p><a class="study-card-link" href="2023-hung-gender-stereotype.qmd">閱讀研究摘要</a></p>
+</div>
+:::
+
+::: {.study-card}
+<div class="study-card-body">
+<p class="study-card-title">短期動態身心覺察課程對國小教師壓力、韌性與內感覺覺察的影響</p>
+<p class="study-card-meta">2020 · 翁宛婷</p>
+<img class="study-card-cover" src="../assets/study-covers/2020-weng-teachers-stress-resilience.png" alt="教師 BMAA 課程降低壓力並提升韌性">
+<p>以在職國小教師為對象，觀察短期 BMAA 課程前後的壓力、情緒與心理韌性變化。</p>
+<ul>
+<li>壓力知覺下降</li>
+<li>心理韌性提升</li>
+<li>負向情緒下降</li>
+</ul>
+<p><a class="study-card-link" href="2020-weng-teachers-stress-resilience.qmd">閱讀研究摘要</a></p>
+</div>
+:::
+
+::: {.study-card}
+<div class="study-card-body">
+<p class="study-card-title">兩週身心中軸覺察練習對大學生情緒調節的成效</p>
+<p class="study-card-meta">2020 · 許惟智</p>
+<img class="study-card-cover" src="../assets/study-covers/2020-hsu-emotion-regulation.png" alt="短版 BMAA-S 改善情緒調節">
+<p>短版 BMAA-S 以兩週練習檢驗大學生情緒狀態、情緒調節困難與身體覺察的改變。</p>
+<ul>
+<li>憂鬱程度下降</li>
+<li>情緒調節困難下降</li>
+<li>身體覺察提升</li>
+</ul>
+<p><a class="study-card-link" href="2020-hsu-emotion-regulation.qmd">閱讀研究摘要</a></p>
+</div>
+:::
+
+::: {.study-card}
+<div class="study-card-body">
+<p class="study-card-title">感覺你的身體：短期入班動態靜觀課程對學童的介入成效</p>
+<p class="study-card-meta">2019 · 李茂寧</p>
+<img class="study-card-cover" src="../assets/study-covers/2019-lee-feel-your-body.png" alt="BMAA-C 促進更自主的情緒調節策略">
+<p>這篇研究聚焦兒童在負向情緒情境中，是否更常使用可以自己操作的情緒調節策略。</p>
+<ul>
+<li>呼吸放鬆策略增加</li>
+<li>再評價策略增加</li>
+<li>情緒調節更自主</li>
+</ul>
+<p><a class="study-card-link" href="2019-lee-feel-your-body.qmd">閱讀研究摘要</a></p>
+</div>
+:::
+
+::: {.study-card}
+<div class="study-card-body">
+<p class="study-card-title">身心中軸覺察與綜合活動訓練增進兒童執行功能及情緒調節</p>
+<p class="study-card-meta">2018 · 張憶如</p>
+<img class="study-card-cover" src="../assets/study-covers/2018-chang-children-executive-emotion.png" alt="兒童 BMAA-C 與綜合活動的成效剖面">
+<p>比較兒童版 BMAA-C 與綜合活動課程，呈現兩種活動對認知與情緒量表的不同受益方向。</p>
+<ul>
+<li>BMAA-C 工作記憶進步較清楚</li>
+<li>綜合活動情緒調節變化較大</li>
+<li>凸顯不同活動的受益差異</li>
+</ul>
+<p><a class="study-card-link" href="2018-chang-children-executive-emotion.qmd">閱讀研究摘要</a></p>
+</div>
+:::
+
+::: {.study-card}
+<div class="study-card-body">
+<p class="study-card-title">身心互動途徑初探：BMAA 對身體感覺、工作記憶與注意力控制的提升效果</p>
+<p class="study-card-meta">2017 · 李少揚</p>
+<img class="study-card-cover" src="../assets/study-covers/2017-lee-body-mind-interaction.png" alt="BMAA-C 的認知改善率">
+<p>以兒童版 BMAA-C 檢驗身體覺察與認知功能的關係，並觀察訓練後的工作記憶與注意力變化。</p>
+<ul>
+<li>工作記憶改善率較高</li>
+<li>注意力穩定度呈現不同變化</li>
+<li>身體覺察基礎可能影響受益程度</li>
+</ul>
+<p><a class="study-card-link" href="2017-lee-body-mind-interaction.qmd">閱讀研究摘要</a></p>
+</div>
+:::
+
+::: {.study-card}
+<div class="study-card-body">
+<p class="study-card-title">What Confucius practiced is good for your mind: contemplative practice and executive functions</p>
+<p class="study-card-meta">2016 · Teng, S.-C., & Lien, Y.-W.</p>
+<img class="study-card-cover" src="../assets/study-covers/2016-teng-confucius.png" alt="短期 BMAA 與禪修對執行功能的不同效果">
+<p>比較 BMAA、禪修動禪與等待控制組，觀察短期身心練習對工作記憶與注意力轉換的不同影響。</p>
+<ul>
+<li>BMAA 組工作記憶提升較清楚</li>
+<li>禪修組注意力轉換成本下降較明顯</li>
+<li>呈現不同練習形式的認知效果差異</li>
+</ul>
+<p><a class="study-card-link" href="2016-teng-confucius.qmd">閱讀研究摘要</a></p>
+</div>
+:::
+
+:::

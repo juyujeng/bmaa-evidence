@@ -1,6 +1,7 @@
 ---
 title: "BMAA and integrated activity training for improving children’s executive function and emotion regulation"
 author: "Chang, Y.-J."
+image: "../../assets/study-covers-en/2018-chang-children-executive-emotion.png"
 lang: en
 language: ../../assets/language-en.yml
 toc-title: "On this page"
@@ -10,6 +11,12 @@ toc-title: "On this page"
 #| include: false
 source("../../R/bmaa_plot_theme.R")
 ```
+
+::: {.study-cover}
+<img src="../../assets/study-covers-en/2018-chang-children-executive-emotion.png" alt="Working-memory span increased">
+
+Cover figure: working-memory span increased more clearly in the BMAA-C group.
+:::
 
 ## Method
 

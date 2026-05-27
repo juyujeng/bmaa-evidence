@@ -13,9 +13,9 @@ source("../../R/bmaa_plot_theme.R")
 ```
 
 ::: {.study-cover}
-<img src="../../assets/study-covers-en/2024-yang-autistic-traits.png" alt="Alexithymia decreased">
+<img src="../../assets/study-covers-en/2024-yang-autistic-traits.png" alt="Expression recognition">
 
-Cover figure: after BMAA, TAS-20 alexithymia scores decreased, indicating less difficulty identifying and describing emotions.
+Cover figure: after BMAA, low-intensity facial-expression recognition improved.
 :::
 
 ## Method

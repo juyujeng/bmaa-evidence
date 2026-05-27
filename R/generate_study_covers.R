@@ -36,7 +36,7 @@ dat <- data.frame(
   )
 )
 save_cover(
-  cover_theme(bmaa_line_plot(subset(dat, outcome == "身體覺察 BAAI"), "身體覺察提升", ylab = "BAAI 平均分數")),
+  cover_theme(bmaa_line_plot(subset(dat, outcome == "心理健康 AMHS"), "心理健康提升", ylab = "AMHS 平均分數")),
   "2026-tien-healthcare-students.png"
 )
 
@@ -84,7 +84,7 @@ dat <- data.frame(
   value = c(81.12, 96.65, 80.73, 82.18, 58.71, 50.53, 56.36, 55.91, 40.44, 45.51, 40.22, 40.40)
 )
 save_cover(
-  cover_theme(bmaa_line_plot(subset(dat, outcome == "述情障礙 TAS-20"), "述情障礙下降", ylab = "TAS-20 平均分數")),
+  cover_theme(bmaa_line_plot(subset(dat, outcome == "低強度表情辨識"), "表情辨識能力", ylab = "平均分數")),
   "2024-yang-autistic-traits.png"
 )
 
@@ -99,13 +99,12 @@ save_cover(
 )
 
 dat <- data.frame(
-  outcome = "第三段再閱讀時間",
-  group = rep(c("正念-一致", "正念-不一致", "控制-一致", "控制-不一致"), each = 2),
-  time = rep(c("前測", "後測"), 4),
-  value = c(1551.94, 2566.15, 3173.46, 1765.30, 2106.19, 1711.23, 2012.86, 1739.40)
+  outcome = c("前測", "後測"),
+  group = "不一致 - 一致",
+  value = c(3173.46 - 1551.94, 1765.30 - 2566.15)
 )
 save_cover(
-  cover_theme(bmaa_line_plot(dat, "性別不一致文章再閱讀時間下降", ylab = "再閱讀時間（毫秒）")),
+  cover_theme(bmaa_bar_plot(dat, "刻板印象干擾程度", ylab = "再閱讀時間差異（毫秒）")),
   "2023-hung-gender-stereotype.png"
 )
 

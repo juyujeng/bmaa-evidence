@@ -13,9 +13,9 @@ source("../../R/bmaa_plot_theme.R")
 ```
 
 ::: {.study-cover}
-<img src="../../assets/study-covers-en/2023-hung-gender-stereotype.png" alt="Rereading time decreased for gender-incongruent texts">
+<img src="../../assets/study-covers-en/2023-hung-gender-stereotype.png" alt="Stereotype interference">
 
-Cover figure: after brief mindfulness guidance, rereading time for gender-incongruent texts decreased.
+Cover figure: after training with BMAA-derived techniques, the rereading-time difference between incongruent and congruent passages decreased.
 :::
 
 ## Method

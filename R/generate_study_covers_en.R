@@ -40,7 +40,7 @@ dat <- data.frame(
   )
 )
 save_cover(
-  cover_theme(bmaa_line_plot(subset(dat, outcome == "Body awareness (BAAI)"), "Body Awareness Increased", ylab = "BAAI mean score")),
+  cover_theme(bmaa_line_plot(subset(dat, outcome == "Mental health (AMHS)"), "Mental Health Increased", ylab = "AMHS mean score")),
   "2026-tien-healthcare-students.png"
 )
 
@@ -88,7 +88,7 @@ dat <- data.frame(
   value = c(81.12, 96.65, 80.73, 82.18, 58.71, 50.53, 56.36, 55.91, 40.44, 45.51, 40.22, 40.40)
 )
 save_cover(
-  cover_theme(bmaa_line_plot(subset(dat, outcome == "Alexithymia (TAS-20)"), "Alexithymia Decreased", ylab = "TAS-20 mean score")),
+  cover_theme(bmaa_line_plot(subset(dat, outcome == "Low-intensity expression recognition"), "Expression Recognition", ylab = "Mean score")),
   "2024-yang-autistic-traits.png"
 )
 
@@ -103,13 +103,12 @@ save_cover(
 )
 
 dat <- data.frame(
-  outcome = "Third-paragraph rereading time",
-  group = rep(c("Mindfulness-congruent", "Mindfulness-incongruent", "Control-congruent", "Control-incongruent"), each = 2),
-  time = rep(c("Pretest", "Posttest"), 4),
-  value = c(1551.94, 2566.15, 3173.46, 1765.30, 2106.19, 1711.23, 2012.86, 1739.40)
+  outcome = c("Pretest", "Posttest"),
+  group = "Incongruent - congruent",
+  value = c(3173.46 - 1551.94, 1765.30 - 2566.15)
 )
 save_cover(
-  cover_theme(bmaa_line_plot(dat, "Rereading Time Decreased for Gender-Incongruent Texts", ylab = "Rereading time (ms)")),
+  cover_theme(bmaa_bar_plot(dat, "Stereotype Interference", ylab = "Rereading-time difference (ms)")),
   "2023-hung-gender-stereotype.png"
 )
 

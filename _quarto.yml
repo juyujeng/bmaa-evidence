@@ -1,6 +1,10 @@
 project:
   type: website
   output-dir: _site
+  render:
+    - "*.qmd"
+    - "studies/*.qmd"
+    - "en/**/*.qmd"
 
 language: assets/language-zh-TW.yml
 

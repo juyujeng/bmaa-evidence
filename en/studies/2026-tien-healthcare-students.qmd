@@ -13,9 +13,9 @@ source("../../R/bmaa_plot_theme.R")
 ```
 
 ::: {.study-cover}
-<img src="../../assets/study-covers-en/2026-tien-healthcare-students.png" alt="Body awareness increased">
+<img src="../../assets/study-covers-en/2026-tien-healthcare-students.png" alt="Mental health increased">
 
-Cover figure: after BMAA, healthcare students showed increased body awareness.
+Cover figure: after BMAA, healthcare students showed higher mental-health scores.
 :::
 
 ## Method

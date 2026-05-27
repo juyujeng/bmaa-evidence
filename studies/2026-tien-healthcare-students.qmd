@@ -15,9 +15,9 @@ source("../R/bmaa_plot_theme.R")
 ```
 
 ::: {.study-cover}
-<img src="../assets/study-covers/2026-tien-healthcare-students.png" alt="BMAA 提升醫療學生身心健康指標">
+<img src="../assets/study-covers/2026-tien-healthcare-students.png" alt="心理健康提升">
 
-封面圖：BMAA 組在身體覺察、心理健康與生活滿意度上升，述情困難下降。
+封面圖：BMAA 組在訓練後心理健康分數上升。
 :::
 
 ## From body to mind: BMAA enhances body awareness, mindfulness, positive embodiment and mental health

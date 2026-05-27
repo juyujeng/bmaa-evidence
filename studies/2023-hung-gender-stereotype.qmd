@@ -15,9 +15,9 @@ source("../R/bmaa_plot_theme.R")
 ```
 
 ::: {.study-cover}
-<img src="../assets/study-covers/2023-hung-gender-stereotype.png" alt="正念引導降低閱讀中的性別不一致效應">
+<img src="../assets/study-covers/2023-hung-gender-stereotype.png" alt="刻板印象干擾程度">
 
-封面圖：正念引導組在後測時，性別不一致文章引發的再閱讀時間下降。
+封面圖：結合 BMAA 技巧訓練後，一致與不一致文章的再閱讀時間差異下降。
 :::
 
 ## 短期正念引導降低閱讀時的內隱性別刻板印象

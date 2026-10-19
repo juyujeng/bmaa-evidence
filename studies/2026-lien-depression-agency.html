@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW" xml:lang="zh-TW"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.36">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -40,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-3985628ddb359818f011ab5e9a53c529.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -162,6 +162,12 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="../studies/2026-lien-depression-agency.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">From the body to the mind: interoception and sense of agency as mechanisms of depression reduction in the Body–Mind Axial Awareness (BMAA)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../studies/2025-li-happiness-agency.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">從自我覺察、能動感到幸福感：探討身心中軸覺察課程對幸福感的提升效果與機制</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -399,9 +405,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const siteHref = function (relativePath) {
     return `${siteRoot}/${relativePath}`.replace(/\/{2,}/g, "/");
   };
-  const toEnglish = path.includes("/studies/")
-    ? siteHref(`en/studies/${pageName}`)
-    : siteHref(`en/${pageName}`);
+  const englishOverride = document.querySelector('meta[name="bmaa-english-href"]');
+  const toEnglish = englishOverride
+    ? siteHref(englishOverride.content)
+    : path.includes("/studies/")
+      ? siteHref(`en/studies/${pageName}`)
+      : siteHref(`en/${pageName}`);
   const toChinese = path.includes("/en/studies/")
     ? siteHref(`studies/${pageName}`)
     : siteHref(pageName);

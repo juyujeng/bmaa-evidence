@@ -51,6 +51,12 @@ save_cover(
   "2026-lien-depression-agency.png"
 )
 
+source("R/2025_li_happiness_agency.R")
+save_cover(
+  li_wellbeing_plot(),
+  "2025-li-happiness-agency.png"
+)
+
 dat <- data.frame(
   outcome = rep(c("惡夢困擾 NDQ", "惡夢影響 NES", "睡眠品質 PSQI"), each = 6),
   group = rep(c("BMAA-MILD", "BMAA-MILD", "BMAA-MILD", "控制組", "控制組", "控制組"), 3),

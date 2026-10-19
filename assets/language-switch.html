@@ -11,9 +11,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const siteHref = function (relativePath) {
     return `${siteRoot}/${relativePath}`.replace(/\/{2,}/g, "/");
   };
-  const toEnglish = path.includes("/studies/")
-    ? siteHref(`en/studies/${pageName}`)
-    : siteHref(`en/${pageName}`);
+  const englishOverride = document.querySelector('meta[name="bmaa-english-href"]');
+  const toEnglish = englishOverride
+    ? siteHref(englishOverride.content)
+    : path.includes("/studies/")
+      ? siteHref(`en/studies/${pageName}`)
+      : siteHref(`en/${pageName}`);
   const toChinese = path.includes("/en/studies/")
     ? siteHref(`studies/${pageName}`)
     : siteHref(pageName);

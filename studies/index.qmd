@@ -29,6 +29,16 @@ title: "研究清單"
 
 ::: {.study-card}
 <div class="study-card-body">
+<p class="study-card-title">從自我覺察、能動感到幸福感：探討身心中軸覺察課程對幸福感的提升效果與機制</p>
+<p class="study-card-meta">2025 · 李政霆</p>
+<img class="study-card-cover" src="../assets/study-covers/2025-li-happiness-agency.png" alt="BMAA 組的安適幸福感與心理幸福感中的自我接納分數提升">
+<p>BMAA 幫助學生提升安適幸福感（內心安定、自在的程度）與自我接納，並更能掌握自己的行動與情緒。</p>
+<p><a class="study-card-link" href="2025-li-happiness-agency.qmd">閱讀研究摘要</a></p>
+</div>
+:::
+
+::: {.study-card}
+<div class="study-card-body">
 <p class="study-card-title">身心中軸覺察訓練結合清醒夢療法對惡夢困擾者的清醒夢、惡夢與睡眠品質的影響</p>
 <p class="study-card-meta">2024 · 邱敬惠</p>
 <img class="study-card-cover" src="../assets/study-covers/2024-chiu-nightmare-lucid-dream.png" alt="BMAA-MILD 減少惡夢負擔並改善睡眠">
